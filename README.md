@@ -32,3 +32,4 @@ TEAM #2
 
 * Yehor Honcharenko
 * Liubomyr Kosteniuk
+* Roman Diakov
