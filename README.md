@@ -36,3 +36,4 @@ TEAM #2
 * Krystyna Lebid
 * Andrii Ferenchuk
 * Tetiana Ishchenko 
+* Hula Anastasiia
