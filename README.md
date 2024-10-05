@@ -34,3 +34,4 @@ TEAM #2
 * Liubomyr Kosteniuk
 * Roman Diakov
 * Krystyna Lebid
+* Andrii Ferenchuk
