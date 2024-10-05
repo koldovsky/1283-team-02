@@ -35,3 +35,4 @@ TEAM #2
 * Roman Diakov
 * Krystyna Lebid
 * Andrii Ferenchuk
+* Tetiana Ishchenko 
