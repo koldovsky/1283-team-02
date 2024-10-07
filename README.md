@@ -38,3 +38,5 @@ TEAM #2
 * Tetiana Ishchenko 
 * Hula Anastasiia
 * Kostya Zeykin
+* Serhii Hrushynskyi
+* Andrii Kindzerskyi
