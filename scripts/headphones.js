@@ -1,15 +1,14 @@
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, 
-    spaceBetween: 30,  
-    loop: true,  
-    loopedSlides: 20,  
-    centeredSlides: true,  
-    speed: 600,  
-    freeMode: true,  
-    freeModeMomentum: false,
-
+    slidesPerView: 3,
+    spaceBetween: 30, 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-});
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true, 
+  });
+  

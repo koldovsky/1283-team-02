@@ -20,7 +20,7 @@
 
 .swiper-container {
     width: 100%; 
-    max-width: 400px; 
+    max-width: 1200px;
     margin: 0 auto; 
     padding: 20px 0;
 }
@@ -37,7 +37,7 @@
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: auto;
     height: 180px;
     object-fit: contain;
     display: block;
