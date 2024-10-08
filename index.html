@@ -15,6 +15,7 @@
             integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
             crossorigin="anonymous"
         ></script>
+        <link rel="stylesheet" href="./styles/index.css" />
     </head>
     <body>
         <!-- Index Header | Yehor Honcharenko -->
@@ -74,7 +75,16 @@
             data-hx-get="index.speakers.partial.html"
         ></section>
         <!-- *block name?* | LEBID KHRYSTYNA -->
-
+        <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.video.partial.html"
+        ></div>
+        <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.companies-logo-carousel.partial.html"
+        ></div>
         <!-- out-customers-say | Mykhailo Prihodko -->
         <section
             data-hx-trigger="load"
