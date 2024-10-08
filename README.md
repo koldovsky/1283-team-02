@@ -39,3 +39,4 @@ TEAM #2
 * Hula Anastasiia
 * Kostya Zeykin
 * Serhii Hrushynskyi
+* Andrii Kindzerskyi
