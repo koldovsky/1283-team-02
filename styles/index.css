@@ -1,6 +1,10 @@
-@import url(out-customers-say.css);
-@import url(features-section.css);
+/* Сторінка для стилів лише index.html. Тут підключаємо css секцій */
+@import url(reset.css);
+@import url(global.css);
 
-* {
-  box-sizing: border-box;
-}
+/* Index Header | Yehor Honcharenko */
+@import url(sections/index.header.css);
+/* Назва секції | Ім'я Прізвище */
+@import url(out-customers-say.css);
+/* Назва секції | Ім'я Прізвище */
+@import url(features-section.css);
