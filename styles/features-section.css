@@ -1,7 +1,16 @@
-.features__container {
+/* .features__container {
   max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .features__card {
   width: 300px;
   height: 100px;
+  display: flex;
+  flex-direction: row;
 }
+.features__img-container {
+  width: 70px;
+  height: 70px;
+} */
