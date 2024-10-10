@@ -11,10 +11,11 @@
     font-family: "Heebo", sans-serif;
     text-align: center;
     font-weight: bold;
+    height: 70px;
 }
 
 .headphones__icon {
-    width: 40px;
+    width: 60px;
     height: 60px;
 }
 
@@ -25,9 +26,18 @@
     text-align: center;
 }
 
-.headphones__catalog {
-    border: 5px #3b3b3b;
-    padding: 24px;
+
+
+.catalog__item {
+    display: flex;
+    flex-direction: row;
+    min-width: 320;
+    max-width: 1080;
+    text-align: center;
+    padding: 31px 29px;
+    flex-direction: column;
+    border: solid 3px #f2f2f2;
+    margin: 30px 15px;
 }
 
 .catalog__item-name {
@@ -38,21 +48,28 @@
     font-family:"PT Sans", sans-serif;
 }
 
+.catalog__item-name:hover {
+    text-decoration: underline;
+}
+
 .catalog__item-price{
     font-weight: bold;
     font-size: 20px;
+    margin: 16px 0 0;
+    height: 30px;
     color: #2877b6;
     font-family: "PT Sans", sans-serif;
 }
 
 .catalog__item-button {
     background-color: #eb5112;
-    padding: 0px 20px;
+    margin: 24px 100px 0;
+    padding: 15px 20px;
     color: #ffff;
     text-align: center;
     font-size: 13px;
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.3s ease;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
 }
