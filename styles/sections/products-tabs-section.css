@@ -7,6 +7,7 @@
   padding: 0 12px;
 
   .product-tabs ul {
+    font-family: 'PT Sans',sans-serif;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -17,7 +18,7 @@
     li {
       padding: 15px 20px;
     }
-    
+
     li:hover {
       cursor: pointer;
     }
