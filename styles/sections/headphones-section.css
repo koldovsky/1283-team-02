@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@100;900&display=swap");
+
+.headphones__main {
+    padding: 24px;
+}
+
+.headphones__title {
+    font-size: 40px;
+    color: #2f2f2f;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.headphones__icon {
+    width: 40px;
+    height: 60px;
+}
+
+.headphones__description {
+    font-size: 19px;
+    color: #3b3b3b;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+
+.headphones__catalog {
+    border: 5px #3b3b3b;
+    padding: 24px;
+}
+
+.catalog__item-name {
+    margin: 8px 0 0;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 19px;
+    font-family:"PT Sans", sans-serif;
+}
+
+.catalog__item-price{
+    font-weight: bold;
+    font-size: 20px;
+    color: #2877b6;
+    font-family: "PT Sans", sans-serif;
+}
+
+.catalog__item-button {
+    background-color: #eb5112;
+    padding: 0px 20px;
+    color: #ffff;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+}
+
+.catalog__item-button:hover{
+    background-color: #2a2a2a;
+}
+
+.product-card__category {
+    font-weight: bold;
+    font-size: 12px;
+    color: #2877b6;
+    font-family: "PT Sans", sans-serif;
+}
+
+

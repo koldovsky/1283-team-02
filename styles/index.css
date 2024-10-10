@@ -10,7 +10,7 @@
 @import url(features-section.css);
 @import url(products-tabs-section.css);
 /* Index Headphones | Liubomyr Kosteniuk */
-@import url(headphones.css);
+@import url(sections/headphones-section.css);
 
 /* Speakers | Kostyantyn Zeykin */
 @import url(sections/index.speakers.css);
