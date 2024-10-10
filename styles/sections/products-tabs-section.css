@@ -7,17 +7,27 @@
   padding: 0 12px;
 
   .product-tabs ul {
+    font-family: 'PT Sans',sans-serif;
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-weight: bold;
+    color: grey;
+    /* transition: opacity .2s ease-in-out, background-color .2s ease-in-out; */
 
     li {
       padding: 15px 20px;
     }
 
-    li.active-tab {
-      border-bottom: 3px solid orangered !important;
-      background-color: blue;
+    li:hover {
+      cursor: pointer;
+    }
+
+    /* чому не застосовується стиль? */
+    .active-tab {
+      color: black;
+      border-bottom: 3px solid blue !important;
+      background-color: green;
     }
   }
 
@@ -36,8 +46,8 @@
     }
 
     @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
