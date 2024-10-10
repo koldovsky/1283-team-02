@@ -2,19 +2,20 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 0px 24px;
     background-color: #f4f4f4;
 }
 
 .special-offers__item {
-    display: flex;
-    flex-direction: column;
+    display: grid; 
+    grid-template-columns: 1fr; 
     object-fit: cover;
     text-align: center;
     justify-content: space-between;
     background-color: #f0f0f0;
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
+    display: grid; grid-template-columns: 1fr;
 }
 
 .special-product__image img {
