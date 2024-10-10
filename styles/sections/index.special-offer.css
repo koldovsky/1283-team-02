@@ -1,157 +1,67 @@
-/* Основні стилі для мобільних пристроїв від 320px */
 .special-offers {
-    display: block;
-    /* Вертикальне розташування блоків на мобільних пристроях */
-}
-
-.special-offers__item {
-    position: relative;
-    /* Встановлюємо відносне позиціонування для подальшого розташування елементів */
-    width: 100%;
-    /* Блок займає всю ширину екрану на мобільних пристроях */
-    height: 269.84px;
-    /* Висота блока як на зображенні */
-    margin-bottom: 20px;
-    /* Відступ між блоками */
-    border-radius: 10px;
-    /* Округлення кутів блоків */
+    display: block; 
+  }
+  
+  .special-offers__item {
+    position: relative; 
+    width: 100%; 
+    margin-bottom: 20px; 
     overflow: hidden;
-    /* Не дозволяємо контенту виходити за межі блока */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Тінь для блока */
-    background-size: cover;
-    /* Масштабування фонового зображення */
-    background-position: center;
-    /* Центруємо фонове зображення */
-    background-repeat: no-repeat;
-    /* Не повторюємо фонове зображення */
-}
-
-/* Стилі для кожного конкретного блоку */
-.special-offers__item--best-seller {
-    background-image: url("assets/images/img-special-offer/banner-maze-t45.jpg");
-    /* Зображення для першого блока */
-}
-
-.special-offers__item--special-offer {
-    background-image: url("assets/images/img-special-offer/banner-yelow-headphone.png");
-    /* Зображення для другого блока */
-}
-
-.special-offers__item--hurry-up {
-    background-image: url("assets/images/img-special-offer/banner-sony-s2.png");
-    /* Зображення для третього блока */
-}
-
-/* Стилі для текстового контенту */
-.special-product__label,
-.special-product__name,
-.special-product__price,
-.special-product__shop-now,
-.special-product__shop-now-svg {
-    position: absolute;
-    /* Абсолютне позиціонування для розміщення контенту поверх зображення */
+  }
+  
+  .special-product__image img {
+    width: 100%; 
+    height: auto;
+    display: block;
+  }
+  
+  .special-product__label,
+  .special-product__name,
+  .special-product__price,
+  .special-product__shop-now {
+    position: absolute; /*  НЕ ЗАБУТИ!!!!!!! */
     left: 15px;
-    /* Відступ від лівого краю */
-    color: white;
-    /* Білий текст для контрасту */
-}
-
-.special-product__label {
-    top: 15px;
-    /* Відступ від верхнього краю */
+    color: #2f2f2f; 
+  }
+  
+  .special-product__label {
+    top: 15px; 
     font-size: 14px;
-    /* Маленький шрифт для мітки */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Напівпрозорий чорний фон для читабельності */
     padding: 5px 10px;
-    /* Внутрішні відступи */
-    border-radius: 5px;
-    /* Округлені кути */
-}
-
-.special-product__name {
+  }
+  
+  .special-product__name {
     bottom: 60px;
-    /* Відступ від нижнього краю */
     font-size: 20px;
-    /* Більший шрифт для назви продукту */
     font-weight: bold;
     text-transform: uppercase;
-    /* Заглавні літери для назви продукту */
-}
-
-.special-product__price {
+  }
+  
+  .special-product__price {
     bottom: 30px;
-    /* Відступ від нижнього краю */
-}
-
-.special-product__price--old {
-    text-decoration: line-through;
-    /* Закреслена стара ціна */
+  }
+  
+  .special-product__price--old {
+    text-decoration: line-through; /*НЕ ЗАБУТИ!!!*/
     font-size: 14px;
-    margin-right: 10px;
-    /* Відступ між старою і новою цінами */
-}
-
-.special-product__price--new {
+    margin-right: 20px; 
+  }
+  
+  .special-product__price--new {
     font-size: 16px;
     font-weight: bold;
-    color: #ffea00;
-    /* Жовта нова ціна */
-}
-
-.special-product__shop-now {
-    bottom: 10px;
-    /* Відступ від нижнього краю */
+    color: #2a2a2a; 
+  }
+  
+  .special-product__shop-now {
+    bottom: 10px; 
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2877b6;
-    /* Синій текст для слова "shop now" */
-}
-
-.special-product__shop-now-svg {
-    bottom: 8px;
-    /* Полоска розташована поруч зі словом "shop now" */
-    left: auto;
-    /* Забираємо відступ зліва */
-    right: 15px;
-    /* Полоска вирівняна справа */
-}
-
-/* Полоска SVG для синьої лінії */
-.special-product__shop-now-svg svg {
     display: inline-block;
-    vertical-align: middle;
-    /* Вирівнюємо по вертикалі з текстом */
-    margin-left: 5px;
-    /* Невеликий відступ між словом "shop now" та лінією */
-}
-
-/* Медіа-запит для екранів від 768px і більше */
-@media (min-width: 768px) {
-    .special-offers {
-        display: flex;
-        /* Вирівнюємо блоки горизонтально */
-        justify-content: space-between;
-        gap: 20px;
-        /* Проміжок між блоками */
-    }
-
-    .special-offers__item {
-        flex: 1;
-        /* Всі блоки займають однакову ширину */
-        max-width: 30%;
-        /* Обмежуємо максимальну ширину кожного блока до 30% від ширини контейнера */
-    }
-
-    .special-product__label,
-    .special-product__name,
-    .special-product__price,
-    .special-product__shop-now,
-    .special-product__shop-now-svg {
-        left: 20px;
-        /* Збільшуємо відступ зліва для більших екранів */
-    }
-}
+    padding: 5px 10px;
+    color: #2a2a2a;
+    text-decoration: none; 
+  }
+  
+  
