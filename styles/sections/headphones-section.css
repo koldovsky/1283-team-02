@@ -14,19 +14,12 @@
     height: 70px;
 }
 
-.headphones__icon {
-    width: 60px;
-    height: 60px;
-}
-
 .headphones__description {
     font-size: 19px;
     color: #3b3b3b;
     font-family: "PT Sans", sans-serif;
     text-align: center;
 }
-
-
 
 .catalog__item {
     display: flex;
@@ -66,7 +59,7 @@
     margin: 24px 100px 0;
     padding: 15px 20px;
     color: #ffff;
-    text-align: center;
+    justify-content: center;
     font-size: 13px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -74,15 +67,60 @@
     font-family: "PT Sans", sans-serif;
 }
 
-.catalog__item-button:hover{
+.catalog__item-button:hover {
     background-color: #2a2a2a;
 }
 
-.product-card__category {
+.product-card__first-category {
     font-weight: bold;
     font-size: 12px;
     color: #2877b6;
+    text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
 }
 
+.product-card__second-category {
+    font-weight: bold;
+    font-size: 12px;
+    color: #eb5112;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
 
+.product-card__third-category {
+    font-weight: bold;
+    font-size: 12px;
+    color: #f3cb1f;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-card__old-price {
+    text-decoration: line-through;
+    color: #85858e;
+    font-weight: bold;
+}
+
+.product-card__first-new-price {
+    color:#2877b6;
+    font-weight: bold;
+}
+
+.product-card__second-new-price {
+    color:#eb5112;
+    font-weight: bold;
+}
+
+.product-card__third-new-price {
+    color:#f3cb1f;
+    font-weight: bold;
+}
+
+.timer__part {
+    font-weight: bold;
+}
+
+.timer__word {
+    font-weight: normal;
+    color:#85858e;
+}
