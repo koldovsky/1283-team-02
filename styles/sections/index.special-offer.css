@@ -9,6 +9,8 @@
     /* Встановлюємо відносне позиціонування для подальшого розташування елементів */
     width: 100%;
     /* Блок займає всю ширину екрану на мобільних пристроях */
+    height: 269.84px;
+    /* Висота блока як на зображенні */
     margin-bottom: 20px;
     /* Відступ між блоками */
     border-radius: 10px;
@@ -16,17 +18,33 @@
     overflow: hidden;
     /* Не дозволяємо контенту виходити за межі блока */
     background-color: #fff;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Тінь для блока */
+    background-size: cover;
+    /* Масштабування фонового зображення */
+    background-position: center;
+    /* Центруємо фонове зображення */
+    background-repeat: no-repeat;
+    /* Не повторюємо фонове зображення */
 }
 
-.special-product__image img {
-    width: 100%;
-    /* Зображення заповнює всю ширину блока */
-    height: auto;
-    display: block;
+/* Стилі для кожного конкретного блоку */
+.special-offers__item--best-seller {
+    background-image: url("assets/images/img-special-offer/banner-maze-t45.jpg");
+    /* Зображення для першого блока */
 }
 
+.special-offers__item--special-offer {
+    background-image: url("assets/images/img-special-offer/banner-yelow-headphone.png");
+    /* Зображення для другого блока */
+}
+
+.special-offers__item--hurry-up {
+    background-image: url("assets/images/img-special-offer/banner-sony-s2.png");
+    /* Зображення для третього блока */
+}
+
+/* Стилі для текстового контенту */
 .special-product__label,
 .special-product__name,
 .special-product__price,
@@ -36,7 +54,7 @@
     /* Абсолютне позиціонування для розміщення контенту поверх зображення */
     left: 15px;
     /* Відступ від лівого краю */
-    color: #2f2f2f;
+    color: white;
     /* Білий текст для контрасту */
 }
 
@@ -79,7 +97,7 @@
 .special-product__price--new {
     font-size: 16px;
     font-weight: bold;
-    color: #2a2a2a;
+    color: #ffea00;
     /* Жовта нова ціна */
 }
 
@@ -89,6 +107,8 @@
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #2877b6;
+    /* Синій текст для слова "shop now" */
 }
 
 .special-product__shop-now-svg {
