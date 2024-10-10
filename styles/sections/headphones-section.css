@@ -22,6 +22,7 @@
     height: 70px;
 }
 
+
 .headphones__description {
     font-size: 19px;
     color: #3b3b3b;
@@ -80,6 +81,8 @@
 }
 
 .product-card__first-category {
+    position: absolute;
+    display: block;
     font-weight: bold;
     font-size: 12px;
     color: #2877b6;
@@ -88,6 +91,7 @@
 }
 
 .product-card__second-category {
+    position: absolute;
     font-weight: bold;
     font-size: 12px;
     color: #eb5112;
@@ -96,6 +100,7 @@
 }
 
 .product-card__third-category {
+    position: absolute;
     font-weight: bold;
     font-size: 12px;
     color: #f3cb1f;
