@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
-
-/* :root{
-  --fearures-svg-color:var(#2877b6)
-  --features-svg-bg-color:var(#f2f2f2)
-} */
+@import url(../global.css);
 
 .features__container {
   min-width: 320px;
@@ -31,10 +27,10 @@
     .features__img-container {
       min-width: 70px;
       min-height: 70px;
-      /* color: var(--fearures-svg-color); */
+      color: var(--fearures-svg-color);
       color: #2877b6;
       padding: 15px;
-      /* background-color: var(--features-svg-bg-color); */
+      background-color: var(--features-svg-bg-color);
       background-color: #f2f2f2;
       border-radius: 50%;
       display: flex;
@@ -52,7 +48,7 @@
       }
 
       @media (min-width: 1024px) {
-        .features__title{
+        .features__title {
           font-size: 1.5rem;
         }
       }

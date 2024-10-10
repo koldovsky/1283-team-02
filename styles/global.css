@@ -1,15 +1,19 @@
 /* Global styles for all pages (index, product etc.)  */
 :root {
-    font-family: "Manrope", sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
+  /* features section variables Andrii Ferenchuk */
+  --fearures-svg-color: var(#2877b6);
+  --features-svg-bg-color: var(#f2f2f2);
+  /* end of features section */
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
