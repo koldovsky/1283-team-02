@@ -1,25 +1,114 @@
+/* Стилі для мобільних пристроїв з екраном від 320px */
 .special-offers {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0px 24px;
-    background-color: #f4f4f4;
+    display: block;
+    /* Спочатку робимо блоки вертикальними (по одному на ряд) для мобільних пристроїв */
 }
 
 .special-offers__item {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    object-fit: cover;
-    text-align: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
-    font-family: "Manrope", sans-serif;
-    display: grid; grid-template-columns: 1fr;
+    width: 100%;
+    /* Блок займає всю ширину екрану на мобільних пристроях */
+    padding: 15px;
+    /* Внутрішні відступи для надання повітря всередині блока */
+    margin-bottom: 20px;
+    /* Відступ між блоками, щоб вони не злипались */
+    background-color: #fff;
+    /* Фон білий для кожного блока */
+    border-radius: 10px;
+    /* Округлення кутів блоків */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Невелика тінь для додання об'єму блокам */
+    transition: transform 0.3s ease;
+    /* Анімація масштабу при наведенні */
+}
+
+.special-offers__item:hover {
+    transform: scale(1.05);
+    /* При наведенні блок збільшується на 5% */
 }
 
 .special-product__image img {
-    max-width: 100%;
+    width: 100%;
+    /* Зображення всередині блока розтягується на всю ширину блока */
     height: auto;
-    margin-bottom: 20px;
+    /* Висота зображення автоматично підлаштовується відповідно до ширини */
+}
+
+.special-product__label {
+    font-size: 14px;
+    /* Розмір шрифту для маленьких текстових міток */
+    color: #666;
+    /* Світло-сірий колір для мітки */
+}
+
+.special-product__name {
+    font-size: 20px;
+    /* Більший шрифт для назви продукту */
+    font-weight: bold;
+    /* Жирний текст для назви продукту */
+    margin: 10px 0;
+    /* Відступи зверху і знизу від назви продукту */
+}
+
+.special-product__price {
+    font-size: 16px;
+    /* Розмір шрифту для цін */
+    margin-bottom: 10px;
+    /* Відступ між ціною і наступним елементом */
+}
+
+.special-product__price--old {
+    text-decoration: line-through;
+    /* Закреслений текст для старої ціни */
+    color: #999;
+    /* Світло-сірий колір для старої ціни */
+}
+
+.special-product__price--new {
+    font-weight: bold;
+    /* Жирний текст для нової ціни */
+    color: #2877B6;
+    /* Синій колір для нової ціни */
+}
+
+.special-product__shop-now {
+    display: inline-block;
+    /* Дозволяє задати ширину та висоту для посилання, а також стилізувати його як кнопку */
+    font-size: 14px;
+    /* Розмір шрифту для тексту "shop now" */
+    color: #2877B6;
+    /* Синій колір для тексту посилання */
+    text-transform: uppercase;
+    /* Робить текст заглавними літерами */
+    margin-top: 10px;
+    /* Відступ зверху для відділення від ціни */
+    cursor: pointer;
+    /* При наведенні курсор стає рукою (як на посиланнях) */
+}
+
+.special-product__shop-now svg {
+    margin-left: 5px;
+    /* Відступ між текстом і графічною стрілкою */
+    vertical-align: middle;
+    /* Вирівнювання svg по вертикалі з текстом */
+}
+
+/* Медіа-запит для екранів з шириною 768px і більше */
+@media (min-width: 768px) {
+    .special-offers {
+        display: flex;
+        /* На екранах шириною 768px і більше використовуємо Flexbox для вирівнювання блоків горизонтально */
+        justify-content: space-between;
+        /* Розташовуємо блоки рівномірно по горизонталі з рівними проміжками */
+        gap: 20px;
+        /* Проміжок між блоками */
+    }
+
+    .special-offers__item {
+        flex: 1;
+        /* Кожен блок займає рівномірну частину доступного простору */
+        max-width: 30%;
+        /* Обмежуємо максимальну ширину кожного блока до 30% від ширини контейнера */
+        margin-bottom: 0;
+        /* Забираємо відступи між блоками по вертикалі на великих екранах */
+    }
 }
