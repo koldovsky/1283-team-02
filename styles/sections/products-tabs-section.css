@@ -15,9 +15,10 @@
       padding: 15px 20px;
     }
 
+    /* чому не застосовується стиль? */
     li.active-tab {
-      border-bottom: 3px solid orangered !important;
-      background-color: blue;
+      border-bottom: 3px solid blue !important;
+      background-color: green;
     }
   }
 
@@ -36,8 +37,8 @@
     }
 
     @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
