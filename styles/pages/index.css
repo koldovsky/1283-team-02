@@ -1,0 +1,19 @@
+/* Сторінка для стилів лише index.html. Тут підключаємо css секцій */
+@import url(../reset.css);
+@import url(../global.css);
+
+/* Index Header | Yehor Honcharenko */
+@import url(../sections/index.header.css);
+/* Назва секції | Ім'я Прізвище */
+@import url(../sections/out-customers-say.css);
+/* Назва секції | Andrii Ferenchuk */
+@import url(../sections/features-section.css);
+@import url(../sections/products-tabs-section.css);
+/* Index Headphones | Liubomyr Kosteniuk */
+@import url(../sections/sections/headphones-section.css);
+
+/* Speakers | Kostyantyn Zeykin */
+@import url(../sections//index.speakers.css);
+/* Companies-carousel Video | Krystyna Lebid */
+@import url(../sections/companies-carousel.css);
+@import url(../sections/video.css);
