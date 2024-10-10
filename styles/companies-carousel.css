@@ -1,0 +1,19 @@
+.companies-carousel{
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+.companies-carousel__container{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+.companies-carousel__slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.companies-carousel__image{
+    width: 85;
+}

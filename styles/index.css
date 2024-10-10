@@ -13,9 +13,7 @@
 @import url(headphones.css);
 
 /* Speakers | Kostyantyn Zeykin */
-@import url(sections/index.speakers.css)
-/* Назва секції | Krystyna Lebid */ 
-@import url(companies-carousel.css);
+@import url(sections/index.speakers.css);
+/* Companies-carousel Video | Krystyna Lebid */
 @import url(companies-carousel.css);
 @import url(video.css);
-
