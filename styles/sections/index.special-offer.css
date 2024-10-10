@@ -1,20 +1,16 @@
-/* Основні стилі для мобільних пристроїв від 320px */
 .special-offers {
-    display: block; /* Вертикальне розташування блоків на мобільних пристроях */
+    display: block; 
   }
   
   .special-offers__item {
-    position: relative; /* Встановлюємо позицію відносно батьківського елемента для подальшого розміщення тексту на зображенні */
-    width: 100%; /* Блок займає всю ширину екрану на мобільних пристроях */
-    margin-bottom: 20px; /* Відступ між блоками */
-    border-radius: 10px; /* Округлення кутів блоків */
-    overflow: hidden; /* Це необхідно, щоб зображення і текст не виходили за межі блока */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для блока */
+    position: relative; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    overflow: hidden;
   }
   
   .special-product__image img {
-    width: 100%; /* Зображення заповнює всю ширину блока */
+    width: 100%; 
     height: auto;
     display: block;
   }
@@ -23,73 +19,49 @@
   .special-product__name,
   .special-product__price,
   .special-product__shop-now {
-    position: absolute; /* Абсолютне позиціонування для розміщення контенту поверх зображення */
-    left: 15px; /* Відступ від лівого краю */
-    color: white; /* Білий текст, щоб він контрастував з зображенням */
+    position: absolute; /*  НЕ ЗАБУТИ!!!!!!! */
+    left: 15px;
+    color: #2f2f2f; 
   }
   
   .special-product__label {
-    top: 15px; /* Відступ від верхнього краю */
-    font-size: 14px; /* Маленький шрифт для мітки */
-    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для читабельності */
-    padding: 5px 10px; /* Внутрішні відступи для фону */
-    border-radius: 5px; /* Округлені кути для фону */
+    top: 15px; 
+    font-size: 14px;
+    padding: 5px 10px;
   }
   
   .special-product__name {
-    bottom: 60px; /* Відступ від нижнього краю */
-    font-size: 20px; /* Більший шрифт для назви продукту */
+    bottom: 60px;
+    font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase; /* Заглавні літери для назви продукту */
+    text-transform: uppercase;
   }
   
   .special-product__price {
-    bottom: 30px; /* Відступ від нижнього краю */
+    bottom: 30px;
   }
   
   .special-product__price--old {
-    text-decoration: line-through; /* Закреслена стара ціна */
+    text-decoration: line-through; /*НЕ ЗАБУТИ!!!*/
     font-size: 14px;
-    margin-right: 10px; /* Відступ між старою і новою цінами */
+    margin-right: 20px; 
   }
   
   .special-product__price--new {
     font-size: 16px;
     font-weight: bold;
-    color: #ffea00; /* Жовта нова ціна для кращого контрасту */
+    color: #2a2a2a; 
   }
   
   .special-product__shop-now {
-    bottom: 10px; /* Відступ від нижнього краю */
+    bottom: 10px; 
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    background-color: #2877b6; /* Синій фон для кнопки */
     padding: 5px 10px;
-    border-radius: 5px; /* Округлені кути */
-    color: white;
-    text-decoration: none; /* Забираємо підкреслення у посилання */
+    color: #2a2a2a;
+    text-decoration: none; 
   }
   
-  /* Медіа-запит для екранів від 768px і більше */
-  @media (min-width: 768px) {
-    .special-offers {
-      display: flex; /* Вирівнюємо блоки горизонтально */
-      justify-content: space-between;
-      gap: 20px; /* Проміжок між блоками */
-    }
-  
-    .special-offers__item {
-      flex: 1; /* Всі блоки займають однакову ширину */
-      max-width: 30%; /* Обмежуємо максимальну ширину кожного блока до 30% від ширини контейнера */
-    }
-  
-    .special-product__label,
-    .special-product__name,
-    .special-product__price,
-    .special-product__shop-now {
-      left: 20px; /* Збільшуємо відступ зліва для більших екранів */
-    }
-  }
   
