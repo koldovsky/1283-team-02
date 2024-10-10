@@ -17,12 +17,13 @@
     li {
       padding: 15px 20px;
     }
+    
     li:hover {
       cursor: pointer;
     }
 
     /* чому не застосовується стиль? */
-    li.active-tab {
+    .active-tab {
       color: black;
       border-bottom: 3px solid blue !important;
       background-color: green;
