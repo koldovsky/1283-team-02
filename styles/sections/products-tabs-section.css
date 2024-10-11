@@ -26,8 +26,7 @@
     li.active-tab {
       display: block;
       color: black;
-      border-bottom: 3px solid blue !important;
-      background-color: green;
+      border-bottom: 3px solid rgb(255, 0, 98);
     }
   }
 
