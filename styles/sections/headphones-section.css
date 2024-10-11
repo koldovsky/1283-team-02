@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@100;900&display=swap");
+@import url(../global.css);
+
+.headphones__container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 0 12px;
+}
 
 .headphones__main {
     padding: 24px;
@@ -14,10 +22,6 @@
     height: 70px;
 }
 
-.headphones__icon {
-    width: 60px;
-    height: 60px;
-}
 
 .headphones__description {
     font-size: 19px;
@@ -26,13 +30,11 @@
     text-align: center;
 }
 
-
-
 .catalog__item {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    min-width: 320;
-    max-width: 1080;
+    max-width: 300;
     text-align: center;
     padding: 31px 29px;
     flex-direction: column;
@@ -41,7 +43,7 @@
 }
 
 .catalog__item-name {
-    margin: 8px 0 0;
+    margin: 8px 0px 0px;
     text-decoration: none;
     color: #2a2a2a;
     font-size: 19px;
@@ -55,7 +57,7 @@
 .catalog__item-price{
     font-weight: bold;
     font-size: 20px;
-    margin: 16px 0 0;
+    margin: 16px 0px 0px;
     height: 30px;
     color: #2877b6;
     font-family: "PT Sans", sans-serif;
@@ -66,7 +68,7 @@
     margin: 24px 100px 0;
     padding: 15px 20px;
     color: #ffff;
-    text-align: center;
+    justify-content: center;
     font-size: 13px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -74,15 +76,64 @@
     font-family: "PT Sans", sans-serif;
 }
 
-.catalog__item-button:hover{
+.catalog__item-button:hover {
     background-color: #2a2a2a;
 }
 
-.product-card__category {
+.product-card__first-category {
+    position: absolute;
+    display: block;
     font-weight: bold;
     font-size: 12px;
     color: #2877b6;
+    text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
 }
 
+.product-card__second-category {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    color: #eb5112;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
 
+.product-card__third-category {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    color: #f3cb1f;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-card__old-price {
+    text-decoration: line-through;
+    color: #85858e;
+    font-weight: bold;
+}
+
+.product-card__first-new-price {
+    color:#2877b6;
+    font-weight: bold;
+}
+
+.product-card__second-new-price {
+    color:#eb5112;
+    font-weight: bold;
+}
+
+.product-card__third-new-price {
+    color:#f3cb1f;
+    font-weight: bold;
+}
+
+.timer__part {
+    font-weight: bold;
+}
+
+.timer__word {
+    font-weight: normal;
+    color:#85858e;
+}

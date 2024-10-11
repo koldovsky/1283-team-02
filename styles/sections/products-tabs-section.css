@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+.product-tabs__container {
+  min-width: 320px;
+  max-width: 991px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  .product-tabs ul {
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: bold;
+    color: grey;
+    /* transition: opacity .2s ease-in-out, background-color .2s ease-in-out; */
+
+    li {
+      padding: 15px 20px;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    /* чому не застосовується стиль? */
+    li.active-tab {
+      display: block;
+      color: black;
+      border-bottom: 3px solid blue !important;
+      background-color: green;
+    }
+  }
+
+  .product-cards {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    min-height: 100vh;
+    gap: 5px;
+
+    .product-card {
+      width: 100%;
+      max-width: 411px;
+      outline: 2px solid lightblue;
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
