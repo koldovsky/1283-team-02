@@ -1,68 +1,69 @@
 .special-offers {
-    display: block; 
-  }
-  
-  .special-offers__item {
-    position: relative; 
-    width: 100%; 
-    margin-bottom: 20px; 
-    overflow: hidden;
-  }
-  
-  .special-product__image img {
-    width: 100%; 
-    height: auto;
-    display: block;
-  }
-  
-  .special-product__label,
-  .special-product__name,
-  .special-product__price,
-  .special-product__shop-now {
-    position: absolute; /*  НЕ ЗАБУТИ!!!!!!! */
-    left: 15px;
-    color: #2f2f2f; 
-  }
-  
-  .special-product__label {
-    top: 15px; 
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-  
-  .special-product__name {
-    bottom: 90px;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Heebo", sans-serif;
-    text-transform: uppercase;
-    color: rgb(47,47,47)
-  }
-  
-  .special-product__price {
-    bottom: 30px;
-  }
-  
-  .special-product__price--old {
-    text-decoration: line-through; /*НЕ ЗАБУТИ!!!*/
-    font-size: 14px;
-    margin-right: 20px; 
-  }
-  
-  .special-product__price--new {
-    font-size: 16px;
-    font-weight: bold;
-    color: #2a2a2a; 
-  }
-  
-  .special-product__shop-now {
-    bottom: 10px; 
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 5px 10px;
-    color: #2a2a2a;
-    text-decoration: none; 
-  }
-  
+  display: block;
+}
+
+.special-offers__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.special-product__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.special-product__label,
+.special-product__name,
+.special-product__price,
+.special-product__shop-now {
+  position: absolute;
+  /*  НЕ ЗАБУТИ!!!!!!! */
+  left: 15px;
+  color: #2f2f2f;
+}
+
+.special-product__label {
+  top: 15px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.special-product__name {
+  bottom: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  color: rgb(47, 47, 47)
+}
+
+.special-product__price {
+  bottom: 30px;
+}
+
+.special-product__price--old {
+  text-decoration: line-through;
+  /*НЕ ЗАБУТИ!!!*/
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.special-product__price--new {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.special-product__shop-now {
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #2a2a2a;
+  text-decoration: none;
+}
