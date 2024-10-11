@@ -1,4 +1,3 @@
-@import url();
 .headphones__container {
     min-width: 320px;
     max-width: 1200px;
@@ -91,9 +90,21 @@
     background-color: #2a2a2a;
 }
 
+.product-borders__first-card {
+    background-image: url(/assets/images/img-headphones/headphonesb.webp);
+}
+
+.product-borders__second-card {
+    background-image: url(/assets/images/img-headphones/speakers.webp);
+}
+
+.product-borders__third-card {
+    background-image: url(/assets/images/img-headphones/headphones.webp);
+}
+
 .product-card__first-category {
-    position: absolute;
     display: block;
+    letter-spacing: 1.2px;
     font-weight: bold;
     font-size: 12px;
     color: var(--headphones-color-blue);
@@ -102,8 +113,8 @@
 }
 
 .product-card__second-category {
-    position: absolute;
     font-weight: bold;
+    letter-spacing: 1.2px;
     font-size: 12px;
     color: var(--headphones-color-orange);
     text-transform: uppercase;
@@ -111,31 +122,46 @@
 }
 
 .product-card__third-category {
-    position: absolute;
     font-weight: bold;
+    letter-spacing: 1.2px;
     font-size: 12px;
     color: var(--headphones-color-yelow);
     text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
 }
 
+.product-card__price {
+    align-items: baseline;
+    gap: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-family: "Heebo", sans-serif;
+}
+
 .product-card__old-price {
+    font-size: 15px;
     text-decoration: line-through;
     color: var(--headphones-color-gray);
     font-weight: bold;
 }
 
 .product-card__first-new-price {
+    font-size: 22px;
+    text-decoration: none;
     color: var(--headphones-color-blue);
     font-weight: bold;
 }
 
 .product-card__second-new-price {
+    font-size: 22px;
     color: var(--headphones-color-orange);
     font-weight: bold;
 }
 
 .product-card__third-new-price {
+    font-size: 22px;
+    text-decoration: none;
     color:var(--headphones-color-yelow);
     font-weight: bold;
 }
