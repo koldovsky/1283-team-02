@@ -13,7 +13,9 @@
 
 .jbl-speaker__container {
     max-width: 1200px;
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
 }
