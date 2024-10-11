@@ -30,54 +30,90 @@
     text-align: center;
 }
 
+
 .catalog__item {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    max-width: 300;
+    flex-direction: column; 
+    max-width: 100%; 
     text-align: center;
-    padding: 31px 29px;
-    flex-direction: column;
+    padding: 20px;
     border: solid 3px #f2f2f2;
-    margin: 30px 15px;
+    margin: 15px 0; 
+    box-sizing: border-box;
 }
 
 .catalog__item-name {
-    margin: 8px 0px 0px;
+    margin: 8px 0 0;
     text-decoration: none;
     color: #2a2a2a;
-    font-size: 19px;
-    font-family:"PT Sans", sans-serif;
+    font-size: 18px; 
+    font-family: "PT Sans", sans-serif;
 }
 
 .catalog__item-name:hover {
     text-decoration: underline;
 }
 
-.catalog__item-price{
+.catalog__item-price {
     font-weight: bold;
-    font-size: 20px;
-    margin: 16px 0px 0px;
-    height: 30px;
+    font-size: 18px; 
+    margin: 12px 0 0;
     color: #2877b6;
     font-family: "PT Sans", sans-serif;
 }
 
 .catalog__item-button {
     background-color: #eb5112;
-    margin: 24px 100px 0;
-    padding: 15px 20px;
-    color: #ffff;
+    margin: 20px auto 0;
+    padding: 12px 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 13px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
+    width: fit-content;
 }
 
 .catalog__item-button:hover {
     background-color: #2a2a2a;
+}
+
+@media (min-width: 768px) {
+    .catalog__item {
+        max-width: 300px; 
+        margin: 30px 15px; 
+        padding: 31px 29px; 
+    }
+
+    .catalog__item-name {
+        font-size: 19px; 
+    }
+
+    .catalog__item-price {
+        font-size: 20px; 
+        margin: 16px 0 0;
+    }
+
+    .catalog__item-button {
+        margin: 24px auto 0;
+        padding: 15px 20px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .catalog__item {
+        max-width: 350px; 
+        margin: 30px 20px; 
+    }
+
+    .catalog__item-button {
+        padding: 16px 24px; 
+    }
 }
 
 .product-card__first-category {
