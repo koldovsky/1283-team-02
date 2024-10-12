@@ -45,19 +45,24 @@
 
       .product-text-info {
         font-size: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 8px;
 
         a.link-to-product-page {
           text-decoration: none;
+          /* margin-top: 24px; */
         }
 
         a.add-to-cart-button-link {
           text-decoration: none;
           font-weight: 700;
           font-size: 0.8rem;
-          .add-to-cart-button-el{
+          .add-to-cart-button-el {
             max-width: 94px;
             max-height: 53px;
-            margin-top: 24px;
+            /* margin-top: 24px; */
             color: white;
             background-color: black;
             padding: 10px;
@@ -67,6 +72,7 @@
         .product-card-text-info__price {
           font-weight: bold;
           color: #2877b6;
+          /* margin-top: 16px; */
         }
       }
     }
