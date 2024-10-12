@@ -48,14 +48,24 @@
 
       .product-text-info {
         font-size: 1.2rem;
+
         a.link-to-product-page {
           text-decoration: none;
         }
-      }
 
-      .product-card-text-info__price {
-        font-weight: bold;
-        color: #2877b6;
+        a.add-to-cart-button-link {
+          text-decoration: none;
+          font-weight: 700;
+          .add-to-cart-button-el{
+            color: white;
+            background-color: black;
+          }
+        }
+
+        .product-card-text-info__price {
+          font-weight: bold;
+          color: #2877b6;
+        }
       }
     }
 
