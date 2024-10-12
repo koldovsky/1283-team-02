@@ -11,11 +11,12 @@
 @import url(../sections/products-tabs-section.css);
 /* Index Headphones | Liubomyr Kosteniuk */
 @import url(../sections/headphones-section.css);
-
+/* Jbl-speaker | Roman Diakov */
+@import url(../sections/index.jbl-speaker.css);
 /* Speakers | Kostyantyn Zeykin */
 @import url(../sections//index.speakers.css);
 /* Companies-carousel Video | Krystyna Lebid */
 @import url(../sections/companies-carousel.css);
 @import url(../sections/video.css);
 /* special-offer  | Serhii Hrushynskyi */
-@import url(../sections/index.special-offer.css);
+@import url(../sections/index.special-offer.css)
