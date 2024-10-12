@@ -1,7 +1,8 @@
+@import url(../global.css);
 .product-tabs__container {
   min-width: 320px;
   max-width: 991px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0 12px;
 
   .product-tabs ul {
@@ -62,7 +63,9 @@
             max-width: 94px;
             max-height: 53px;
             color: var(--products-tabs-product-card-add-to-cart-text-color);
-            background-color: var(--products-tabs-product-card-add-to-cart-bg-color);
+            background-color: var(
+              --products-tabs-product-card-add-to-cart-bg-color
+            );
             padding: 10px;
           }
         }
