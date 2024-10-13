@@ -1,83 +1,62 @@
 .special-offers {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: block; 
 }
 
 .special-offers__item {
   position: relative;
-  width: 100%;
-  max-width: 32%;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  width: 100%; 
+  margin-bottom: 20px; 
+  overflow: hidden; 
 }
 
-.special-product__image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
+.special-product__image img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
 }
 
+.special-product__label,
+.special-product__name,
+.special-product__price,
+.special-product__shop-now {
+  position: absolute; 
+  left: 15px;
+  color: #2f2f2f;
 .special-product__label {
+  top: 15px;
   font-size: 14px;
   padding: 5px 10px;
-  text-transform: uppercase;
-  color: #333;
-  margin-bottom: 10px;
 }
 
 .special-product__name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  bottom: 60px; 
+  font-size: 20px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
 }
 
 .special-product__price {
-  margin-bottom: 10px;
+  bottom: 60px; 
 }
 
 .special-product__price--old {
-  text-decoration: line-through;
-  color: #888;
-  margin-right: 10px;
+  text-decoration: line-through; 
+  font-size: 14px; 
+  margin-right: 20px; 
 }
 
 .special-product__price--new {
-  font-size: 18px;
-  font-weight: bold;
-  color: #e60000;
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #2a2a2a; 
 }
 
-.special-product__shop-now {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2877B6;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  margin-top: 10px;
-}
-
-.special-product__shop-now-svg {
-  margin-top: 15px;
-}
-
-@media screen and (max-width: 768px) {
-  .special-offers__item {
-    max-width: 48%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .special-offers__item {
-    max-width: 100%;
-  }
+.special-product__shop-now { 
+  font-size: 14px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  display: inline-block; 
+  padding: 5px 10px; 
+  color: #2a2a2a; 
+  text-decoration: none; 
 }
