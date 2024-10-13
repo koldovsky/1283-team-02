@@ -1,69 +1,83 @@
 .special-offers {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .special-offers__item {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
+  max-width: 32%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.special-product__image img {
+.special-product__image {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.special-product__label,
-.special-product__name,
-.special-product__price,
-.special-product__shop-now {
-  position: absolute;
-  /*  НЕ ЗАБУТИ!!!!!!! */
-  left: 15px;
-  color: #2f2f2f;
+  margin-bottom: 20px;
 }
 
 .special-product__label {
-  top: 15px;
   font-size: 14px;
   padding: 5px 10px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .special-product__name {
-  bottom: 100px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
-  font-family: sans-serif;
+  color: #333;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  color: rgb(47, 47, 47)
 }
 
 .special-product__price {
-  bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .special-product__price--old {
   text-decoration: line-through;
-  /*НЕ ЗАБУТИ!!!*/
-  font-size: 14px;
-  margin-right: 20px;
+  color: #888;
+  margin-right: 10px;
 }
 
 .special-product__price--new {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  color: #2a2a2a;
+  color: #e60000;
 }
 
 .special-product__shop-now {
-  bottom: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
   display: inline-block;
-  padding: 5px 10px;
-  color: #2a2a2a;
+  padding: 10px 20px;
+  background-color: #2877B6;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.special-product__shop-now-svg {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .special-offers__item {
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .special-offers__item {
+    max-width: 100%;
+  }
 }
