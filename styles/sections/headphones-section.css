@@ -1,0 +1,210 @@
+.headphones__container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 0 12px;
+}
+
+.headphones__icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.headphones__icon-img {
+    height: 32px;
+    width: auto;
+}
+
+.headphones__main {
+    padding: 24px;
+}
+
+.headphones__title {
+    font-size: 40px;
+    color: #2f2f2f;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 70px;
+}
+
+
+.headphones__description {
+    font-size: 19px;
+    color: #3b3b3b;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+
+
+.catalog__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    max-width: 100%; 
+    text-align: center;
+    padding: 20px;
+    border: solid 3px #f2f2f2;
+    margin: 15px 0; 
+    box-sizing: border-box;
+}
+
+.catalog__item-name {
+    margin: 8px 0 0;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 18px; 
+    font-family: "PT Sans", sans-serif;
+}
+
+.catalog__item-name:hover {
+    text-decoration: underline;
+}
+
+.catalog__item-price {
+    font-weight: bold;
+    font-size: 18px; 
+    margin: 12px 0 0;
+    color: var(--headphones-color-blue);
+    font-family: "PT Sans", sans-serif;
+}
+
+.catalog__item-button {
+    background-color: var(--headphones-color-orange);
+    margin: 20px auto 0;
+    padding: 12px 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+    width: fit-content;
+}
+
+.catalog__item-button:hover {
+    background-color: #2a2a2a;
+}
+
+.product-borders__first-card {
+    background-image: url(/assets/images/img-headphones/headphonesb.webp);
+}
+
+.product-borders__second-card {
+    background-image: url(/assets/images/img-headphones/speakers.webp);
+}
+
+.product-borders__third-card {
+    background-image: url(/assets/images/img-headphones/headphones.webp);
+}
+
+.product-card__first-category {
+    display: block;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--headphones-color-blue);
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-card__second-category {
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    color: var(--headphones-color-orange);
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-card__third-category {
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    color: var(--headphones-color-yelow);
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-card__price {
+    align-items: baseline;
+    gap: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-family: "Heebo", sans-serif;
+}
+
+.product-card__old-price {
+    font-size: 15px;
+    text-decoration: line-through;
+    color: var(--headphones-color-gray);
+    font-weight: bold;
+}
+
+.product-card__first-new-price {
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--headphones-color-blue);
+    font-weight: bold;
+}
+
+.product-card__second-new-price {
+    font-size: 22px;
+    color: var(--headphones-color-orange);
+    font-weight: bold;
+}
+
+.product-card__third-new-price {
+    font-size: 22px;
+    text-decoration: none;
+    color:var(--headphones-color-yelow);
+    font-weight: bold;
+}
+
+.timer__part {
+    font-weight: bold;
+}
+
+.timer__word {
+    font-weight: normal;
+    color: var(--headphones-color-gray);
+}
+
+@media (min-width: 768px) {
+    .catalog__item {
+        max-width: 300px; 
+        margin: 30px 15px; 
+        padding: 31px 29px; 
+    }
+
+    .catalog__item-name {
+        font-size: 19px; 
+    }
+
+    .catalog__item-price {
+        font-size: 20px; 
+        margin: 16px 0 0;
+    }
+
+    .catalog__item-button {
+        margin: 24px auto 0;
+        padding: 15px 20px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .catalog__item {
+        max-width: 350px; 
+        margin: 30px 20px; 
+    }
+
+    .catalog__item-button {
+        padding: 16px 24px; 
+    }
+}
+
