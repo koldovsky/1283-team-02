@@ -3,15 +3,14 @@
 @import url(global.css);
 
 /* Index Header | Yehor Honcharenko */
-@import url(sections/global.header.css);
+@import url(sections/index.header.css);
 /* Назва секції | Ім'я Прізвище */
 @import url(out-customers-say.css);
 /* Назва секції | Ім'я Прізвище */
 @import url(features-section.css);
 /* Index gGeneral selection info | Tetiana Ishchenko*/
 @import url(general.selection.info.css)
-/* Index Headphones | Liubomyr Kosteniuk */
-@import url(headphones.css);
+    /* Index Headphones | Liubomyr Kosteniuk */ @import url(headphones.css);
 
 /* Speakers | Kostyantyn Zeykin */
-@import url(sections/index.speakers.css)
+@import url(sections/index.speakers.css);
