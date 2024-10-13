@@ -3,7 +3,7 @@
 @import url(global.css);
 
 /* Index Header | Yehor Honcharenko */
-@import url(sections/index.header.css);
+@import url(sections/global.header.css);
 /* Назва секції | Ім'я Прізвище */
 @import url(out-customers-say.css);
 /* Назва секції | Ім'я Прізвище */
