@@ -1,62 +1,91 @@
 .special-offers {
-  display: block; 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .special-offers__item {
+  width: 272px;
+  height: 270px;
+  margin: 0 auto;
   position: relative;
-  width: 100%; 
-  margin-bottom: 20px; 
-  overflow: hidden; 
+}
+
+.special-product__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .special-product__image img {
-  width: 100%; 
-  height: auto; 
-  display: block; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.special-product__label,
-.special-product__name,
-.special-product__price,
-.special-product__shop-now {
-  position: absolute; 
-  left: 15px;
-  color: #2f2f2f; }
+.special-product__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  background-color: transparent;
+  color: black;
+}
+
 .special-product__label {
-  top: 15px;
   font-size: 14px;
-  padding: 5px 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .special-product__name {
-  bottom: 60px; 
-  font-size: 20px; 
-  font-weight: bold; 
-  text-transform: uppercase; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .special-product__price {
-  bottom: 60px; 
+  margin-bottom: 15px;
 }
 
 .special-product__price--old {
-  text-decoration: line-through; 
-  font-size: 14px; 
-  margin-right: 20px; 
+  text-decoration: line-through;
+  margin-right: 10px;
 }
 
 .special-product__price--new {
-  font-size: 16px; 
-  font-weight: bold; 
-  color: #2a2a2a; 
+  font-weight: bold;
+  color: #000;
 }
 
-.special-product__shop-now { 
-  font-size: 14px; 
-  font-weight: bold; 
-  text-transform: uppercase; 
-  display: inline-block; 
-  padding: 5px 10px; 
-  color: #2a2a2a; 
-  text-decoration: none; 
+.special-product__shop-now {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2877B6;
+}
+
+@media (min-width: 950px) {
+  .special-offers {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .special-offers {
+    grid-template-columns: repeat(2, 1fr, 1fr);
+    gap: 20px;
+  }
+
+  .special-offers__item {
+    width: 100%;
+    height: auto;
+  }
 }
