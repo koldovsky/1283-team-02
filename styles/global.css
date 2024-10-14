@@ -21,6 +21,17 @@
     --headphones-color-yelow: #f3cb1f;
     --headphones-color-gray: #85858e;
     /* end of headphones section */
+
+    /*speakers section */
+    --speakers__title: rgb(47, 47, 47);
+    --speakers__card-border: red;
+    --speakers__card-top-margin: 45px;
+    --speakers__card-left-right-padding: 24px;
+    --speakers__card-border: #f2f2f2;
+    --speakers__card-title-font: #2a2a2a;
+    --speakers__card-price-font-color: #2877b6;
+    --speakers__card-link-background-color: #2a2a2a;
+    --speakers__card-link-font-color: #fff;
 }
 
 img {
