@@ -1,6 +1,30 @@
 /* Global styles for all pages (index, product etc.)  */
 :root {
     scroll-behavior: smooth;
+
+    /* colors: global primitives */
+    --color-white: #fff;
+    --color-dark: #000;
+    --color-black: #2a2a2a;
+    --color-dark-gray: #2f2f2f;
+    --color-gray: #3b3b3b;
+    --color-light-gray: #474747;
+    --color-blue: #2877b6;
+
+    /* global header | Yehor Honcharenko */
+    --header-top-bar-bg-color: var(--color-black);
+    --header-top-bar-contact-link-color-black: var(--color-black);
+    --header-top-bar-contact-link-color-white: var(--color-white);
+    --header-burger-color: var(--color-black);
+    --header-nav-link-color: var(--color-light-gray);
+    --header-nav-link-color-hover: var(--color-black);
+    --header-hero-title-color: var(--color-dark-gray);
+    --header-hero-text-color: var(--color-gray);
+    --header-hero-button-primary-blue-color: var(--color-blue);
+    --header-hero-button-primary-blue-text-color: var(--color-white);
+    --header-hero-button-primary-blue-hover-color: var(--color-dark);
+    --header-hero-button-clear-orange-text-color: var(--color-black);
+
     /* features section variables | Andrii Ferenchuk */
     --fearures-svg-color: #2877b6;
     --features-svg-bg-color: #f2f2f2;
@@ -50,7 +74,7 @@ img {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
     .container {
         padding: 0 24px;
         margin: 0 auto;
