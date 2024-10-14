@@ -9,12 +9,12 @@
     /* products-tabs section variables | Andrii Ferenchuk */
     --products-tabs-ul-color: #808080;
     --products-tabs-active-tab-bottom-color: #d4561b;
-    --products-tabs-product-card-outline-color:#add8e6;
-    --products-tabs-product-card-add-to-cart-text-color:#ffffff;
-    --products-tabs-product-card-add-to-cart-bg-color:#000000;
-    --products-tabs-product-card-price-text-color:#2877b6;
+    --products-tabs-product-card-outline-color: #add8e6;
+    --products-tabs-product-card-add-to-cart-text-color: #ffffff;
+    --products-tabs-product-card-add-to-cart-bg-color: #000000;
+    --products-tabs-product-card-price-text-color: #2877b6;
     /* end of products-tabs section */
-    
+
     /*headphones section */
     --headphones-color-blue: #2877b6;
     --headphones-color-orange: #eb5112;
@@ -29,9 +29,41 @@ img {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 16px;
     width: 100%;
+}
+
+@media (min-width: 479px) {
+    .container {
+        padding: 0 24px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 24px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 24px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 h1,
