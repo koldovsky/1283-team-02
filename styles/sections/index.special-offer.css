@@ -7,13 +7,38 @@
 .special-offers-container {
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
+  padding: 24px 31px;
   gap: 32px;
+}
+
+@media (min-width: 989px) {
+  .special-offers-container {
+    flex-direction: row;
+  }
+}
+
+.special-offers-tab-version {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+@media (min-width: 479px) {
+  .special-offers-tab-version {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 989px) {
+  .special-offers-tab-version {
+    width: 66%;
+  }
 }
 
 .special-offers__item {
   display: flex;
-  width: 100%;
+  width: 100%; 
   padding: 24px;
   gap: 24px;
 }
@@ -25,11 +50,23 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: 989px) {
+  .special-offers__item--best-seller {
+    width: 50%;
+  }
+}
+
 .special-offers__item--special-offer {
   background-image: url(../../assets/images/img-special-offer/banner-maze-t45.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 989px) {
+  .special-offers__item--special-offer {
+    width: 50%;
+  }
 }
 
 .special-offers__item--hurry-up {
@@ -39,7 +76,11 @@
   background-repeat: no-repeat;
 }
 
-
+@media (min-width: 989px) {
+  .special-offers__item--hurry-up {
+    width: 33%;
+  }
+}
 /* .special-product__image {
   width: 100%;
   height: 100%;
@@ -106,10 +147,5 @@
   .special-offers {
     grid-template-columns: repeat(2, 1fr, 1fr, 1fr, );
     gap: 20px;
-  }
-
-  .special-offers__item {
-    width: 100%;
-    height: auto;
   }
 }
