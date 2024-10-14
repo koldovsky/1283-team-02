@@ -125,6 +125,10 @@
     }
 }
 
+.header__burger.open {
+    transform: translateX(-16px);
+}
+
 .header__burger span {
     display: block;
     width: 100%;
@@ -271,7 +275,7 @@
 /* Hero */
 .hero {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 100vh;
     min-width: 320px;
     background-image: url(../../assets/images/hero/hero.png);
@@ -283,11 +287,6 @@
 .hero__content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
-
-    @media (min-width: 991px) {
-        margin-bottom: 148px;
-    }
 }
 
 .hero__header {
