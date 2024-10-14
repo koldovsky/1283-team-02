@@ -2,8 +2,8 @@
 @import url(../reset.css);
 @import url(../global.css);
 
-/* Index Header | Yehor Honcharenko */
-@import url(../sections/index.header.css);
+/* Global Header | Yehor Honcharenko */
+@import url(../sections/global.header.css);
 /* Назва секції | Ім'я Прізвище */
 @import url(../sections/out-customers-say.css);
 /* Назва секції | Andrii Ferenchuk */
@@ -21,4 +21,9 @@
 @import url(../sections/companies-carousel.css);
 @import url(../sections/video.css);
 /* special-offer  | Serhii Hrushynskyi */
-@import url(../sections/index.special-offer.css)
+@import url(../sections/index.special-offer.css);
+<<<<<<< HEAD
+/* three-headphones-carousel | Andrii Kindzerskyi*/
+@import url(../sections/index.three-headphones-carousel.css);
+=======
+>>>>>>> c295342eb17907b2f3e370532be414d607099678
