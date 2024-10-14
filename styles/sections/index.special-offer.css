@@ -76,6 +76,7 @@
   background-repeat: no-repeat;
 }
 
+
 @media (min-width: 989px) {
   .special-offers__item--hurry-up {
     width: 33%;
@@ -148,4 +149,14 @@
     grid-template-columns: repeat(2, 1fr, 1fr, 1fr, );
     gap: 20px;
   }
+}
+
+.button__clear-icon--blue {
+  width: 40px; 
+  height: 2px; 
+  background-color: #0074D9; 
+} 
+
+.special-product__shop-now:hover {
+  opacity: 0.8; 
 }
