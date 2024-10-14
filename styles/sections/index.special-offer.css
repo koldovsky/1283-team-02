@@ -1,73 +1,89 @@
 .special-offers {
-  display: grid;
+  /*  display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 20px;*/
+}
+
+.special-offers-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  gap: 32px;
 }
 
 .special-offers__item {
-  width: 272px;
-  height: 270px;
-  margin: 0 auto;
-  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  gap: 24px;
 }
 
-.special-product__image {
+.special-offers__item--best-seller {
+  background-image: url(../../assets/images/img-special-offer/banner-yelow-headphone.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.special-offers__item--special-offer {
+  background-image: url(../../assets/images/img-special-offer/banner-maze-t45.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.special-offers__item--hurry-up {
+  background-image: url(../../assets/images/img-special-offer/banner-sony-s2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* .special-product__image {
   width: 100%;
   height: 100%;
   position: relative;
-}
+} */
 
-.special-product__image img {
+/* .special-product__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .special-product__info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 15px;
-  background-color: transparent;
-  color: #494949;
+  justify-content: flex-start;
+  gap: 24px;
 }
 
 .special-product__label {
-  padding-top: 3em;
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  font-family: "PT-sans", sans-serif;
+  /* margin-bottom: 10px; */
 }
 
 .special-product__name {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 90px;
-  font-family: "Heebo", sans-serif;
+  /* margin-bottom: 90px; */
 }
 
 .special-product__price {
-  margin-bottom: 15px;
-  font-family: "Heebo", sans-serif;
+  /* margin-bottom: 15px; */
 }
 
 .special-product__price--old {
   text-decoration: line-through;
   margin-right: 10px;
-  font-family: "Heebo", sans-serif;
 }
 
 .special-product__price--new {
   font-weight: bold;
   font-size: 22px;
   color: #2f2f2f;
-  font-family: "Heebo", sans-serif;
 }
 
 .special-product__shop-now {
@@ -88,7 +104,7 @@
 
 @media (min-width: 700px) {
   .special-offers {
-    grid-template-columns: repeat(2, 1fr, 1fr, 1fr,);
+    grid-template-columns: repeat(2, 1fr, 1fr, 1fr, );
     gap: 20px;
   }
 
