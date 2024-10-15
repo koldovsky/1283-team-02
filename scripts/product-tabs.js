@@ -7,7 +7,7 @@ const newTabWrapper = document.querySelector('#new-tab__wrapper');
 
 
 document.addEventListener('click', function (e) {
-    e.preventDefault();
+    
     console.log(e.target.id);
     console.log(e.target.classList);
     if (e.target.id === 'featured-tab') {
