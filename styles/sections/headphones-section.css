@@ -95,15 +95,15 @@
 }
 
 .product-borders__first-card {
-    background-image: url(/assets/images/img-headphones/headphonesb.webp);
+    background-image: url(../../assets/images/img-headphones/headphonesb.webp);
 }
 
 .product-borders__second-card {
-    background-image: url(/assets/images/img-headphones/speakers.webp);
+    background-image: url(../../assets/images/img-headphones/speakers.webp);
 }
 
 .product-borders__third-card {
-    background-image: url(/assets/images/img-headphones/headphones.webp);
+    background-image: url(../../assets/images/img-headphones/headphones.webp);
 }
 
 .product-card__first-category {
@@ -188,9 +188,11 @@
 }
 
 .product-card__timer {
+    text-align: center;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
+    margin: 50px;
 }
 .timer_days {
     display: flex;
