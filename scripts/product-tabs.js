@@ -10,19 +10,18 @@ const tabs = [
     { button: featuredTabBtn, wrapper: featuredTabWrapper },
     { button: saleTabBtn, wrapper: saleTabWrapper },
     { button: newTabBtn, wrapper: newTabWrapper }
-  ];
-  
-  document.addEventListener('click', function (e) {
-      // Проверяем, кликнули ли по одной из кнопок вкладок
-      if (e.target.id !== 'featured-tab' && e.target.id !== 'sale-tab' && e.target.id !== 'new-tab') {
-          return; // Если клик не на кнопке вкладки, выходим из функции
-      }
-  
-      tabs.forEach(tab => {
-          const isActive = tab.button.id === e.target.id;
-  
-          tab.button.classList.toggle('active-tab', isActive);
-          tab.wrapper.classList.toggle('hidden', !isActive);
-      });
-  });
-  
+];
+
+document.addEventListener('click', function (e) {
+
+    if (e.target.id !== 'featured-tab' && e.target.id !== 'sale-tab' && e.target.id !== 'new-tab') {
+        return;
+    }
+
+    tabs.forEach(tab => {
+        const isActive = tab.button.id === e.target.id;
+
+        tab.button.classList.toggle('active-tab', isActive);
+        tab.wrapper.classList.toggle('hidden', !isActive);
+    });
+});
