@@ -6,32 +6,23 @@ const saleTabWrapper = document.querySelector('#sale-tab__wrapper');
 const newTabWrapper = document.querySelector('#new-tab__wrapper');
 
 
-document.addEventListener('click', function (e) {
-    
-    console.log(e.target.id);
-    console.log(e.target.classList);
-    if (e.target.id === 'featured-tab') {
-        featuredTabBtn.classList.add("active-tab");
-        saleTabBtn.classList.remove("active-tab");
-        newTabBtn.classList.remove("active-tab");
-        featuredTabWrapper.classList.remove('hidden');
-        saleTabWrapper.classList.add('hidden');
-        newTabWrapper.classList.add('hidden');
-    }
-    if (e.target.id === 'sale-tab') {
-        featuredTabBtn.classList.remove("active-tab");
-        saleTabBtn.classList.add("active-tab");
-        newTabBtn.classList.remove("active-tab");
-        featuredTabWrapper.classList.add('hidden');
-        saleTabWrapper.classList.remove('hidden');
-        newTabWrapper.classList.add('hidden');
-    }
-    if (e.target.id === 'new-tab') {
-        featuredTabBtn.classList.remove("active-tab");
-        saleTabBtn.classList.remove("active-tab");
-        newTabBtn.classList.add("active-tab");
-        featuredTabWrapper.classList.add('hidden');
-        saleTabWrapper.classList.add('hidden');
-        newTabWrapper.classList.remove('hidden');
-    }
-});
+const tabs = [
+    { button: featuredTabBtn, wrapper: featuredTabWrapper },
+    { button: saleTabBtn, wrapper: saleTabWrapper },
+    { button: newTabBtn, wrapper: newTabWrapper }
+  ];
+  
+  document.addEventListener('click', function (e) {
+      // Проверяем, кликнули ли по одной из кнопок вкладок
+      if (e.target.id !== 'featured-tab' && e.target.id !== 'sale-tab' && e.target.id !== 'new-tab') {
+          return; // Если клик не на кнопке вкладки, выходим из функции
+      }
+  
+      tabs.forEach(tab => {
+          const isActive = tab.button.id === e.target.id;
+  
+          tab.button.classList.toggle('active-tab', isActive);
+          tab.wrapper.classList.toggle('hidden', !isActive);
+      });
+  });
+  
