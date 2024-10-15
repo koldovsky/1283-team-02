@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 /*@media (min-width: 320px ){
     .general-selection-info {
         box-sizing: border-box;
@@ -8,74 +5,82 @@
         flex-direction: ;
     }
 }*/
-.general-selection-info{
+.general-selection-info {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
 }
+
 .general-selection-info__image {
     box-sizing: block;
     max-height: 192px;
     min-width: fit-content;
     object-position: 50%;
     overflow: hidden;
-}  
-.general-selection-info__description{
+}
+
+.general-selection-info__description {
     box-sizing: border-box;
     margin: 0%;
-    padding: 100px 30px  90px;
+    padding: 100px 30px 90px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     background-color: #F2F2F2;
 }
- 
-.description__text-name h2{ 
+
+.description__text-name h2 {
     color: #2f2f2f;
     font-family: "Heebo" sans-serif;
     font-size: 40px;
     line-height: 45px;
-    font-weight: 900; 
+    font-weight: 900;
 }
+
 .description__sound-icon {
     height: 32px;
     justify-items: left;
 }
+
 .sound-icon-img {
     display: block;
     width: 55px;
     height: 32px;
 }
-.description__text-discover p{
+
+.description__text-discover p {
     color: #3B3B3B;
     font-family: "PT Sans", sans-serif;
     font-size: 19px;
     width: 233px;
 }
+
 .description__text-basside p {
     color: #6C6C6C;
     font-family: "PT Sans", sans-serif;
     font-size: 17px;
 }
 
-.general-selection-info__menu{
+.general-selection-info__menu {
     display: flex;
     flex-direction: column;
     margin: 0%;
-    padding: 0px 25px  0px;
+    padding: 0px 25px 0px;
     background-color: #F2F2F2;
 }
-.menu__headphones{
+
+.menu__headphones {
     display: flex;
-    flex-direction: row;       
+    flex-direction: row;
 }
-.menu__headphones-text-conteiner{
+
+.menu__headphones-text-conteiner {
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
-.menu__headphones-icon{
+.menu__headphones-icon {
     display: flex;
     width: 50px;
     height: 50px;
@@ -84,19 +89,22 @@
     align-items: center;
     justify-content: center;
 }
-.menu__headphones-icon img{
+
+.menu__headphones-icon img {
     width: 26px;
     height: 26px;
 }
-
-.menu__headphones-text-name h3{
+.menu__headphones-text-name {
+    padding-left: 10px;
+}
+    
+.menu__headphones-text-name h3 {
     color: #2A2A2A;
-    font-family: "Heebo" sans-serif;
     font-size: 22px;
     font-weight: 700;
-    padding-left: 10px;    
 }
-.menu__headphones-text p{
+
+.menu__headphones-text p {
     width: 195px;
     color: #2A2A2A;
     font-family: "PT Sans", sans-serif;
@@ -104,12 +112,13 @@
     line-height: 25px;
 }
 
-.menu__loudspeakers{
+.menu__loudspeakers {
     display: flex;
-    flex-direction: row;       
+    flex-direction: row;
     margin-top: 30px;
-} 
-.menu__loudspeakers-icon{
+}
+
+.menu__loudspeakers-icon {
     display: flex;
     width: 50px;
     height: 50px;
@@ -118,24 +127,28 @@
     align-items: center;
     justify-content: center;
 }
-.menu__loudspeakers-icon img{
+
+.menu__loudspeakers-icon img {
     width: 26px;
     height: 26px;
 }
-.menu__loudspeakers-text-conteiner{
+
+.menu__loudspeakers-text-conteiner {
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: 10px;
 }
-.menu__loudspeakers-text-name h3{
+
+.menu__loudspeakers-text-name h3 {
     color: #2A2A2A;
     font-family: "Heebo" sans-serif;
     font-size: 22px;
     font-weight: 700;
     padding-left: 10px;
 }
-.menu__loudspeakers-text p{
+
+.menu__loudspeakers-text p {
     width: 195px;
     color: #2A2A2A;
     font-family: "PT Sans", sans-serif;
@@ -143,13 +156,13 @@
     line-height: 25px;
 }
 
-.menu__wireless-connection{
+.menu__wireless-connection {
     display: flex;
-    flex-direction: row;       
-    margin-top: 30px;    
+    flex-direction: row;
+    margin-top: 30px;
 }
 
-.menu__wireless-connection-icon{
+.menu__wireless-connection-icon {
     display: flex;
     width: 50px;
     height: 50px;
@@ -158,24 +171,28 @@
     align-items: center;
     justify-content: center;
 }
-.menu__wireless-connection-icon img{
+
+.menu__wireless-connection-icon img {
     width: 26px;
     height: 26px;
 }
-.menu__wireless-connection-text-conteiner{
+
+.menu__wireless-connection-text-conteiner {
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: 10px;
 }
-.menu__wireless-connection-text-name h3{
+
+.menu__wireless-connection-text-name h3 {
     color: #2A2A2A;
     font-family: "Heebo" sans-serif;
     font-size: 22px;
     font-weight: 700;
     padding-left: 10px;
 }
-.menu__wireless-connection-text p{
+
+.menu__wireless-connection-text p {
     width: 195px;
     color: #2A2A2A;
     font-family: "PT Sans", sans-serif;
