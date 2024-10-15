@@ -10,6 +10,7 @@
     --color-gray: #3b3b3b;
     --color-light-gray: #474747;
     --color-blue: #2877b6;
+    --color-transparent-white: rgba(255, 255, 255, 0.78);
 
     /* global header | Yehor Honcharenko */
     --header-top-bar-bg-color: var(--color-black);
@@ -51,8 +52,6 @@
     --description-text-discover-color: #3B3B3B;
     --description-text-baside-color:  #6C6C6C;
     --headphones-icon-color:  #FFFFFF;
-    
-
 
     /*speakers section */
     --speakers__title: rgb(47, 47, 47);
