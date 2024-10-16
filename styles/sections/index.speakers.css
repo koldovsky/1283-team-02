@@ -36,12 +36,6 @@
     text-align: center;
 }
 
-/* .speakers__catalog {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-} */
-
 .speakers__catalog {
     display: flex;
     align-items: center;
@@ -96,8 +90,17 @@
     margin-right: var(--speakers__card-left-right-margin);
     border: solid 1px var(--speakers__card-border);
 
+    .speakers__card-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* height: 30px; */
+        padding: 0 10px;
+    }
+
     .speakers__card-title {
         margin-top: 8px;
+        padding: 0 10px;
         font-size: 19px;
         text-decoration: underline;
         color: var(--speakers__card-title-font);
@@ -106,6 +109,7 @@
     .speakers__card-price {
         display: flex;
         margin-top: 16px;
+        padding: 0 10px;
         text-align: left;
         font-size: 20px;
         font-weight: 700;
@@ -115,7 +119,7 @@
     .speakers__card-link {
         display: block;
         width: fit-content;
-        margin-top: 24px;
+        margin: 24px 0 0 10px;
         padding: 19px 21px;
         background-color: var(--speakers__card-link-background-color);
         font-weight: 700;
