@@ -1,4 +1,3 @@
-@import url(../global.css);
 .product-tabs__container {
   min-width: 320px;
   max-width: 991px;
@@ -29,12 +28,24 @@
   }
 
   .product-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    min-height: 100vh;
-    gap: 30px;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .product-cards__tab--wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      gap: 30px;
+      padding-top: 30px;
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
 
     .product-card {
       max-width: 411px;
@@ -76,13 +87,9 @@
         }
       }
     }
-
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
   }
+}
+
+.hidden {
+ display: none !important;
 }
