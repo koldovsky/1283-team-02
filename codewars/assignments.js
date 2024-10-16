@@ -16,7 +16,7 @@ function makeNegative(num) {
 // solution | Andrii Ferenchuk
 
 function move(position, roll) {
-    return position + roll * 2
+    return position + roll * 2;
 }
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
@@ -37,7 +37,7 @@ function litres(time) {
 // solution | Andrii Ferenchuk
 
 function lovefunc(flower1, flower2) {
-    return ((flower1 + flower2) % 2 !== 0)
+    return ((flower1 + flower2) % 2 !== 0);
 }
 
 
