@@ -79,6 +79,46 @@
     width: auto;
 }
 
+.embla {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+  
+.embla__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+  
+.embla__container {
+    display: flex;
+}
+  
+.embla__slide {
+    position: relative;
+    flex: 0 0 20%; /* Three cards visible at the same time */
+    padding: 10px;
+}
+
+.embla__prev, .embla__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2877B6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.embla__prev {
+    left: 10px;
+}
+
+.embla__next {
+    right: 10px;
+}
+
 .speakers__card {
     margin-top: var(--speakers__card-top-margin);
     min-width: 16%;
