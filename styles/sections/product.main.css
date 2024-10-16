@@ -1,36 +1,38 @@
 .main {
-    max-width: 1200px;
-    margin: 150px auto;
+    max-width: 100%; 
+    margin: 20px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     border-radius: 8px;
 }
 
-/* Store homepage у верхньому лівому куті */
 .product__nav {
     text-align: left; 
     margin-bottom: 20px; 
 }
 
-.product__content {
-    display: flex;
-    gap: 40px; 
-    align-items: flex-start; 
+.product__nav-link {
+    text-decoration: none; 
+    color: inherit;
 }
 
-/* Ліва колонка: Галерея продукту */
-.product__left-column {
-    flex: 1;
+/* Контейнер для мобільного вигляду — одна колонка */
+.product__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Ліва колонка: Галерея продукту */
+.product__left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .product__gallery .product__image {
-    margin: 0 auto; 
-    width: 100%;
-    max-width: 400px;
+    margin: 0 auto;
+    width: 70%; 
     height: auto;
     border-radius: 4px;
 }
@@ -42,23 +44,21 @@
 }
 
 .product__thumbnail {
-    width: 120px;
-    height: 120px;
+    width: 15%;
+    height: auto;
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid #000; 
+    border: 2px solid #000;
     border-radius: 4px;
 }
 
 /* Права колонка: Інформація про продукт */
 .product__right-column {
-    flex: 1; 
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Інші стилі */
 .product__info {
     display: flex;
     flex-direction: column;
@@ -84,10 +84,10 @@
     margin-bottom: 10px;
 }
 
-/* Панель покупки */
 .product__purchase {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -115,7 +115,6 @@
     background-color: #0056b3;
 }
 
-/* Опис і специфікації продукту */
 .product__details {
     background-color: #ffffff;
     padding: 16px;
@@ -151,4 +150,37 @@
     margin-bottom: 5px;
     padding-left: 15px;
     text-indent: -15px;
+}
+
+/* Медіа-запит для великих екранів (від 768px і вище) */
+@media (min-width: 768px) {
+    .main {
+        max-width: 1200px;
+    }
+
+    .product__content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start; 
+    }
+
+    .product__left-column, 
+    .product__right-column {
+        flex: 1; 
+    }
+
+    .product__thumbnail {
+        width: 15%; 
+        height: auto; 
+    }
+
+    .product__gallery .product__image {
+        width: 70%; 
+    }
+
+    .product__purchase {
+        flex-direction: row; 
+        align-items: center;
+    }
 }
