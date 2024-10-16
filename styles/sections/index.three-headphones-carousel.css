@@ -72,15 +72,15 @@
 
 /* Унікальні кольори фону для кожного елемента каруселі */
 .headphone-carousel__item--first {
-    background-image: url(../../assets/images/svg-bg-carousel/bgblue1.svg);; /*  фон для першого елемента */
+    background-image: url(../../assets/images/svg-bg-carousel/bgyellow2.svg); /*  фон для жовтих навушників */
 }
 
 .headphone-carousel__item--second {
-    background-color: #4caf50; /* Зелений фон для другого елемента */
+    background-image: url(../../assets/images/svg-bg-carousel/bgblue1.svg); /* фон для синіх навушників */
 }
 
 .headphone-carousel__item--third {
-    background-color: #2196f3; /* Синій фон для третього елемента */
+    background-image: url(../../assets/images/svg-bg-carousel/blackbg1.svg) /*  фон для чорних навушників */
 }
 
 /* Стилі для кнопок "BUY NOW" та "ALL HEADPHONES" */
