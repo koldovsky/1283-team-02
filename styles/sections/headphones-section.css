@@ -38,6 +38,11 @@
     text-align: center;
 }
 
+.headphones__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .catalog__item {
     display: flex;
@@ -97,34 +102,45 @@
 
 .product-borders__first-card {
     background-image: url(../../assets/images/img-headphones/headphonesb.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .product-borders__second-card {
     background-image: url(../../assets/images/img-headphones/speakers.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 
 .product-borders__third-card {
     background-image: url(../../assets/images/img-headphones/headphones.webp);
+}
+
+.product-borders__first-card,
+.product-borders__second-card,
+.product-borders__third-card {
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
-.product-card__first-category {
+.product-card__category {
     padding: 30px;
     display: flex;
     letter-spacing: 1.2px;
     font-weight: bold;
     font-size: 12px;
-    color: var(--headphones-color-blue);
     text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
+}
+
+.text-blue {
+    color: var(--headphones-color-blue);
+}
+
+.text-orange {
+    color: var(--headphones-color-orange);
+}
+
+.text-yellow {
+    color: var(--headphones-color-yelow);
 }
 
 .product-card__name {
@@ -132,28 +148,6 @@
     display: block;
     font-size: 22px;
     font-family: "Heebo", sans-serif;
-}
-
-.product-card__second-category {
-    padding: 30px;
-    display: flex;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-    font-size: 12px;
-    color: var(--headphones-color-orange);
-    text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
-}
-
-.product-card__third-category {
-    padding: 30px;
-    display: flex;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-    font-size: 12px;
-    color: var(--headphones-color-yelow);
-    text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
 }
 
 .product-card__price {
@@ -173,23 +167,9 @@
     font-weight: bold;
 }
 
-.product-card__first-new-price {
+.product-card__new-price {
     font-size: 22px;
     text-decoration: none;
-    color: var(--headphones-color-blue);
-    font-weight: bold;
-}
-
-.product-card__second-new-price {
-    font-size: 22px;
-    color: var(--headphones-color-orange);
-    font-weight: bold;
-}
-
-.product-card__third-new-price {
-    font-size: 22px;
-    text-decoration: none;
-    color:var(--headphones-color-yelow);
     font-weight: bold;
 }
 
@@ -199,21 +179,24 @@
     padding: 30px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
     margin: 35px;
 }
 
-.separator {
-    display: inline-block;
-    width: 1px;
-    height: 100px;
-    background-color: var(--headphones-color-gray);
-    vertical-align: middle;
+.timer__part {
+    align-content: center;
+}
+
+.timer__part:nth-child(2) {
+    border-left: 0.5px solid #e0e0e0;
+    border-right: 0.5px solid #e0e0e0;
+    padding: 15px 30px;
+    margin: 0 30px; 
 }
 
 .timer__days,
 .timer__hours,
 .timer__minutes {
+    flex: 1 1 auto;
     font-weight: bold;
     font-size: 36px;
     font-family: "Heebo", sans-serif;
@@ -225,7 +208,11 @@
     font-family: "PT Sans", sans-serif;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
     .catalog__item {
         max-width: 300px; 
         margin: 30px 15px; 
@@ -248,21 +235,9 @@
 
     .headphones__product-borders {
         display: flex;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         justify-content: center;
-    }
-    
-    .product-borders__first-card {
-        width: 50%;
-    }
-
-    .product-borders__second-card {
-        width: 50%;
-    }
-
-    .product-borders__third-card {
-        width: 50%;
     }
 }
 
@@ -278,21 +253,9 @@
 
     .headphones__product-borders {
         display: flex;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         justify-content: center;
-    }
-
-    .product-borders__first-card {
-        width: 100%;
-    }
-
-    .product-borders__second-card {
-        width: 100%;
-    }
-
-    .product-borders__third-card {
-        width: 100%;
     }
 }
 
