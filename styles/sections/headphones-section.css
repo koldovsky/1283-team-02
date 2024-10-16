@@ -96,19 +96,28 @@
 
 .product-borders__first-card {
     background-image: url(../../assets/images/img-headphones/headphonesb.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-borders__second-card {
     background-image: url(../../assets/images/img-headphones/speakers.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-borders__third-card {
     background-image: url(../../assets/images/img-headphones/headphones.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .product-card__first-category {
     padding: 30px;
-    display: block;
+    display: flex;
     letter-spacing: 1.2px;
     font-weight: bold;
     font-size: 12px;
@@ -126,7 +135,7 @@
 
 .product-card__second-category {
     padding: 30px;
-    display: block;
+    display: flex;
     font-weight: bold;
     letter-spacing: 1.2px;
     font-size: 12px;
@@ -137,7 +146,7 @@
 
 .product-card__third-category {
     padding: 30px;
-    display: block;
+    display: flex;
     font-weight: bold;
     letter-spacing: 1.2px;
     font-size: 12px;
@@ -188,10 +197,12 @@
 }
 
 .product-card__timer {
+    justify-content: center;
     text-align: center;
+    padding: 50px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 100px;
     margin: 50px;
 }
 .timer_days {
@@ -223,6 +234,18 @@
         margin: 24px auto 0;
         padding: 15px 20px; 
     }
+
+    .product-borders__first-card {
+        width: 50%;
+    }
+
+    .product-borders__second-card {
+        width: 50%;
+    }
+
+    .product-borders__third-card {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -235,6 +258,16 @@
         padding: 16px 24px; 
     }
 
+    .product-borders__first-card {
+        width: 33%;
+    }
 
+    .product-borders__second-card {
+        width: 33%;
+    }
+
+    .product-borders__third-card {
+        width: 33%;
+    }
 }
 
