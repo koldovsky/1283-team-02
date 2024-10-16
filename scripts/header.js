@@ -5,6 +5,7 @@ const navContainer = document.querySelector('.header__nav-container');
 const social = document.querySelector('.social');
 const navLinks = document.querySelectorAll('.nav__link');
 const body = document.body;
+const heroSection = document.querySelector('.header__hero');
 
 function toggleMenu() {
     // Toggle burger menu open state
@@ -37,3 +38,16 @@ if (burger) {
 navLinks.forEach(link => {
     link.addEventListener('click', toggleMenu);
 });
+
+// Check active page and update header accordingly
+if (window.location.pathname.includes('product.html')) {
+    if (heroSection) {
+        heroSection.style.display = 'none';
+    }
+    headerPosition.style.position = 'relative';
+} else if (window.location.pathname.includes('index.html')) {
+    if (heroSection) {
+        heroSection.style.display = 'block';
+    }
+    headerPosition.style.position = 'absolute';
+}

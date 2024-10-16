@@ -25,6 +25,7 @@
     --header-hero-button-primary-blue-text-color: var(--color-white);
     --header-hero-button-primary-blue-hover-color: var(--color-dark);
     --header-hero-button-clear-orange-text-color: var(--color-black);
+    --header-hero-bg-color: var(--color-white);
 
     /* features section variables | Andrii Ferenchuk */
     --fearures-svg-color: #2877b6;

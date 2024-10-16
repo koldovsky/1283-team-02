@@ -31,6 +31,7 @@
 
 
 .headphones__description {
+    margin-top: 10px;
     font-size: 19px;
     color: #3b3b3b;
     font-family: "PT Sans", sans-serif;
@@ -192,29 +193,39 @@
     font-weight: bold;
 }
 
-.timer__part {
-    font-weight: bold;
-}
-
 .product-card__timer {
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    margin: 50px;
+    gap: 30px;
+    margin: 35px;
 }
-.timer_days {
-    display: flex;
+
+.separator {
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    background-color: var(--headphones-color-gray);
+    vertical-align: middle;
+}
+
+.timer__days,
+.timer__hours,
+.timer__minutes {
+    font-weight: bold;
+    font-size: 36px;
+    font-family: "Heebo", sans-serif;
 }
 
 .timer__word {
-    font-weight: normal;
     color: var(--headphones-color-gray);
+    font-size: 23px;
+    font-family: "PT Sans", sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     .catalog__item {
         max-width: 300px; 
         margin: 30px 15px; 
@@ -235,6 +246,13 @@
         padding: 15px 20px; 
     }
 
+    .headphones__product-borders {
+        display: flex;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    
     .product-borders__first-card {
         width: 50%;
     }
@@ -248,7 +266,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
     .catalog__item {
         max-width: 350px; 
         margin: 30px 20px; 
@@ -258,16 +276,23 @@
         padding: 16px 24px; 
     }
 
+    .headphones__product-borders {
+        display: flex;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+
     .product-borders__first-card {
-        width: 33%;
+        width: 100%;
     }
 
     .product-borders__second-card {
-        width: 33%;
+        width: 100%;
     }
 
     .product-borders__third-card {
-        width: 33%;
+        width: 100%;
     }
 }
 

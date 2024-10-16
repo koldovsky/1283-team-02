@@ -5,7 +5,12 @@
     <div class="product__content">
         <div class="product__left-column">
             <div class="product__gallery">
-                <img src="assets/images/speakers_pics/jbl_rr-56.png" alt="JBL RR-56 red wireless speaker" class="product__image">
+                <div class="image-wrapper">
+                    <img src="assets/images/speakers_pics/jbl_rr-56.png" alt="JBL RR-56 red wireless speaker" class="product__image">
+                    <!-- Стрілки для навігації -->
+                    <div class="arrow-left">&#10094;</div> <!-- Ліва стрілка -->
+                    <div class="arrow-right">&#10095;</div> <!-- Права стрілка -->
+                </div>
                 <div class="product__thumbnail-list">
                     <img src="assets/images/speakers_pics/jbl_rr-56-thumbnail.png" alt="Thumbnail view of JBL RR-56 red wireless speaker" class="product__thumbnail">
                 </div>
@@ -17,14 +22,18 @@
                 <h1 class="product__name">JBL RR-56 (76967)</h1>
                 <p class="product__code">Product code 21</p>
                 <p class="product__price">$110,00</p>
+                <hr class="product__info-hr"> <!-- Підкреслення після блоку з ціною -->
             </div>
+
             <div class="product__purchase">
                 <label for="quantity" class="product__quantity-label"></label>
                 <input type="number" id="quantity" class="product__quantity" value="1" min="1" aria-label="Quantity of JBL RR-56">
                 <button class="product__add-to-cart" aria-label="Add JBL RR-56 to cart">Add to Cart</button>
             </div>
+
             <section class="product__details">
-                <h2 class="product__details-title">Description</h2>
+                <h2 class="product__details-title">DESCRIPTION</h2>
+                <hr class="description-hr"> <!-- Тонка лінія до кінця блоку -->
                 <p class="product__description">
                     Take this wireless speaker to the beach, use it in a car or outdoors – wherever and whenever you are. Express yourself and enjoy music listening without limits.
                 </p>
