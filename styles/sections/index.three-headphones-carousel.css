@@ -80,7 +80,7 @@
 }
 
 .headphone-carousel__item--third {
-    background-image: url(../../assets/images/svg-bg-carousel/blackbg1.svg) /*  фон для чорних навушників */
+    background-image: url(../../assets/images/svg-bg-carousel/blackbg1.svg); /*  фон для чорних навушників */
 }
 
 /* Стилі для кнопок "BUY NOW" та "ALL HEADPHONES" */
