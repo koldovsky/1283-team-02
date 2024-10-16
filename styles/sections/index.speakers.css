@@ -20,40 +20,81 @@
 }
 
 .speakers__wave {
-    box-sizing: border-box;
     display: flex;
-    object-fit: cover;
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 32px;
-    height: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.speakers__wave-picture {
+    margin: 25px 0 15px 0;
+    height: 32px;
+    width: auto;
 }
 
 .speakers__slogan {
     display: block;
-    padding: 0 15px;
     text-align: center;
 }
 
-.speakers__catalog {
+/* .speakers__catalog {
     display: flex;
     flex-direction: row;
     gap: 20px;
+} */
+
+.speakers__catalog {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Buttons for speakers gallery */
+.prev, .next {
+    background-color: var(--speakers__catalog-next-prev-bg-gallery-buttons);
+    opacity: 0.85;
+    border: none;
+    color: var(--speakers__catalog-scroll-direction-arrow-color);
+    /* font-size: 24px; */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 6px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    text-align: center;
+}
+
+/* Prev button for speakers gallery */
+.prev {
+    left: 10px;
+}
+
+/* Next button for speakers gallery */
+.next {
+    right: 10px;
+}
+
+.speakers__catalog-gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: auto;
 }
 
 .speakers__card {
     margin-top: var(--speakers__card-top-margin);
-    padding-bottom: 24px;
+    min-width: 16%;
+    padding-bottom: 34px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding-left: var(--speakers__card-left-right-padding);
-    padding-right: var(--speakers__card-left-right-padding);
+    margin-left: var(--speakers__card-left-right-margin);
+    margin-right: var(--speakers__card-left-right-margin);
     border: solid 1px var(--speakers__card-border);
-
-    /* .speakers__card-image {
-        box-sizing: border-box;
-    } */
 
     .speakers__card-title {
         margin-top: 8px;
@@ -72,7 +113,6 @@
     }
 
     .speakers__card-link {
-        
         display: block;
         width: fit-content;
         margin-top: 24px;
