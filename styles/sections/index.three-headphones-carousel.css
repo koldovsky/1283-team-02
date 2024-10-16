@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+.headphone-carousel__item--first {
+background-image: url(../../assets/images/svg-bg-carousel/bgblue1.svg);
+=======
 
 .carousel-container {
     display: flex;
@@ -107,4 +111,5 @@
 
 .headphone-carousel__link--all:hover {
     background-color: #546e7a; /* Трохи темніший відтінок при наведенні */
+>>>>>>> 2fa6a220157aca9a8801ad45250643d0fa5592e2
 }

@@ -31,6 +31,16 @@
     --features-svg-bg-color: #f2f2f2;
     /* end of features section */
 
+    /*selection info section | Tetiana Ishchenko*/
+    --description-bg-color: #F2F2F2;
+    --description-text-title-color: #2f2f2f;
+    --description-text-discover-color: #3B3B3B;
+    --description-text-baside-color:  #6C6C6C;
+    --menu-icons-bg-color:  #FFFFFF;
+    --menu-icons-img-color: #EB5112;
+    --menu-text-color: #2A2A2A;
+
+    /* end of section info section */
     /* products-tabs section variables | Andrii Ferenchuk */
     --products-tabs-ul-color: #808080;
     --products-tabs-active-tab-bottom-color: #d4561b;
@@ -53,6 +63,7 @@
     --description-text-baside-color:  #6C6C6C;
     --headphones-icon-color:  #FFFFFF;
 
+  
     /*speakers section | Kostyantyn Zeykin */
     --speakers__title: rgb(47, 47, 47);
     --speakers__card-border: red;
