@@ -1,15 +1,13 @@
 .special-offers-container {
   display: flex;
   flex-direction: column;
-  padding: 35px 0px 60px;
+  padding: 24px 31px;
   gap: 32px;
 }
 
 @media (min-width: 989px) {
   .special-offers-container {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
   }
 }
 
@@ -17,6 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
 }
 
 @media (min-width: 479px) {
@@ -33,34 +32,48 @@
 
 .special-offers__item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
+  width: 100%; 
   padding: 24px;
   gap: 24px;
-  flex: 1;
-  height: 300px;
 }
 
 .special-offers__item--best-seller {
-  background-image: url(../../assets/images/img-special-offer/banner-maze-t45.jpg);
+  background-image: url(../../assets/images/img-special-offer/banner-yelow-headphone.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 989px) {
+  .special-offers__item--best-seller {
+    width: 50%;
+  }
 }
 
 .special-offers__item--special-offer {
-  background-image: url(../../assets/images/img-special-offer/banner-yelow-headphone.png);
+  background-image: url(../../assets/images/img-special-offer/banner-maze-t45.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 989px) {
+  .special-offers__item--special-offer {
+    width: 50%;
+  }
 }
 
 .special-offers__item--hurry-up {
   background-image: url(../../assets/images/img-special-offer/banner-sony-s2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+
 @media (min-width: 989px) {
-  .special-offers__item {
-    width: 32%;
-    height: 400px;
+  .special-offers__item--hurry-up {
+    width: 33%;
   }
 }
 
@@ -68,17 +81,19 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 16px;
+  gap: 24px;
 }
 
 .special-product__label {
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
+  /* margin-bottom: 10px; */
 }
 
 .special-product__name {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  /* margin-bottom: 90px; */
 }
 
 .special-product__price--old {
@@ -88,60 +103,39 @@
 
 .special-product__price--new {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   color: #2f2f2f;
 }
 
 .special-product__shop-now {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #494949;
+  font-family: "Heebo", sans-serif;
 }
 
-.special-product__shop-now:hover {
-  opacity: 0.8;
+@media (min-width: 950px) {
+  .special-offers {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .special-offers {
+    grid-template-columns: repeat(2, 1fr, 1fr, 1fr, );
+    gap: 20px;
+  }
 }
 
 .button__clear-icon--blue {
-  width: 40px;
-  height: 2px;
-  background-color: #0074D9;
-}
+  width: 40px; 
+  height: 2px; 
+  background-color: #0074D9; 
+} 
 
-@media (min-width: 768px) {
-  .special-product__label {
-    font-size: 12px;
-  }
-
-  .special-product__name {
-    font-size: 24px;
-  }
-
-  .special-product__price--new {
-    font-size: 20px;
-  }
-
-  .special-product__shop-now {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .special-product__label {
-    font-size: 14px;
-  }
-
-  .special-product__name {
-    font-size: 28px;
-  }
-
-  .special-product__price--new {
-    font-size: 24px;
-  }
-
-  .special-product__shop-now {
-    font-size: 14px;
-  }
+.special-product__shop-now:hover {
+  opacity: 0.8; 
 }
