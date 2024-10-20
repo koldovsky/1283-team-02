@@ -1,9 +1,3 @@
-.special-offers {
-  /*  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;*/
-}
-
 .special-offers-container {
   display: flex;
   flex-direction: column;
@@ -82,17 +76,6 @@
     width: 33%;
   }
 }
-/* .special-product__image {
-  width: 100%;
-  height: 100%;
-  position: relative;
-} */
-
-/* .special-product__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .special-product__info {
   display: flex;
@@ -111,10 +94,6 @@
   font-size: 30px;
   font-weight: bold;
   /* margin-bottom: 90px; */
-}
-
-.special-product__price {
-  /* margin-bottom: 15px; */
 }
 
 .special-product__price--old {
