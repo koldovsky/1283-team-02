@@ -54,7 +54,7 @@ const move = (position, roll) =>
     position + roll*2;
 // solution | Diakov Roman
 function move(position, roll) {
-  return Number(position) + Number(roll) * 2;
+  return position + roll * 2;
 }
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
