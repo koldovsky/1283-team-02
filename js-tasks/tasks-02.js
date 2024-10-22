@@ -10,6 +10,11 @@ function DNAtoRNA(dna) {
   return dna.includes("T") ? dna.prototype.replaceAll("T", "U") : dna;
 }
 
+// liubomyr Kosteniuk
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U');
+}
+
 // Find Maximum and Minimum Values of a List https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 // Kostia Zeykin
 var min = function(list){
@@ -20,6 +25,14 @@ var min = function(list){
     return list[0];
 }
 
+//Liubomyr Kosteniuk
+var min = function(list) {
+  return Math.min(...list);
+}
+var max = function(list) { 
+  return Math.max(...list);
+}
+
 // Smallest value of an array https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 // Kostia Zeykin
 function min(arr, toReturn) {
@@ -27,5 +40,15 @@ function min(arr, toReturn) {
     return Math.min(...arr);
   } else {
     return arr.indexOf(Math.min(...arr));
+  }
+}
+
+//Liubomyr Kosteniuk
+function min(arr, toReturn) {
+  const minValue = Math.min(...arr);
+  if (toReturn === "value") {
+    return minValue;
+  } else if (toReturn === "index") {
+    return arr.indexOf(minValue);
   }
 }

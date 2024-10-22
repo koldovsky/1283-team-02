@@ -90,6 +90,7 @@
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
     width: fit-content;
+    border: none;
 }
 
 .catalog__item-button:hover {
@@ -258,4 +259,3 @@
         justify-content: center;
     }
 }
-
