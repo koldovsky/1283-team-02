@@ -4,7 +4,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 // solution | Kostya Zeykin
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
 // solution | Yehor Honcharenko
@@ -22,10 +22,7 @@ function makeNegative(num) {
 }
 // solution | Kostya Zeykin
 function makeNegative(num) {
-    if (num > 0) {
-      return num *= -1;
-    }
-    return num;
+  return -Math.abs(num);
 }
 // solution | Yehor Honcharenko
 function makeNegative(num) {
@@ -46,7 +43,7 @@ function move(position, roll) {
     return position + roll * 2;
 }
 // solution | Kostya Zeykin
-function move (position, roll) {
+function move(position, roll) {
     return position + roll * 2
   }
 // solution | Yehor Honcharenko
@@ -63,12 +60,9 @@ function greet(name, owner) {
     return name === owner ? 'Hello boss' : 'Hello guest';
 }
 // solution | Kostya Zeykin
-function greet (name, owner) {
-if (name === owner) {
-    return "Hello boss"
-} else {
-    return "Hello guest"
-}
+function greet(name, owner) {
+  return "Hello " + (name === owner ? "boss" : "guest");
+  // лучший вариант - return "Hello ${name === owner ? "boss" : "guest"}";
 }
 // solution | Yehor Honcharenko
 const greet = (name,owner) =>
