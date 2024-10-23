@@ -3,6 +3,10 @@
 function stringToArray(string) {
   return string.split(" ");
 }
+// Mykyta Mantsov
+function stringToArray(string){
+	return string.split(" ");
+}
 // Krystyna Lebid
 function stringToArray(string){
   return string.split(' ');
@@ -17,6 +21,10 @@ function DNAtoRNA(dna) {
 // liubomyr Kosteniuk
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, 'U');
+}
+// Mykyta Mantsov
+function DNAtoRNA(dna) {
+  return dna.replaceAll('T', 'U');
 }
 // Krystyna Lebid
 function DNAtoRNA(dna) {
@@ -48,6 +56,14 @@ var min = function(list) {
 var max = function(list) { 
   return Math.max(...list);
 }
+// Mykyta Mantsov
+var min = function(list) {
+  return Math.min(...list);
+}
+
+var max = function(list) {
+  return Math.max(...list);
+}
 // Krystyna Lebid
 var min = function(list){
   return Math.min(...list);
@@ -75,6 +91,15 @@ function min(arr, toReturn) {
     return arr.indexOf(minValue);
   }
 }
+// Mykyta Mantsov
+function min(arr, toReturn) {
+  const min = Math.min(...arr); 
+  if(toReturn === "value"){
+    return min;
+  } else if(toReturn === "index"){
+    return arr.indexOf(min);
+  }
+}
 // Krystyna Lebid
 function min(arr, toReturn) { 
   if (toReturn === 'value') {
@@ -90,11 +115,20 @@ function doubleInteger(i) {
   i += i;
   return i;
 }
+// Mykyta Mantsov
+function doubleInteger(i) {
+  return i * 2;
+}
 
 // Twice as old https://www.codewars.com/kata/5b853229cfde412a470000d0/solutions/javascript
 // Kostia Zeykin
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - (sonYearsOld * 2))
+}
+// Mykyta Mantsov
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  const years = sonYearsOld * 2 - dadYearsOld;
+  return Math.abs(years);
 }
 // Krystyna Lebid
 function twiceAsOld(dadYearsOld, sonYearsOld) {
@@ -105,6 +139,10 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 // kostia Zeykin
 function nthEven(n){
   return (n * 2) - 2
+}
+// Mykyta Mantsov
+function nthEven(n){
+  return (n - 1) * 2;
 }
 // Krystyna Lebid
 function nthEven(n){
@@ -122,7 +160,10 @@ function getRealFloor(n) {
     return n - 2;
   }
 }
-
+// Mykyta Mantsov
+function getRealFloor(n) {
+  return n <= 0 ? n : (n < 13 ? n - 1 : n - 2);  
+}
 // Beginner Series #2 Clock https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 // Kostia Zeykin
 function past(h, m, s) {
@@ -130,6 +171,10 @@ function past(h, m, s) {
   const minutesToMilliseconds = m * 60000;
   const secondsToMilliseconds = s * 1000;
   return hoursToMilliseconds + minutesToMilliseconds + secondsToMilliseconds;
+}
+// Mykyta Mantsov
+function past(h, m, s){
+  return (h * 3600 + m * 60 + s) * 1000;
 }
 // Krystyna Lebid
 function past(h, m, s){
@@ -147,4 +192,8 @@ function isDivisible(n, x, y) {
     return true;
   } else {
     return false;
-  }
+}
+//Mykyta Mantsov
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
