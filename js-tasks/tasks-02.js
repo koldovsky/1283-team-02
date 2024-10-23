@@ -164,6 +164,17 @@ function getRealFloor(n) {
 function getRealFloor(n) {
   return n <= 0 ? n : (n < 13 ? n - 1 : n - 2);  
 }
+// Krystyna Lebid
+function getRealFloor(n) {
+  if (n <= 0) {
+    return n;
+  }else if (n <= 13){
+    return n - 1;
+  }else{
+    return n - 2;
+  }
+}
+
 // Beginner Series #2 Clock https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 // Kostia Zeykin
 function past(h, m, s) {
@@ -198,3 +209,7 @@ function isDivisible(n, x, y) {
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0;
 }
+  // Krystyna Lebid
+  function isDivisible(n, x, y) {
+    return (n % x === 0 && n % y === 0) ? true : false;
+  }
