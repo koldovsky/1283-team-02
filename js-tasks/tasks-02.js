@@ -3,6 +3,10 @@
 function stringToArray(string) {
   return string.split(" ");
 }
+// Krystyna Lebid
+function stringToArray(string){
+  return string.split(' ');
+}
 
 // DNA to RNA Conversion https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 // Kostia Zeykin
@@ -13,6 +17,18 @@ function DNAtoRNA(dna) {
 // liubomyr Kosteniuk
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, 'U');
+}
+// Krystyna Lebid
+function DNAtoRNA(dna) {
+  let rna = '';
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === 'T') {
+      rna = rna + 'U';
+    } else {
+      rna = rna + dna[i];
+    }
+  }
+  return  rna;
 }
 
 // Find Maximum and Minimum Values of a List https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -30,6 +46,13 @@ var min = function(list) {
   return Math.min(...list);
 }
 var max = function(list) { 
+  return Math.max(...list);
+}
+// Krystyna Lebid
+var min = function(list){
+  return Math.min(...list);
+}
+var max = function(list){
   return Math.max(...list);
 }
 
@@ -50,6 +73,14 @@ function min(arr, toReturn) {
     return minValue;
   } else if (toReturn === "index") {
     return arr.indexOf(minValue);
+  }
+}
+// Krystyna Lebid
+function min(arr, toReturn) { 
+  if (toReturn === 'value') {
+    return Math.min(...arr);
+  } else {
+  return arr.indexOf(Math.min(...arr));
   }
 }
 
