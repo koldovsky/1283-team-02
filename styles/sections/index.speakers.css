@@ -1,6 +1,8 @@
 /* Styles for speakers section in the index page */
 
 .speakers {
+    margin: 0 auto;
+    width: 100%;
     min-width: 320px;
     max-width: 1200px;
     padding: 90px 24px;
@@ -36,12 +38,16 @@
     text-align: center;
 }
 
-.speakers__catalog {
+.speakers__cataloge {
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* gap: 20px; */
+    flex-direction: row;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .speakers__card {
@@ -50,16 +56,18 @@
     padding-bottom: 34px;
     display: flex;
     flex-direction: column;
+    /* flex: 1 1 calc(16% - 40px); */
     box-sizing: border-box;
     margin-left: var(--speakers__card-left-right-margin);
     margin-right: var(--speakers__card-left-right-margin);
     border: solid 1px var(--speakers__card-border);
 
     .speakers__card-image {
+        width: 202px;
+        height: 182px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* height: 30px; */
         padding: 0 10px;
     }
 
