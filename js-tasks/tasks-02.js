@@ -84,6 +84,13 @@ function min(arr, toReturn) {
   }
 }
 
+// Double Integer    https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+// Krystyna Lebid
+function doubleInteger(i) {
+  i += i;
+  return i;
+}
+
 // Twice as old https://www.codewars.com/kata/5b853229cfde412a470000d0/solutions/javascript
 // Kostia Zeykin
 function twiceAsOld(dadYearsOld, sonYearsOld) {
