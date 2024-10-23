@@ -192,6 +192,7 @@ function isDivisible(n, x, y) {
     return true;
   } else {
     return false;
+  }
 }
 //Mykyta Mantsov
 function isDivisible(n, x, y) {
