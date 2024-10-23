@@ -96,11 +96,19 @@ function doubleInteger(i) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - (sonYearsOld * 2))
 }
+// Krystyna Lebid
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - (sonYearsOld * 2))
+}
 
 // Get Nth Even Number https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 // kostia Zeykin
 function nthEven(n){
   return (n * 2) - 2
+}
+// Krystyna Lebid
+function nthEven(n){
+  return --n*2;
 }
 
 // What's the real floor? https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
@@ -122,6 +130,14 @@ function past(h, m, s) {
   const minutesToMilliseconds = m * 60000;
   const secondsToMilliseconds = s * 1000;
   return hoursToMilliseconds + minutesToMilliseconds + secondsToMilliseconds;
+}
+// Krystyna Lebid
+function past(h, m, s){
+  h = h * 3600000;
+ m = m * 60000;
+ s = s * 1000;
+ let result = h + m + s;
+ return result;
 }
 
 // Is n divisible by x and y? https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
