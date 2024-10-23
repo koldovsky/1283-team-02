@@ -122,6 +122,16 @@ function getRealFloor(n) {
     return n - 2;
   }
 }
+// Krystyna Lebid
+function getRealFloor(n) {
+  if (n <= 0) {
+    return n;
+  }else if (n <= 13){
+    return n - 1;
+  }else{
+    return n - 2;
+  }
+}
 
 // Beginner Series #2 Clock https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 // Kostia Zeykin
@@ -147,4 +157,9 @@ function isDivisible(n, x, y) {
     return true;
   } else {
     return false;
+  }
+}
+  // Krystyna Lebid
+  function isDivisible(n, x, y) {
+    return (n % x === 0 && n % y === 0) ? true : false;
   }
