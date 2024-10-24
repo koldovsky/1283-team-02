@@ -14,15 +14,12 @@ class ProductCard {
         return `
       <article class="product-card">
             <div class="product-card-img__container">
-              <a href=${this.linkToProductPage} class="link-to-product-page">
-                <img
-                  src=${this.imgSrc}
-                  alt=${this.imgAlt}
-                />
+              <a href="${this.linkToProductPage}" class="link-to-product-page">
+                <img src="${this.imgSrc}" alt="${this.imgAlt}" />
               </a>
             </div>
             <div class="product-text-info">
-              <a href=${this.linkToProductPage} class="link-to-product-page">
+              <a href="${this.linkToProductPage}" class="link-to-product-page">
                 <p class="product-card-text-info__main-info">${this.productCardMainInfo}</p>
               </a>
               <p class="product-card-text-info__price">$ ${this.productCardPrice}</p>
