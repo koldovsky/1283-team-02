@@ -125,12 +125,20 @@ const cardsData = [{
 
 const updateView = function () {
     document.getElementById('featured-tab__wrapper').innerHTML = ''
+    document.getElementById('sale-tab__wrapper').innerHTML = ''
+    document.getElementById('new-tab__wrapper').innerHTML = ''
 }
 
 const renderCards = function (cardsData) {
     updateView()
     cardsData.forEach((card, i) => {
         document.getElementById('featured-tab__wrapper').insertAdjacentHTML("beforeend", new ProductCard(cardsData[i]).getProductCardHtml())
+    })
+    cardsData.forEach((card, i) => {
+        document.getElementById('sale-tab__wrapper').insertAdjacentHTML("beforeend", new ProductCard(cardsData[i]).getProductCardHtml())
+    })
+    cardsData.forEach((card, i) => {
+        document.getElementById('new-tab__wrapper').insertAdjacentHTML("beforeend", new ProductCard(cardsData[i]).getProductCardHtml())
     })
 }
 

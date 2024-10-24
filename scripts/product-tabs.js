@@ -22,6 +22,6 @@ document.addEventListener('click', function (e) {
         const isActive = tab.button.id === e.target.id;
 
         tab.button.classList.toggle('active-tab', isActive);
-        // tab.wrapper.classList.toggle('hidden', !isActive);
+        tab.wrapper.classList.toggle('hidden', !isActive);
     });
 });
