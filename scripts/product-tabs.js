@@ -64,12 +64,7 @@ const updateView = function () {
 const renderCards = function () {
     updateView();
 
-    const activeTab = document.querySelector('.active-tab');
-
-    if (!activeTab) {         // without this test the whole code is not working! why?????????????????
-        console.error('No active tab found');
-        return;
-    }
+    const activeTab = document.querySelector('.active-tab');    
 
     const activeTabId = activeTab.id;
     
@@ -100,6 +95,7 @@ document.addEventListener('click', function (e) {
 
         tab.button.classList.toggle('active-tab', isActive);
         tab.wrapper.classList.toggle('hidden', !isActive);
-        renderCards()
+        
     });
+    renderCards()
 });
