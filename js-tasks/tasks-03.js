@@ -8,7 +8,7 @@ function findSmallestInt(arr) {
 // Andrii Ferenchuk
 function circleCircumference(circle) {
     const circumference = circle.radius * Math.PI * 2;
-    return circumference.toFixed(6);
+    return circumference;
 }
 https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 // Andrii Ferenchuk
