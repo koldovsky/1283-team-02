@@ -1,7 +1,7 @@
 function init() {
   import("./header.js");
   import("./product-tabs.js")
-  import("./dinamic-prodicts-cards-rendering.js")
+  // import("./dinamic-prodicts-cards-rendering.js")
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
