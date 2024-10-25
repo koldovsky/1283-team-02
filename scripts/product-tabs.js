@@ -63,15 +63,10 @@ const updateView = function () {
 
 const renderCards = function () {
     updateView();
-
-    const activeTab = document.querySelector('.active-tab');    
-
+    const activeTab = document.querySelector('.active-tab');
     const activeTabId = activeTab.id;
-    
-    const activeCards = cardsData[activeTabId.split('-')[0]];    
-
+    const activeCards = cardsData[activeTabId.split('-')[0]];
     const activeWrapper = document.getElementById(`${activeTabId}__wrapper`);
-
     activeCards.forEach((card) => {
         activeWrapper.insertAdjacentHTML("beforeend", new ProductCard(card).getProductCardHtml());
     });
@@ -92,10 +87,8 @@ document.addEventListener('click', function (e) {
 
     tabs.forEach(tab => {
         const isActive = tab.button.id === e.target.id;
-
         tab.button.classList.toggle('active-tab', isActive);
         tab.wrapper.classList.toggle('hidden', !isActive);
-        
     });
     renderCards()
 });
