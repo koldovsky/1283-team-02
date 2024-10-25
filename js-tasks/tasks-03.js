@@ -14,8 +14,7 @@ https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-an
 // Andrii Ferenchuk
 function giveMeFive(obj) {
     const array = []
-    for (const key in obj) {
-        console.log(key);
+    for (const key in obj) {        
         if (key.length === 5) {
             array.push(key)
         }
