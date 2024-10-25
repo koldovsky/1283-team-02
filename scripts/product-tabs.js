@@ -65,21 +65,15 @@ const renderCards = function () {
     updateView();
 
     const activeTab = document.querySelector('.active-tab');
-    if (!activeTab) {
+
+    if (!activeTab) {         // without this test the whole code is not working! why?????????????????
         console.error('No active tab found');
         return;
     }
 
     const activeTabId = activeTab.id;
-    console.log(`Active Tab ID: ${activeTabId}`);
-    const activeCards = cardsData[activeTabId.split('-')[0]];
-
-    if (!activeCards) {
-        console.error('No cards found for the active tab');
-        return;
-    }
-
-    console.log(activeCards);
+    
+    const activeCards = cardsData[activeTabId.split('-')[0]];    
 
     const activeWrapper = document.getElementById(`${activeTabId}__wrapper`);
 
@@ -89,8 +83,6 @@ const renderCards = function () {
 }
 
 renderCards()
-
-
 
 const tabs = [
     { button: document.querySelector('#featured-tab'), wrapper: document.querySelector('#featured-tab__wrapper') },
