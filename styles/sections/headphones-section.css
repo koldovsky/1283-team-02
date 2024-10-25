@@ -93,12 +93,15 @@
     text-align: center;
     border: 1.5px solid #f2f2f2;
   }
-.catalog__item--image {
-    
+
+.catalog__item {
+    padding: 20px;
 }
 
 .catalog__item-name {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
     text-decoration: none;
     color: #2a2a2a;
     font-size: 18px;
@@ -109,18 +112,20 @@
     text-decoration: underline;
 }
 .catalog__item-price {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-weight: bold;
     font-size: 18px;
-    margin: 15px 0 0;
+    margin: 10px 0 0;
     color: var(--headphones-color-blue);
     font-family: "PT Sans", sans-serif;
 }
 
 .catalog__item-button {
+    display: flex;
     background-color: var(--headphones-color-orange);
     height: 50px;
-    margin: 20px auto 40px;
+    margin: 30px auto 40px;
     padding: 15px 21px;
     color: #ffffff;
     display: flex;
@@ -139,6 +144,34 @@
     background-color: #2a2a2a;
 }
 
+.embla__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .embla__arrow-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .embla__arrow--left {
+    margin-right: auto;
+    padding-right: 30px;
+  }
+  
+  .embla__arrow--left .embla__arrow-svg {
+    transform: rotate(180deg);
+  }
+  
+  .embla__arrow--right {
+    margin-left: auto;
+    padding-left: 5px;
+  }
 
 .headphones__product-borders {
     padding: 30px 0 120px;
