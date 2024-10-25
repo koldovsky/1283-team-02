@@ -1,8 +1,6 @@
 function init() {
   import("./header.js");
-  import("./product-tabs.js");
-  import("./dinamic-prodicts-cards-rendering.js");
-  import("./product-tabs.js");
+  import("./product-tabs.js");  
   import("./headphones.js");
 }
 
