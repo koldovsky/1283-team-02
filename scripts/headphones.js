@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.querySelector(".embla__arrow-btn--right");
 
     if (carouselNode && slidesContainer && slides.length > 1) {
-      const repeatCount = 50;
+      const repeatCount = 30;
 
       for (let i = 0; i < repeatCount; i++) {
         const startClones = slides.map(slide => slide.cloneNode(true));
