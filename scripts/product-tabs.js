@@ -47,7 +47,7 @@ const cardsData = {
   ]
 };
 
-// Кэшируем ссылки на элементы DOM
+
 const tabWrappers = {
   featured: document.getElementById('featured-tab__wrapper'),
   sale: document.getElementById('sale-tab__wrapper'),
@@ -63,7 +63,7 @@ const renderCards = function (tabId) {
   const activeCards = cardsData[tabId];
   const activeWrapper = tabWrappers[tabId];
   
-  activeWrapper.innerHTML = '';  // Очищаем только активную вкладку
+  activeWrapper.innerHTML = '';  
 
   activeCards.forEach((card) => {
       activeWrapper.insertAdjacentHTML("beforeend", new ProductCard(card).getProductCardHtml());
@@ -78,7 +78,7 @@ document.addEventListener('click', function (e) {
   }
 
   const isAlreadyActive = tabButtons[clickedTabId].classList.contains('active-tab');
-  if (isAlreadyActive) return;  // Выход, если нажата активная вкладка
+  if (isAlreadyActive) return;  
 
   Object.keys(tabButtons).forEach(tabId => {
       tabButtons[tabId].classList.toggle('active-tab', tabId === clickedTabId);
@@ -88,7 +88,7 @@ document.addEventListener('click', function (e) {
   renderCards(clickedTabId);
 });
 
-// Инициализация отображения первой вкладки
+
 renderCards('featured');
 tabButtons['featured'].classList.add('active-tab');
 tabWrappers['sale'].classList.add('hidden');
