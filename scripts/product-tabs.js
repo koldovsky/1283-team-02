@@ -28,22 +28,22 @@ class ProductCard {
 
 const cardsData = {
   featured: [
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_rr-56.png", imgAlt: "yellow headphones", productCardMainInfo: "JBL RR-56", productCardPrice: 110 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sennheiser_sn-67.png", imgAlt: "black headphones", productCardMainInfo: "Sennheiser SN-67", productCardPrice: 213 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_gt-345.png", imgAlt: "grey speaker", productCardMainInfo: "JBL GT-345", productCardPrice: 120 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_s890.png", imgAlt: "red speaker", productCardMainInfo: "Sony S890", productCardPrice: 259 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_rr-56.png", imgAlt: "JBL RR-56", productCardMainInfo: "JBL RR-56", productCardPrice: 110 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sennheiser_sn-67.png", imgAlt: "Sennheiser SN-67", productCardMainInfo: "Sennheiser SN-67", productCardPrice: 213 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_gt-345.png", imgAlt: "JBL GT-345", productCardMainInfo: "JBL GT-345", productCardPrice: 120 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_s890.png", imgAlt: "Sony S890", productCardMainInfo: "Sony S890", productCardPrice: 259 },
   ],
   sale: [
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/bose_g656-a.png", imgAlt: "Bose G656-A headphones", productCardMainInfo: "Bose G656-A", productCardPrice: 65 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/airpulse_r255.png", imgAlt: "AirPulse R255 headphones", productCardMainInfo: "AirPulse R255", productCardPrice: 65 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_yt555.png", imgAlt: "Sony YT555 headphones", productCardMainInfo: "Sony YT555", productCardPrice: 140 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_tt56.png", imgAlt: "Sony TT56 headphones", productCardMainInfo: "Sony TT56", productCardPrice: 98 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/bose_g656-a.png", imgAlt: "Bose G656-A", productCardMainInfo: "Bose G656-A", productCardPrice: 65 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/airpulse_r255.png", imgAlt: "AirPulse R255", productCardMainInfo: "AirPulse R255", productCardPrice: 65 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_yt555.png", imgAlt: "Sony YT555", productCardMainInfo: "Sony YT555", productCardPrice: 140 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_tt56.png", imgAlt: "Sony TT56", productCardMainInfo: "Sony TT56", productCardPrice: 98 },
   ],
   new: [
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_yt555.png", imgAlt: "Sony YT555 headphones", productCardMainInfo: "Sony YT555", productCardPrice: 140 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/v-moda_er65.png", imgAlt: "V-MODA ER65 headphones", productCardMainInfo: "V-MODA ER65", productCardPrice: 80 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_br-55.png", imgAlt: "JBL BR-55 headphones", productCardMainInfo: "JBL BR-55", productCardPrice: 115 },
-      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_334wn.png", imgAlt: "JBL 334WN headphones", productCardMainInfo: "JBL 334WN", productCardPrice: 140 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/sony_yt555.png", imgAlt: "Sony YT555", productCardMainInfo: "Sony YT555", productCardPrice: 140 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/v-moda_er65.png", imgAlt: "V-MODA ER65", productCardMainInfo: "V-MODA ER65", productCardPrice: 80 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_br-55.png", imgAlt: "JBL BR-55", productCardMainInfo: "JBL BR-55", productCardPrice: 115 },
+      { linkToProductPage: "product.html", imgSrc: "assets/images/products_pics/jbl_334wn.png", imgAlt: "JBL 334WN", productCardMainInfo: "JBL 334WN", productCardPrice: 140 },
   ]
 };
 
