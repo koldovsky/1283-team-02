@@ -1,11 +1,7 @@
 class ProductCard {
-  constructor({ linkToProductPage, imgSrc, imgAlt, productCardMainInfo, productCardPrice }) {
-      this.linkToProductPage = linkToProductPage;
-      this.imgSrc = imgSrc;
-      this.imgAlt = imgAlt;
-      this.productCardMainInfo = productCardMainInfo;
-      this.productCardPrice = productCardPrice;
-  }
+  constructor(cardData) {
+    Object.assign(this, cardData);
+}
 
   getProductCardHtml() {
       return `
