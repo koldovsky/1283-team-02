@@ -200,6 +200,7 @@
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
+    height: 460px;
 }
 
 .product-card__category {
@@ -257,7 +258,7 @@
 .product-card__timer {
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     margin: 35px;
@@ -279,7 +280,7 @@
 .timer__minutes {
     flex: 1 1 auto;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 24px;
     font-family: "Heebo", sans-serif;
 }
 
