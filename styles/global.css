@@ -56,6 +56,7 @@
     --headphones-color-orange: #eb5112;
     --headphones-color-yelow: #f3cb1f;
     --headphones-color-gray: #85858e;
+    --headphones-color-white: #e0e0e0;
     /* end of headphones section */
     
   
@@ -131,3 +132,17 @@ li,
 span {
     font-family: "PT Sans", sans-serif;
 }
+
+body::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--headphones-color-orange); 
+    border-radius: 5px; 
+    border: 2px solid var(--color-gray); 
+  }

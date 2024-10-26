@@ -64,6 +64,7 @@
   @media (min-width: 720px) {
     .embla__container {
       grid-auto-columns: 33% 33% 33%;
+      white-space: nowrap;
     }
     .headphones__product-borders {
         display: flex;
@@ -200,7 +201,8 @@
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 460px;
+    height: 412px;
+    width: 365px;
 }
 
 .product-card__category {
@@ -261,7 +263,6 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
-    margin: 35px;
 }
 
 .timer__part {
@@ -269,7 +270,7 @@
 }
 
 .timer__part:nth-child(2) {
-    border-left: 0.5px solid #e0e0e0;
+    border-left: 0.5px solid var(--headphones-color-white);
     border-right: 0.5px solid #e0e0e0;
     padding: 15px 30px;
     margin: 0 30px; 
