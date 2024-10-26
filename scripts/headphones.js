@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       for (let i = 0; i < repeatCount; i++) {
         const startClones = slides.map(slide => slide.cloneNode(true));
-        const endClones = slides.map(slide => slide.cloneNode(true));
+        const endClones = slides.map(slide => slide.cloneNode(true)).reverse();
 
+        endClones.forEach(clone => slidesContainer.insertBefore(clone, slidesContainer.firstChild));
         startClones.forEach(clone => slidesContainer.appendChild(clone));
-        endClones.reverse().forEach(clone => slidesContainer.insertBefore(clone, slides[0]));
       }
 
       const options = { align: "start", loop: false };
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       emblaApi.on("init", () => {
         emblaApi.scrollTo(slides.length * repeatCount, false); 
       });
+
       prevButton.addEventListener("click", () => emblaApi.scrollPrev());
       nextButton.addEventListener("click", () => emblaApi.scrollNext());
 
