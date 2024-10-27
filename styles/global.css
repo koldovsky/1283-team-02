@@ -138,7 +138,7 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #fff; 
+    background: var(--color-white); 
   }
   
   body::-webkit-scrollbar-thumb {
