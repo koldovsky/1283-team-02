@@ -1,0 +1,28 @@
+.video {
+    min-height: 550px;
+    background-image: url(../../assets/images/video/video-banner-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 479px) {
+    .video {
+        height: 585px;
+    }
+}
+
+@media (min-width: 767px) {
+    .video {
+        height: 763px;
+    }
+}
+
+@media (min-width: 991px) {
+    .video {
+        height: 900px;
+    }
+}
+
+.video__content {
+    color: #fff;
+}
