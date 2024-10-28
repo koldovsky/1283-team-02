@@ -3,6 +3,7 @@ function init() {
   import("./product-tabs.js");  
   import("./headphones.js");
   import("./out-customers-say.js");
+  import("./special-offers.js")
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
