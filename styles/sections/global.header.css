@@ -277,18 +277,23 @@
 /* Hero */
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
     min-width: 320px;
     background-image: url(../../assets/images/hero/hero.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: 375px) {
+        align-items: center;
+    }
 }
 
 .hero__content {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
 }
 
 .hero__header {
