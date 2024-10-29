@@ -2,7 +2,7 @@
     {
         "dataId": "jbl_rr-56",
         "imgSrc": "assets/images/speakers_pics/jbl_rr-56-big.png",
-        "imgAlt": "yellow headphones",
+        "imgAlt": "JBL RR-56",
         "thumbnailSrc": "assets/images/speakers_pics/jbl_rr-56-thumbnail.png",
         "productCardMainInfo": "JBL RR-56 (76967)",
         "productCardPrice": 110.00,
@@ -16,6 +16,53 @@
         ]
     },
     {
+        "dataId": "sennheiser_sn-67",
+        "imgSrc": "assets/images/products_pics/sennheiser_sn-67.png",
+        "imgAlt": "Sennheiser SN-67",
+        "thumbnailSrc": "assets/images/products_pics/sennheiser_sn-67.png",
+        "productCardMainInfo": "Sennheiser SN-67 (76967)",
+        "productCardPrice": 213.00,
+        "productCode": 27,
+        "description": "The professional Sennheiser SN-67 headphones have been designed to cater to your audio experience and make the sound as clear and high-quality as possible.",
+        "specs": [
+            "Frequency response — 10 – 30,000 Hz",
+            "Battery life — up to 30 hours",
+            "Wireless range — 10 m"
+        ]
+    },
+    {
+        "dataId": "jbl_gt-345",
+        "imgSrc": "assets/images/products_pics/jbl_gt-345.png",
+        "imgAlt": "JBL GT-345",
+        "thumbnailSrc": "assets/images/products_pics/jbl_gt-345.png",
+        "productCardMainInfo": "JBL GT-345 (76967)",
+        "productCardPrice": 120.00,
+        "productCode": 23,
+        "description": "This waterproof Bluetooth speaker will be an indispensable accessory for your parties and outings. Enjoy your favorite tracks wherever you are!",
+        "specs": [
+            "Battery life — 12 hours",
+            "Waterproof — yes, IPX7",
+            "Connector type — 3.5 millimeter stereo",
+            "Compatibility — universal"
+        ]
+    },
+    {
+        "dataId": "sony_s890",
+        "imgSrc": "assets/images/products_pics/sony_s890.png",
+        "imgAlt": "Sony S890",
+        "thumbnailSrc": "assets/images/products_pics/sony_s890.png",
+        "productCardMainInfo": "Sony S890 (76967)",
+        "productCardPrice": 259.00,
+        "productCode": 26,
+        "description": "These ergonomic and colorful wireless headphones will be to the liking of all sound lovers. The headphones feature powerful bass and full immersion into your favorite music on the go.",
+        "specs": [
+            "Frequency response — 10Hz – 50kHz",
+            "Battery life — 13 hours",
+            "Charging time — 2.5 hours",
+            "Wireless range — 15 m"
+        ]
+    },
+    {
         "dataId": "bose_g656-a",
         "imgSrc": "assets/images/products_pics/bose_g656-a.png",
         "imgAlt": "Bose G656-A headphones",
@@ -24,6 +71,107 @@
         "productCardPrice": 65.00,
         "productCode": 32,
         "description": "Enjoy your favourite tracks with the all-new Bose wireless speakers. Powered by Bluetooth 5.0, the portable speaker is easily connected with your smartphone or laptop for an exceptional music listening experience.",
-        "specs": ["Frequency response — 60 Hz – 20 KHz", "Play time — 15+ hours","Charging time — 2 hours to full recharge","Bluetooth range — 14 m"]
+        "specs": [
+            "Frequency response — 60 Hz – 20 KHz", 
+            "Play time — 15+ hours","Charging time — 2 hours to full recharge",
+            "Bluetooth range — 14 m"
+        ]
+    },
+    {
+        "dataId": "airpulse_r255",
+        "imgSrc": "assets/images/products_pics/airpulse_r255.png",
+        "imgAlt": "AirPulse R255",
+        "thumbnailSrc": "assets/images/products_pics/airpulse_r255.png",
+        "productCardMainInfo": "AirPulse R255 (76967)",
+        "productCardPrice": 185.00,
+        "productCode": 33,
+        "description": "15 hours of wireless playback and award-winning clear sound by AirPulse. These headphones are your perfect choice for work, travels, or just everyday use wherever you go.",
+        "specs": [
+            "Battery life — 15 hours", 
+            "Sensitivity — 100 DB @ 1kHz 1mW",
+            "Frequency response — 5Hz - 40,000Hz"
+        ]
+    },
+    {
+        "dataId": "sony_yt555",
+        "imgSrc": "assets/images/products_pics/sony_yt555.png",
+        "imgAlt": "Sony YT555",
+        "thumbnailSrc": "assets/images/products_pics/sony_yt555.png",
+        "productCardMainInfo": "Sony YT555 (76967)",
+        "productCardPrice": 140.00,
+        "productCode": 19,
+        "description": "Simple and convenient, this wireless speaker will be your faithful companion wherever you are — at work, at home, in the car, or on a picnic. The Sony brand delivers perfect sound and deep bass in all conditions.",
+        "specs": [
+            "Battery life — 18 hours",
+            "Battery charge time — 2 hours",
+            "Waterproof — no",
+            "Connector type — 3.5 mm stereo",
+            "Compatibility — universal"
+        ]
+    },
+    {
+        "dataId": "sony_tt56",
+        "imgSrc": "assets/images/products_pics/sony_tt56.png",
+        "imgAlt": "Sony TT56",
+        "thumbnailSrc": "assets/images/products_pics/sony_tt56.png",
+        "productCardMainInfo": "Sony TT56 (76967)",
+        "productCardPrice": 98.00,
+        "productCode": 30,
+        "description": "These genuine leather-trimmed headphones sit perfectly on your head and are ready for adventures with you! Perfectly clear sound is provided.",
+        "specs": [
+            "Sensitivity — 101 DB/MW", 
+            "Frequency response — 2 Hz–20,000 Hz",
+            "Battery life — 20 hours",
+            "Noise canceling on/off switch"
+        ]
+    },
+    {
+        "dataId": "v-moda_er65",
+        "imgSrc": "assets/images/products_pics/v-moda_er65.png",
+        "imgAlt": "V-MODA ER65",
+        "thumbnailSrc": "assets/images/products_pics/v-moda_er65.png",
+        "productCardMainInfo": "V-MODA ER65 (76967)",
+        "productCardPrice": 80.00,
+        "productCode": 31,
+        "description": "The V-MODA ER65 wireless headphones have been designed with top-quality drivers. The headphones were tested at 6 different frequency levels for consistency, and their unique technology provides perfect sound even when on Bluetooth.",
+        "specs": [
+            "Sensitivity — 107 DB @ 1kHz 1mW", 
+            "Frequency response — 5Hz - 30,000Hz",
+            "Battery life — 8 hours",
+            "Charging time — 3 hours"
+        ]
+    },
+    {
+        "dataId": "jbl_br-55",
+        "imgSrc": "assets/images/products_pics/jbl_br-55.png",
+        "imgAlt": "JBL BR-55",
+        "thumbnailSrc": "assets/images/products_pics/jbl_br-55.png",
+        "productCardMainInfo": "JBL BR-55 (76967)",
+        "productCardPrice": 110.00,
+        "productCode": 22,
+        "description": "Really portable and really powerful, this Bluetooth speaker is a perfect choice for outdoor parties, travels, or meeting with your friends. Enjoy your favorite tracks without limits!",
+        "specs": [
+            "Battery life — 20 hours",
+            "Battery charge time — 4 hours",
+            "Waterproof — yes, IPX7",
+            "Number of gadgets — up to 2 smartphones can be connected"
+        ]
+    },
+    {
+        "dataId": "jbl_334wn",
+        "imgSrc": "assets/images/products_pics/jbl_334wn.png",
+        "imgAlt": "JBL 334WN",
+        "thumbnailSrc": "assets/images/products_pics/jbl_334wn.png",
+        "productCardMainInfo": "JBL 334WN (76967)",
+        "productCardPrice": 140.00,
+        "productCode": 24,
+        "description": "Listen to your favorite tracks all day long thanks to the powerful battery of these headphones (up to 30 hours). And when the battery goes down, you can plug in the cable and continue enjoying your music.",
+        "specs": [
+            "Frequency response — 10Hz – 50kHz",
+            "Battery life — 30 hours",
+            "Charging time — 2.5 hours",
+            "Wireless range — 15 m",
+            "Plug type — 3.5 mm"
+        ]
     }
 ]

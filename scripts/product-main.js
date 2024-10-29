@@ -62,7 +62,7 @@ function updateProductPageFromJSON() {
                 li.textContent = spec;
                 specsList.appendChild(li);
             });
-          document.getElementById('modalProductName').textContent = productData.productCardMainInfo;
+          document.getElementById('modalProductName').textContent = productData.imgAlt;
           document.getElementById('modalThumbnailImage').src = productData.thumbnailSrc;
           document.getElementById('modalThumbnailImage').alt = productData.imgAlt;
           document.getElementById('modalMainImage').src = productData.imgSrc;
