@@ -1,0 +1,29 @@
+[
+    {
+        "dataId": "jbl_rr-56",
+        "imgSrc": "assets/images/speakers_pics/jbl_rr-56-big.png",
+        "imgAlt": "yellow headphones",
+        "thumbnailSrc": "assets/images/speakers_pics/jbl_rr-56-thumbnail.png",
+        "productCardMainInfo": "JBL RR-56 (76967)",
+        "productCardPrice": 110.00,
+        "productCode": 21,
+        "description": "Take this wireless speaker to the beach, use it in a car or outdoors — wherever and whenever you are. Express yourself and enjoy music listening without limits.",
+        "specs": [
+            "Battery life – 20 hours",
+            "Battery charge time – 4 hours",
+            "Waterproof – yes, IPX7",
+            "Number of gadgets – up to 2 smartphones can be connected"
+        ]
+    },
+    {
+        "dataId": "bose_g656-a",
+        "imgSrc": "assets/images/products_pics/bose_g656-a.png",
+        "imgAlt": "Bose G656-A headphones",
+        "thumbnailSrc": "assets/images/products_pics/bose_g656-a.png",
+        "productCardMainInfo": "Bose G656-A",
+        "productCardPrice": 65.00,
+        "productCode": 32,
+        "description": "Enjoy your favourite tracks with the all-new Bose wireless speakers. Powered by Bluetooth 5.0, the portable speaker is easily connected with your smartphone or laptop for an exceptional music listening experience.",
+        "specs": ["Frequency response — 60 Hz – 20 KHz", "Play time — 15+ hours","Charging time — 2 hours to full recharge","Bluetooth range — 14 m"]
+    }
+]

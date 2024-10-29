@@ -72,7 +72,7 @@ const renderCards = function (tabId) {
 
 document.addEventListener('click', function (e) {
     const clickedTabId = e.target.id.replace('-tab', '');
-
+    console.log("1");
     if (!['featured', 'sale', 'new'].includes(clickedTabId)) {
         return;
     }
@@ -93,3 +93,16 @@ renderCards('featured');
 tabButtons['featured'].classList.add('active-tab');
 tabWrappers['sale'].classList.add('hidden');
 tabWrappers['new'].classList.add('hidden');
+
+// скрипт для додавання data-id до local storage
+document.addEventListener('click', function (event) {
+    const linkElement = event.target.closest('.link-to-product-page');
+
+    if (linkElement) {
+        event.preventDefault();
+        const productId = linkElement.getAttribute('data-id');
+        localStorage.setItem('selectedProductId', productId);
+        window.location.href = 'product.html';
+    }
+});
+
