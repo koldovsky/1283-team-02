@@ -72,6 +72,8 @@
     --speakers__card-link-font-color: #fff;
     --speakers__catalog-next-prev-bg-gallery-buttons: #2a2a2a;
     --speakers__catalog-scroll-direction-arrow-color: #fff;
+    --speakers-carousel__btn-text-color: white;
+
 }
 
 img {

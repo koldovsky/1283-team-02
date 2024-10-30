@@ -40,8 +40,8 @@ const countdownContainers = document.querySelectorAll(".product-card__timer");
 const currentYear = new Date().getFullYear();
 
 const border1FinalDate = new Date(`February 25, ${currentYear + 1} 00:00:00`);
-const border2FinalDate = new Date(`March 15, ${currentYear + 1} 00:00:00`);
-const border3FinalDate = new Date(`May 28, ${currentYear + 1} 00:00:00`);
+const border2FinalDate = new Date(`March 15, ${currentYear + 1} 15:00:00`);
+const border3FinalDate = new Date(`May 28, ${currentYear + 1} 08:00:00`);
 
 function updateCountdown() {
   const currentTime = new Date();
