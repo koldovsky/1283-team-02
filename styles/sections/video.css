@@ -3,6 +3,9 @@
     background-image: url(../../assets/images/video/video-banner-background.png);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items:left;
+    flex-direction: column;
 }
 
 @media (min-width: 479px) {
@@ -23,6 +26,6 @@
     }
 }
 
-.video__content {
-    color: #fff;
+.video-conteiner {
+    color: var(--color-white);
 }

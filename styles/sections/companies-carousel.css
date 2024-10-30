@@ -3,6 +3,7 @@
     background-color: #f2f2f2;
 
     .companies-carousel__container{
+        display: flex;
         padding: 0 24px;
     }
     .companies-carousel__slide{
