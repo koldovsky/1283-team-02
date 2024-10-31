@@ -1,7 +1,7 @@
 [
     {
         "dataId": "jbl_rr-56",
-        "imgSrc": "assets/images/speakers_pics/jbl_rr-56-big.png",
+        "imgSrc": "assets/images/img-products-big/jbl_rr-56-big.png",
         "imgAlt": "JBL RR-56",
         "thumbnailSrc": "assets/images/speakers_pics/jbl_rr-56-thumbnail.png",
         "productCardMainInfo": "JBL RR-56 (76967)",
@@ -17,7 +17,7 @@
     },
     {
         "dataId": "sennheiser_sn-67",
-        "imgSrc": "assets/images/products_pics/sennheiser_sn-67.png",
+        "imgSrc": "assets/images/img-products-big/sennheiser_sn-67-big.png",
         "imgAlt": "Sennheiser SN-67",
         "thumbnailSrc": "assets/images/products_pics/sennheiser_sn-67.png",
         "productCardMainInfo": "Sennheiser SN-67 (76967)",
@@ -32,7 +32,7 @@
     },
     {
         "dataId": "jbl_gt-345",
-        "imgSrc": "assets/images/products_pics/jbl_gt-345.png",
+        "imgSrc": "assets/images/img-products-big/jbl_gt-345-big.png",
         "imgAlt": "JBL GT-345",
         "thumbnailSrc": "assets/images/products_pics/jbl_gt-345.png",
         "productCardMainInfo": "JBL GT-345 (76967)",
@@ -48,7 +48,7 @@
     },
     {
         "dataId": "sony_s890",
-        "imgSrc": "assets/images/products_pics/sony_s890.png",
+        "imgSrc": "assets/images/img-products-big/sony_s890-big.png",
         "imgAlt": "Sony S890",
         "thumbnailSrc": "assets/images/products_pics/sony_s890.png",
         "productCardMainInfo": "Sony S890 (76967)",
@@ -64,8 +64,8 @@
     },
     {
         "dataId": "bose_g656-a",
-        "imgSrc": "assets/images/products_pics/bose_g656-a.png",
-        "imgAlt": "Bose G656-A headphones",
+        "imgSrc": "assets/images/img-products-big/bose_g656-a-big.png",
+        "imgAlt": "Bose G656-A",
         "thumbnailSrc": "assets/images/products_pics/bose_g656-a.png",
         "productCardMainInfo": "Bose G656-A",
         "productCardPrice": 65.00,
@@ -79,7 +79,7 @@
     },
     {
         "dataId": "airpulse_r255",
-        "imgSrc": "assets/images/products_pics/airpulse_r255.png",
+        "imgSrc": "assets/images/img-products-big/airpulse_r255-big.png",
         "imgAlt": "AirPulse R255",
         "thumbnailSrc": "assets/images/products_pics/airpulse_r255.png",
         "productCardMainInfo": "AirPulse R255 (76967)",
@@ -94,7 +94,7 @@
     },
     {
         "dataId": "sony_yt555",
-        "imgSrc": "assets/images/products_pics/sony_yt555.png",
+        "imgSrc": "assets/images/img-products-big/sony_yt555-big.png",
         "imgAlt": "Sony YT555",
         "thumbnailSrc": "assets/images/products_pics/sony_yt555.png",
         "productCardMainInfo": "Sony YT555 (76967)",
@@ -111,7 +111,7 @@
     },
     {
         "dataId": "sony_tt56",
-        "imgSrc": "assets/images/products_pics/sony_tt56.png",
+        "imgSrc": "assets/images/img-products-big/sony_tt56-big.png",
         "imgAlt": "Sony TT56",
         "thumbnailSrc": "assets/images/products_pics/sony_tt56.png",
         "productCardMainInfo": "Sony TT56 (76967)",
@@ -127,7 +127,7 @@
     },
     {
         "dataId": "v-moda_er65",
-        "imgSrc": "assets/images/products_pics/v-moda_er65.png",
+        "imgSrc": "assets/images/img-products-big/v-moda_er65-big.png",
         "imgAlt": "V-MODA ER65",
         "thumbnailSrc": "assets/images/products_pics/v-moda_er65.png",
         "productCardMainInfo": "V-MODA ER65 (76967)",
@@ -143,7 +143,7 @@
     },
     {
         "dataId": "jbl_br-55",
-        "imgSrc": "assets/images/products_pics/jbl_br-55.png",
+        "imgSrc": "assets/images/img-products-big/jbl_br-55-big.png",
         "imgAlt": "JBL BR-55",
         "thumbnailSrc": "assets/images/products_pics/jbl_br-55.png",
         "productCardMainInfo": "JBL BR-55 (76967)",
@@ -159,7 +159,7 @@
     },
     {
         "dataId": "jbl_334wn",
-        "imgSrc": "assets/images/products_pics/jbl_334wn.png",
+        "imgSrc": "assets/images/img-products-big/jbl_334wn-big.png",
         "imgAlt": "JBL 334WN",
         "thumbnailSrc": "assets/images/products_pics/jbl_334wn.png",
         "productCardMainInfo": "JBL 334WN (76967)",
@@ -176,7 +176,7 @@
     },
     {
         "dataId": "airpulse_rs45",
-        "imgSrc": "assets/images/img-headphones/airpulse-rs45.png",
+        "imgSrc": "assets/images/img-products-big/airpulse_rs45-big.png",
         "imgAlt": "AirPulse RS45",
         "thumbnailSrc": "assets/images/img-headphones/airpulse-rs45.png",
         "productCardMainInfo": "AirPulse RS45 (76967)",
@@ -191,7 +191,7 @@
     },
     {
         "dataId": "bang_&_olufsen_f112",
-        "imgSrc": "assets/images/img-headphones/bang&olufsen-f112.png",
+        "imgSrc": "assets/images/img-products-big/bang_&_olufsen_f112-big.png",
         "imgAlt": "Bang & Olufsen F112",
         "thumbnailSrc": "assets/images/img-headphones/bang&olufsen-f112.png",
         "productCardMainInfo": "Bang & Olufsen F112 (76967)",
@@ -208,7 +208,7 @@
     },
     {
         "dataId": "airpulse_bb34",
-        "imgSrc": "assets/images/img-headphones/airpulse-bb34.png",
+        "imgSrc": "assets/images/img-products-big/airpulse_bb34-big.png",
         "imgAlt": "AirPulse BB34",
         "thumbnailSrc": "assets/images/img-headphones/airpulse-bb34.png",
         "productCardMainInfo": "AirPulse BB34 (76967)",
@@ -225,7 +225,7 @@
     },
     {
         "dataId": "jbl_or-57",
-        "imgSrc": "assets/images/speakers_pics/jbl_or-57.png",
+        "imgSrc": "assets/images/img-products-big/jbl_or-57-big.png",
         "imgAlt": "JBL OR-57",
         "thumbnailSrc": "assets/images/speakers_pics/jbl_or-57.png",
         "productCardMainInfo": "JBL OR-57 (76967)",
@@ -241,7 +241,7 @@
     },
     {
         "dataId": "jbl_party_pt-25",
-        "imgSrc": "assets/images/speakers_pics/jbl_party_pt-25.png",
+        "imgSrc": "assets/images/img-products-big/jbl_party_pt-25-big.png",
         "imgAlt": "JBL Party PT-25",
         "thumbnailSrc": "assets/images/speakers_pics/jbl_party_pt-25.png",
         "productCardMainInfo": "JBL Party PT-25 (76967)",
