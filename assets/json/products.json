@@ -173,5 +173,86 @@
             "Wireless range — 15 m",
             "Plug type — 3.5 mm"
         ]
+    },
+    {
+        "dataId": "airpulse_rs45",
+        "imgSrc": "assets/images/img-headphones/airpulse-rs45.png",
+        "imgAlt": "AirPulse RS45",
+        "thumbnailSrc": "assets/images/img-headphones/airpulse-rs45.png",
+        "productCardMainInfo": "AirPulse RS45 (76967)",
+        "productCardPrice": 195.00,
+        "productCode": 28,
+        "description": "Listen to music wherever you are with these headphones by AirPulse that work up to 15 hours. And, by the way, we're in love with this rose color!",
+        "specs": [
+            "Battery life — up to 15 hours",
+            "Sensitivity — 100 DB @ 1kHz 1mW",
+            "Frequency response — 5Hz - 40,000Hz"
+        ]
+    },
+    {
+        "dataId": "bang_&_olufsen_f112",
+        "imgSrc": "assets/images/img-headphones/bang&olufsen-f112.png",
+        "imgAlt": "Bang & Olufsen F112",
+        "thumbnailSrc": "assets/images/img-headphones/bang&olufsen-f112.png",
+        "productCardMainInfo": "Bang & Olufsen F112 (76967)",
+        "productCardPrice": 145.00,
+        "productCode": 29,
+        "description": "Headphones from one of the best manufacturers of audio equipment with leather inserts. Enjoy up to 14 hours of wireless playback and the premium design of these headphones by Bang & Olufsen.",
+        "specs": [
+            "Amplifier — Built-In balanced amplifier (output 1W)",
+            "Frequency response — 10Hz – 50kHz",
+            "Battery life — 18 hours",
+            "Charging time — 2 hours",
+            "Wireless range — 25 m"
+        ]
+    },
+    {
+        "dataId": "airpulse_bb34",
+        "imgSrc": "assets/images/img-headphones/airpulse-bb34.png",
+        "imgAlt": "AirPulse BB34",
+        "thumbnailSrc": "assets/images/img-headphones/airpulse-bb34.png",
+        "productCardMainInfo": "AirPulse BB34 (76967)",
+        "productCardPrice": 112.00,
+        "productCode": 25,
+        "description": "Don’t let the street noise interrupt your listening experience. The new AirPulse BB34 headphones remove all external nose and help you enjoy your favorite tracks.",
+        "specs": [
+            "Frequency response — 16Hz - 20kHz",
+            "Sensitivity — 100 DBSPL@1kHz",
+            "Battery life — 24 hours",
+            "Charging time — 2 hours",
+            "Wireless range — 35 m"
+        ]
+    },
+    {
+        "dataId": "jbl_or-57",
+        "imgSrc": "assets/images/speakers_pics/jbl_or-57.png",
+        "imgAlt": "JBL OR-57",
+        "thumbnailSrc": "assets/images/speakers_pics/jbl_or-57.png",
+        "productCardMainInfo": "JBL OR-57 (76967)",
+        "productCardPrice": 98.00,
+        "productCode": 18,
+        "description": "Basic model for listening to music in any conditions — on a picnic, in your car, at home or office. It features signature JBL sound and a number of extra options.",
+        "specs": [
+            "Battery life — 8 hours",
+            "Powerful 100W amplifier",
+            "Built-in bass port",
+            "USB playback"
+        ]
+    },
+    {
+        "dataId": "jbl_party_pt-25",
+        "imgSrc": "assets/images/speakers_pics/jbl_party_pt-25.png",
+        "imgAlt": "JBL Party PT-25",
+        "thumbnailSrc": "assets/images/speakers_pics/jbl_party_pt-25.png",
+        "productCardMainInfo": "JBL Party PT-25 (76967)",
+        "productCardPrice": 180.00,
+        "productCode": 20,
+        "description": "Really powerful and loud, this wireless speaker is the main ingredient of your crazy party! It can be connected both to a smartphone and to musical instrument.",
+        "specs": [
+            "Dual 6.5\" woofers",
+            "Three 2.25\" tweeters",
+            "Stereo pairing",
+            "Up to 15 hours of playback"
+        ]
     }
 ]
