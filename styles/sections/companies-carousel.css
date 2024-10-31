@@ -2,17 +2,16 @@
     padding: 50px 0;
     background-color: #f2f2f2;
 
-    .companies-carousel__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 24px;
+    .companies-carousel__inner{
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        min-height: 200px;
     }
-    .companies-carousel__slide{
+    .companies-carousel__slides{
         display: flex;
-        margin: 0 15px;
         align-items: center;
         justify-content: center;
+        gap: 10px;
         overflow: hidden;
         background-color: #fff;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -26,5 +25,6 @@
         border-radius: 50%;
         color: var(--speakers-carousel__btn-text-color);
         font-size: 25px;
+        border: none;
     }
 }
