@@ -17,9 +17,25 @@ function renderCarousels() {
     if (window.matchMedia('(min-width: 479px)').matches) {
         const secondSlidesIndex = currentSlideIdx + 1 >= slide.length ? 0 : currentSlideIdx + 1;
         slidesContainer.innerHTML += slide[secondSlidesIndex];
+
         if (window.matchMedia('(min-width: 767px)').matches) {
-            const fourSlidesIndex = currentSlideIdx + 1 >= slide.length ? 0 : currentSlideIdx + 1;
-            slidesContainer.innerHTML += slide[fourSlidesIndex];
+            const thirdSlidesIndex = secondSlidesIndex + 1 >= slide.length ? 0 : secondSlidesIndex + 1;
+            slidesContainer.innerHTML += slide[thirdSlidesIndex];
+
+            const fourthSlidesIndex = thirdSlidesIndex + 1 >= slide.length ? 0 : thirdSlidesIndex + 1;
+            slidesContainer.innerHTML += slide[fourthSlidesIndex];
+
+            if (window.matchMedia('(min-width: 990px)').matches) {
+                const fiveSlidesIndex = fourthSlidesIndex + 1 >= slide.length ? 0 : fourthSlidesIndex + 1;
+                slidesContainer.innerHTML += slide[fiveSlidesIndex];
+
+                const sixSlidesIndex = fiveSlidesIndex + 1 >= slide.length ? 0 : fiveSlidesIndex + 1;
+                slidesContainer.innerHTML += slide[sixSlidesIndex];
+
+                const sevenSlidesIndex = sixSlidesIndex + 1 >= slide.length ? 0 : sixSlidesIndex + 1;
+                slidesContainer.innerHTML += slide[sevenSlidesIndex];
+            }
+        }
     }
 }
 
