@@ -278,7 +278,6 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between; 
-    margin-bottom: 10px;
     align-items: center;
 }
 
@@ -296,11 +295,21 @@
     color: #9199ab;
 }
 
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 20px;
+}
+
 .product__thumbnail-small-wrapper {
+    flex: 0;
+    flex-direction: column;
     display: flex;
     justify-content: flex-start; 
     width: 100%;
-    padding-left: 20px;
+    
 }
 
 .product__thumbnail-small {
@@ -311,6 +320,8 @@
 }
 
 .modal-image-wrapper {
+    flex: 2;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
