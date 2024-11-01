@@ -25,17 +25,67 @@ if (burger) {
 }
 
 navLinks.forEach((link) => {
-    link.addEventListener("click", toggleMenu);
+    link.addEventListener("click", (event) => {
+        const targetSection = link.getAttribute("href"); // Отримуємо якорь, наприклад "#headphones"
+
+        if (window.location.pathname.includes("product.html")) {
+            // Якщо ми на сторінці product.html
+            event.preventDefault();
+            if (window.innerWidth <= 990) {
+                // Для екранів до 990 пікселів — закриваємо меню і переходимо на index.html з якорем
+                toggleMenu();
+                body.style.overflow = ""; // Зберігаємо можливість прокручування після закриття меню
+                window.location.href = `index.html${targetSection}`;
+            } else {
+                // Для екранів від 991 пікселів і більше — просто переходимо на index.html з якорем
+                window.location.href = `index.html${targetSection}`;
+            }
+        } else if (window.location.pathname.includes("index.html")) {
+            // Якщо ми на сторінці index.html
+            if (window.innerWidth <= 990) {
+                // Для екранів до 990 пікселів
+                event.preventDefault();
+                toggleMenu();
+                body.style.overflow = ""; // Повертаємо можливість прокручування
+                const targetElement = document.querySelector(targetSection);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            } else {
+                // Для екранів від 991 пікселів — просто прокручуємо до секції
+                event.preventDefault();
+                const targetElement = document.querySelector(targetSection);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        }
+    });
 });
 
-if (window.location.pathname.includes("product.html")) {
-    if (heroSection) {
-        heroSection.style.display = "none";
+// Перевірка на конкретну сторінку та встановлення правильного положення heroSection
+window.addEventListener("load", () => {
+    if (window.location.pathname.includes("product.html")) {
+        // При переході на сторінку product.html ховаємо блок heroSection
+        if (heroSection) {
+            heroSection.style.display = "none";
+        }
+        headerPosition.style.position = "relative";
+    } else if (window.location.pathname.includes("index.html")) {
+        if (heroSection) {
+            heroSection.style.display = "flex";
+        }
+        headerPosition.style.position = "absolute";
+
+        // Виконуємо прокручування до потрібної секції, якщо є якорь в URL
+        const hash = window.location.hash; // Отримуємо якорь з URL
+        if (hash) {
+            setTimeout(() => {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" }); // Прокручуємо до потрібної секції
+                }
+            }, 100); // Невелика затримка, щоб переконатися, що всі елементи сторінки завантажилися
+        }
     }
-    headerPosition.style.position = "relative";
-} else if (window.location.pathname.includes("index.html")) {
-    if (heroSection) {
-        heroSection.style.display = "block";
-    }
-    headerPosition.style.position = "absolute";
-}
+});
