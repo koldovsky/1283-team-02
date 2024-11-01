@@ -26,36 +26,30 @@ if (burger) {
 
 navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
-        const targetSection = link.getAttribute("href"); // Отримуємо якорь, наприклад "#headphones"
+        const targetSection = link.getAttribute("href");
 
         if (window.location.pathname.includes("product.html")) {
-            // Якщо ми на сторінці product.html
             event.preventDefault();
             if (window.innerWidth <= 990) {
-                // Для екранів до 990 пікселів — закриваємо меню і переходимо на іншу сторінку з якорем
                 toggleMenu();
                 setTimeout(() => {
-                    body.style.overflow = ""; // Повертаємо можливість прокручування після закриття меню
+                    body.style.overflow = "";
                     window.location.href = `index.html${targetSection}`;
                 }, 300);
             } else {
-                // Для екранів від 991 пікселів і більше — просто переходимо на index.html з якорем
                 window.location.href = `index.html${targetSection}`;
             }
         } else {
-            // Для будь-якої іншої сторінки (універсальний випадок)
             if (window.innerWidth <= 990) {
-                // Для екранів до 990 пікселів
                 event.preventDefault();
                 toggleMenu();
                 const targetElement = document.querySelector(targetSection);
                 if (targetElement) {
                     setTimeout(() => {
                         targetElement.scrollIntoView({ behavior: "smooth" });
-                    }, 300); // Затримка, щоб дати можливість меню закритися перед прокруткою
+                    }, 300);
                 }
             } else {
-                // Для екранів від 991 пікселів — просто прокручуємо до секції
                 event.preventDefault();
                 const targetElement = document.querySelector(targetSection);
                 if (targetElement) {
@@ -66,37 +60,31 @@ navLinks.forEach((link) => {
     });
 });
 
-// Перевірка на конкретну сторінку та встановлення правильного положення heroSection
 function updateHeroSection() {
     if (window.location.pathname.includes("product.html")) {
-        // Якщо ми на сторінці product.html, ховаємо блок heroSection
         if (heroSection) {
             heroSection.style.display = "none";
         }
         headerPosition.style.position = "relative";
     } else {
-        // Якщо ми на будь-якій іншій сторінці, відображаємо блок heroSection
         if (heroSection) {
             heroSection.style.display = "flex";
         }
         headerPosition.style.position = "absolute";
 
-        // Виконуємо прокручування до потрібної секції, якщо є якорь в URL
-        const hash = window.location.hash; // Отримуємо якорь з URL
+        const hash = window.location.hash;
         if (hash) {
             setTimeout(() => {
                 const targetElement = document.querySelector(hash);
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: "smooth" }); // Прокручуємо до потрібної секції
+                    targetElement.scrollIntoView({ behavior: "smooth" });
                 }
-            }, 100); // Невелика затримка, щоб переконатися, що всі елементи сторінки завантажилися
+            }, 100);
         }
     }
 }
 
-// Викликаємо при завантаженні сторінки
 window.addEventListener("load", updateHeroSection);
 
-// Викликаємо при зміні URL (щоб реагувати на переходи)
 window.addEventListener("popstate", updateHeroSection);
 window.addEventListener("hashchange", updateHeroSection);
