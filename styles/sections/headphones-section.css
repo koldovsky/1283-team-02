@@ -61,7 +61,7 @@
     }
 
     .headphones__product-borders {
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         justify-content: center;
@@ -81,7 +81,7 @@
       white-space: nowrap;
     }
     .headphones__product-borders {
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         justify-content: center;
@@ -94,7 +94,7 @@
       grid-auto-columns: 22% 22% 22% 22%;
     }
     .headphones__product-borders {
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         justify-content: center;
@@ -219,6 +219,7 @@
     background-repeat: no-repeat;
     height: 412px;
     width: auto;
+    max-width: 360px;
 }
 
 .product-card__category {
