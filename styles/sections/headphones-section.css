@@ -92,6 +92,12 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .product-borders__first-card,
+    .product-borders__second-card,
+    .product-borders__third-card {
+        max-width: 360px;
+    }
   }
 
   @media (min-width: 950px) {
