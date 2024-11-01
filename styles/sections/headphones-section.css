@@ -56,6 +56,10 @@
   }
 
   @media (min-width: 320px) {
+    .embla__container {
+        grid-auto-columns: 100%;
+    }
+
     .headphones__product-borders {
         display: flex;
         grid-template-columns: 1fr;
