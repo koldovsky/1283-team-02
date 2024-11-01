@@ -65,7 +65,12 @@
         grid-template-columns: 1fr;
         gap: 20px;
         justify-content: center;
-        flex-wrap: wrap;
+    }
+
+    .product-borders__first-card,
+    .product-borders__second-card,
+    .product-borders__third-card {
+        max-width: 320px;
     }
   }
 
@@ -94,7 +99,7 @@
       grid-auto-columns: 22% 22% 22% 22%;
     }
     .headphones__product-borders {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         justify-content: center;
