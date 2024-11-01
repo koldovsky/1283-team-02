@@ -5,26 +5,36 @@
     .companies-carousel__inner{
         display: grid;
         grid-template-columns: 50px 1fr 50px;
-        min-height: 200px;
+        min-height: 100px;
     }
     .companies-carousel__slides{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
         overflow: hidden;
+    }
+    .companies-carousel__slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #fff;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+    .companies-carousel__slide img {
+        padding: 0 20%;
     }
     .companies-carousel__btn-prev, .companies-carousel__btn-next {
-        display: block;
+        opacity: 0.8;
+        margin: auto;
         cursor: pointer;
         background-color: var(--speakers__catalog-next-prev-bg-gallery-buttons);
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         color: var(--speakers-carousel__btn-text-color);
-        font-size: 25px;
+        font-size: 20px;
         border: none;
     }
 }

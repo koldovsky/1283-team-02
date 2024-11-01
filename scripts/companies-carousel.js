@@ -1,12 +1,12 @@
 const slide = [
-    '<div><img src="./assets/images/companies-logo/apple-logo.svg" alt="apple logo"></div>',
-    '<div><img src="./assets/images/companies-logo/beyer-logo.svg" alt="beyer logo"></div>',
-    '<div><img src="./assets/images/companies-logo/jbl-logo.svg" alt="jbl logo"></div>',
-    '<div><img src="./assets/images/companies-logo/marshall-logo.svg" alt="marshall logo"></div>',
-    '<div><img src="./assets/images/companies-logo/panasonic-logo.svg" alt="panasonic logo"></div>',
-    '<div><img src="./assets/images/companies-logo/samsung-logo.svg" alt="samsung logo"></div>',
-    '<div><img src="./assets/images/companies-logo/sennheiser-logo.svg" alt="sennheiser logo"></div>',
-    '<div><img src="./assets/images/companies-logo/sony-logo.svg" alt="sony logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/apple-logo.svg" alt="apple logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/beyer-logo.svg" alt="beyer logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/jbl-logo.svg" alt="jbl logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/marshall-logo.svg" alt="marshall logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/panasonic-logo.svg" alt="panasonic logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/samsung-logo.svg" alt="samsung logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/sennheiser-logo.svg" alt="sennheiser logo"></div>',
+    '<div class="companies-carousel__slide"><img src="./assets/images/companies-logo/sony-logo.svg" alt="sony logo"></div>',
 ];
 
 let currentSlideIdx = 0;
