@@ -81,7 +81,7 @@
       white-space: nowrap;
     }
     .headphones__product-borders {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         justify-content: center;
