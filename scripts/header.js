@@ -32,24 +32,27 @@ navLinks.forEach((link) => {
             // Якщо ми на сторінці product.html
             event.preventDefault();
             if (window.innerWidth <= 990) {
-                // Для екранів до 990 пікселів — закриваємо меню і переходимо на index.html з якорем
+                // Для екранів до 990 пікселів — закриваємо меню і переходимо на іншу сторінку з якорем
                 toggleMenu();
-                body.style.overflow = ""; // Зберігаємо можливість прокручування після закриття меню
-                window.location.href = `index.html${targetSection}`;
+                setTimeout(() => {
+                    body.style.overflow = ""; // Повертаємо можливість прокручування після закриття меню
+                    window.location.href = `index.html${targetSection}`;
+                }, 300);
             } else {
                 // Для екранів від 991 пікселів і більше — просто переходимо на index.html з якорем
                 window.location.href = `index.html${targetSection}`;
             }
-        } else if (window.location.pathname.includes("index.html")) {
-            // Якщо ми на сторінці index.html
+        } else {
+            // Для будь-якої іншої сторінки (універсальний випадок)
             if (window.innerWidth <= 990) {
                 // Для екранів до 990 пікселів
                 event.preventDefault();
                 toggleMenu();
-                body.style.overflow = ""; // Повертаємо можливість прокручування
                 const targetElement = document.querySelector(targetSection);
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }, 300); // Затримка, щоб дати можливість меню закритися перед прокруткою
                 }
             } else {
                 // Для екранів від 991 пікселів — просто прокручуємо до секції
@@ -64,14 +67,15 @@ navLinks.forEach((link) => {
 });
 
 // Перевірка на конкретну сторінку та встановлення правильного положення heroSection
-window.addEventListener("load", () => {
+function updateHeroSection() {
     if (window.location.pathname.includes("product.html")) {
-        // При переході на сторінку product.html ховаємо блок heroSection
+        // Якщо ми на сторінці product.html, ховаємо блок heroSection
         if (heroSection) {
             heroSection.style.display = "none";
         }
         headerPosition.style.position = "relative";
-    } else if (window.location.pathname.includes("index.html")) {
+    } else {
+        // Якщо ми на будь-якій іншій сторінці, відображаємо блок heroSection
         if (heroSection) {
             heroSection.style.display = "flex";
         }
@@ -88,4 +92,11 @@ window.addEventListener("load", () => {
             }, 100); // Невелика затримка, щоб переконатися, що всі елементи сторінки завантажилися
         }
     }
-});
+}
+
+// Викликаємо при завантаженні сторінки
+window.addEventListener("load", updateHeroSection);
+
+// Викликаємо при зміні URL (щоб реагувати на переходи)
+window.addEventListener("popstate", updateHeroSection);
+window.addEventListener("hashchange", updateHeroSection);
