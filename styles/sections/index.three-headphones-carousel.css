@@ -4,6 +4,7 @@
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
   .headphone-carousel__item--first .carousel-content {
+    background-image: url('../../assets/images/svg-bg-carousel/bgyellow2.svg');
     display: flex;
     flex-direction: column;
     align-items: flex-start;
