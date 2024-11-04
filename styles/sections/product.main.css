@@ -224,39 +224,6 @@
     line-height: 1.5;
     font-size: 17px;
 }
-
-/* Медіа-запит для великих екранів (від 768px і вище) */
-@media (min-width: 768px) {
-    .main {
-        max-width: 1200px;
-    }
-
-    .product__content {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        align-items: flex-start;
-    }
-
-    .product__left-column, 
-    .product__right-column {
-        flex: 1;
-    }
-
-    .product__thumbnail {
-        width: 20%;
-        height: auto;
-    }
-
-    .product__gallery .product__image {
-        width: 80%; 
-    }
-
-    .product__purchase {
-        flex-direction: row;
-        align-items: center;
-    }
-}
 /* Модальне вікно */
 .modal {
     display: none;
@@ -309,7 +276,7 @@
     display: flex;
     justify-content: flex-start; 
     width: 100%;
-    
+    display: none;
 }
 
 .product__thumbnail-small {
@@ -330,7 +297,6 @@
 }
 
 .product__image-large {
-    width: 50%;
     max-width: 600px;
     height: auto;
     border-radius: 8px;
@@ -347,13 +313,49 @@
 }
 
 .modal-arrow-left {
-    left: 25%;
+    left: calc(50% - min(350px, 50%));
 }
 
 .modal-arrow-right {
-    right: 25%; 
+    right: calc(50% - min(350px, 50%));
 }
 
 .modal-arrow-left:hover, .modal-arrow-right:hover {
     color: #555;
 }
+/* Медіа-запит для великих екранів (від 768px і вище) */
+@media (min-width: 768px) {
+    .main {
+        max-width: 1200px;
+    }
+
+    .product__content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .product__left-column, 
+    .product__right-column {
+        flex: 1;
+    }
+
+    .product__thumbnail {
+        width: 20%;
+        height: auto;
+    }
+
+    .product__gallery .product__image {
+        width: 80%; 
+    }
+
+    .product__purchase {
+        flex-direction: row;
+        align-items: center;
+    }
+    .product__thumbnail-small-wrapper {
+        display: block;
+    }
+}
+
