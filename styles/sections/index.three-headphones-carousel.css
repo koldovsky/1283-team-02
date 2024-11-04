@@ -4,7 +4,9 @@
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
   .headphone-carousel__item--first .carousel-content {
-    background-image: url('../../assets/images/svg-bg-carousel/bgyellow2.svg');
+    background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
+    background-size: cover; /* Покриває весь екран пропорційно */
+    background-position: center; /* Центрує зображення по середині */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -15,7 +17,7 @@
 
 /* Стилі для заголовка */
 .headphone-carousel__title {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px;
@@ -35,7 +37,7 @@
 .headphone-carousel__model,
 .headphone-carousel__details {
     font-size: 1rem;
-    color: #d4d4d4; /* Світло-сірий текст */
+    color: #FFFFFFC7; /* Світло-сірий текст */
     margin-bottom: 10px;
 }
 
@@ -43,7 +45,7 @@
 .headphone-carousel__price {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffd700; /* Жовтий текст для ціни */
+    color: #fdf9f0; /*  ,SKBQ текст для ціни */
     margin-top: 10px;
 }
 
@@ -52,7 +54,6 @@
     max-width: 250px;
     max-height: 250px;
     margin-top: 30px;
-    align-self: center;
 }
 
 /* Стиль для кнопок */
@@ -66,12 +67,25 @@
 }
 
 .headphone-carousel__link--buy {
-    background-color: #ffd700; /* Жовта кнопка */
-    color: #0a3d77;
+    border-radius: 0; /* Гострі кути */
+    background-color: #2877b6; /* Синя кнопка */
+    color: #fbfdfd;
+}
+.headphone-carousel__link--buy:hover {
+    background-color: #2a2a2a; 
 }
 
 .headphone-carousel__link--all {
-    background-color: #5a91d1; /* Світло-синя кнопка */
+    border-radius: 0; /* Гострі кути */
+    background-color: #2a2a2a; /* Світло-синя кнопка */
     color: #ffffff;
-    margin-left: 10px;
+}
+.headphone-carousel__link--all:hover {
+    background-color: #2877b6; /* Синя кнопка */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Контейнер буде відповідати розміру кнопки */
+    height: auto; /* Контейнер буде відповідати висоті кнопки */
+    padding: 0; /* Забираємо зайвий відступ */
 }
