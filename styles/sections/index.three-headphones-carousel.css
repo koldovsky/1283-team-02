@@ -1,3 +1,8 @@
 .carousel-itemone{
+    width: 100%; /* Встановіть потрібну ширину */
+    height: 994px; /* Встановіть потрібну висоту */
+    text-align: center; /* Центрування тексту */
+    color: white; /* Колір тексту */
+    overflow: hidden; /* Сховати переповнені елементи */
 background-image: url('../../assets/images/svg-bg-carousel/bgyellow2.svg');
 }
