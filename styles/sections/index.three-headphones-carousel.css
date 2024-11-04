@@ -10,7 +10,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 50px;
-    max-width: 500px;
+    width: 100%;
 }
 
 /* Стилі для заголовка */
