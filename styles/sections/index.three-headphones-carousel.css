@@ -3,18 +3,28 @@
     width: 100%; /* Встановіть потрібну ширину */
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
-  .headphone-carousel__item--first .carousel-content {
+  .headphone-carousel__grid {
     background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
     background-position: center; /* Центрує зображення по середині */
+    display: grid;
+   
+    align-items: center;             /* Вирівнює елементи вертикально по центру */
+    gap: 20px;                       /* Відстань між колонками */
+    padding: 90px;       
+}
+/* Стиль для зображення навушників */
+.headphone-carousel__image {
+    width: 100%;                     /* Зображення займає всю ширину колонки */
+    max-width: 400px;                /* Максимальна ширина зображення */
+    height: auto;    /* Зберігає пропорції */
+    padding: 5px;
+}
+.carousel-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 50px;
-    width: 100%;
+    gap: 10px;                       /* Відстань між елементами текстової колонки */
 }
-
 /* Стилі для заголовка */
 .headphone-carousel__title {
     font-size: 40px;
@@ -49,13 +59,6 @@
     margin-top: 10px;
 }
 
-/* Стиль для зображення навушників */
-.headphone-carousel__image {
-    max-width: 250px;
-    max-height: 250px;
-    margin-top: 30px;
-}
-
 /* Стиль для кнопок */
 .headphone-carousel__link {
     display: inline-block;
@@ -67,6 +70,9 @@
 }
 
 .headphone-carousel__link--buy {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
     background-color: #2877b6; /* Синя кнопка */
     color: #fbfdfd;
@@ -76,6 +82,9 @@
 }
 
 .headphone-carousel__link--all {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
     background-color: #2a2a2a; /* Світло-синя кнопка */
     color: #ffffff;
