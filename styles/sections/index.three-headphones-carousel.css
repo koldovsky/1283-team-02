@@ -109,6 +109,54 @@
 .headphone-carousel__linkslide1--all:hover {
     background-color: #2877b6; /* Синя кнопка */
 }
+.headphone-carousel__linkslide2--buy {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
+    border-radius: 0; /* Гострі кути */
+    background-color: #f2cb1f; /* Синя кнопка */
+    color: #2a2a2a;
+}
+.headphone-carousel__linkslide2--buy:hover {
+    background-color: #2a2a2a; 
+    color: #ffffff;
+}
+
+.headphone-carousel__linkslide2--all {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
+    border-radius: 0; /* Гострі кути */
+    background-color: #2877b6; /* Світло-синя кнопка */
+    color: #ffffff;
+}
+.headphone-carousel__linkslide2--all:hover {
+    background-color: #2a2a2a; /* Синя кнопка */
+}
+.headphone-carousel__linkslide3--buy {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
+    border-radius: 0; /* Гострі кути */
+    background-color: #2877b6; /* Синя кнопка */
+    color: #fbfdfd;
+}
+.headphone-carousel__linkslide3--buy:hover {
+    background-color: #2a2a2a; 
+}
+
+.headphone-carousel__linkslide3--all {
+    display: inline-block;
+    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
+    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
+    border-radius: 0; /* Гострі кути */
+    background-color: #f2cb1f; /* Світло-синя кнопка */
+    color: #2a2a2a;
+}
+.headphone-carousel__linkslide3--all:hover {
+    background-color: #2a2a2a; /* Синя кнопка */
+    color: #ffffff
+}
 .carousel-control-prev,
 .carousel-control-next {
     width: auto; /* Контейнер буде відповідати розміру кнопки */
