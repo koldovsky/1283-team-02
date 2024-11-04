@@ -3,11 +3,74 @@
     width: 100%; /* Встановіть потрібну ширину */
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
-.carousel-itemone{
-    width: 100%; /* Встановіть потрібну ширину */
-    min-height: 1063px; /* Встановіть потрібну висоту */
-    text-align: center; /* Центрування тексту */
-    color: white; /* Колір тексту */
-    overflow: hidden; /* Сховати переповнені елементи */
-background-image: url('../../assets/images/svg-bg-carousel/bgyellow2.svg');
+  .headphone-carousel__item--first .carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    max-width: 500px;
+}
+
+/* Стилі для заголовка */
+.headphone-carousel__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Стилі для підзаголовків (Model, Details, Price) */
+.headphone-carousel__model-title,
+.headphone-carousel__details-title,
+.headphone-carousel__price-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Стиль для моделі та деталей */
+.headphone-carousel__model,
+.headphone-carousel__details {
+    font-size: 1rem;
+    color: #d4d4d4; /* Світло-сірий текст */
+    margin-bottom: 10px;
+}
+
+/* Стиль для ціни */
+.headphone-carousel__price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700; /* Жовтий текст для ціни */
+    margin-top: 10px;
+}
+
+/* Стиль для зображення навушників */
+.headphone-carousel__image {
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+/* Стиль для кнопок */
+.headphone-carousel__link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.headphone-carousel__link--buy {
+    background-color: #ffd700; /* Жовта кнопка */
+    color: #0a3d77;
+}
+
+.headphone-carousel__link--all {
+    background-color: #5a91d1; /* Світло-синя кнопка */
+    color: #ffffff;
+    margin-left: 10px;
 }
