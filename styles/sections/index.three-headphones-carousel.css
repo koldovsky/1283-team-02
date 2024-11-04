@@ -67,15 +67,25 @@
     color: #FFFFFFC7; /* Світло-сірий текст */
     margin-bottom: 10px;
 }
-
 /* Стиль для ціни */
-.headphone-carousel__price {
+.headphone-carousel__price1 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fdf9f0; /*  ,SKBQ текст для ціни */
     margin-top: 10px;
 }
-
+.headphone-carousel__price2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f2cb1f; /*  ,SKBQ текст для ціни */
+    margin-top: 10px;
+}
+.headphone-carousel__price3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f2cb1f; /*  ,SKBQ текст для ціни */
+    margin-top: 10px;
+}
 /* Стиль для кнопок */
 .headphone-carousel__link {
     display: inline-block;
