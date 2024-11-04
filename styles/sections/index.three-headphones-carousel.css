@@ -3,12 +3,29 @@
     width: 100%; /* Встановіть потрібну ширину */
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
-  .headphone-carousel__grid {
+  .headphone-carousel__grid1 {
     background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
     background-position: center; /* Центрує зображення по середині */
     display: grid;
-   
+    align-items: center;             /* Вирівнює елементи вертикально по центру */
+    gap: 20px;                       /* Відстань між колонками */
+    padding: 90px;       
+}
+.headphone-carousel__grid2 {
+    background-image: url('../../assets/images/svg-bg-carousel/bgblue1.svg');
+    background-size: cover; /* Покриває весь екран пропорційно */
+    background-position: center; /* Центрує зображення по середині */
+    display: grid;
+    align-items: center;             /* Вирівнює елементи вертикально по центру */
+    gap: 20px;                       /* Відстань між колонками */
+    padding: 90px;       
+}
+.headphone-carousel__grid3 {
+    background-image: url('../../assets/images/svg-bg-carousel/blackbg1.svg');
+    background-size: cover; /* Покриває весь екран пропорційно */
+    background-position: center; /* Центрує зображення по середині */
+    display: grid;
     align-items: center;             /* Вирівнює елементи вертикально по центру */
     gap: 20px;                       /* Відстань між колонками */
     padding: 90px;       
@@ -69,7 +86,7 @@
     border-radius: 5px;
 }
 
-.headphone-carousel__link--buy {
+.headphone-carousel__linkslide1--buy {
     display: inline-block;
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
@@ -77,11 +94,11 @@
     background-color: #2877b6; /* Синя кнопка */
     color: #fbfdfd;
 }
-.headphone-carousel__link--buy:hover {
+.headphone-carousel__linkslide1--buy:hover {
     background-color: #2a2a2a; 
 }
 
-.headphone-carousel__link--all {
+.headphone-carousel__linkslide1--all {
     display: inline-block;
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
@@ -89,7 +106,7 @@
     background-color: #2a2a2a; /* Світло-синя кнопка */
     color: #ffffff;
 }
-.headphone-carousel__link--all:hover {
+.headphone-carousel__linkslide1--all:hover {
     background-color: #2877b6; /* Синя кнопка */
 }
 .carousel-control-prev,
