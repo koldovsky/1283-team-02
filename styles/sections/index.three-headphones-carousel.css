@@ -1,2 +1,3 @@
-.headphone-carousel__link--buy {
-    background-color: black; /* Помаранчевий колір кнопки "BUY NOW" */
+.carousel-itemone{
+background-image: url('../../assets/images/svg-bg-carousel/bgyellow2.svg');
+}
