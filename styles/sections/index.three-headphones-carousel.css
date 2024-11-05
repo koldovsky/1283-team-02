@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     width: 100%; /* Встановіть потрібну ширину */
-    min-height: 1063px; /* Встановіть потрібну висоту */
+    min-height: 106px; /* Встановіть потрібну висоту */
   }
   .headphone-carousel__grid1,
   .headphone-carousel__grid2,
@@ -10,14 +10,18 @@
     grid-template-columns: 1fr; 
     align-items: center;             /* Вирівнює елементи вертикально по центру */
     gap: 20px;                       /* Відстань між колонками */
-    padding: 90px;       
-}
-.headphone-carousel__grid1 {
+    padding: 90px; 
+  }
+  .headphone-carousel__image-container {
+    display: flex; /* Використовуємо flex, щоб вирівняти зображення */
+    justify-content: flex-end; /* Вирівнює зображення праворуч */
+  }
+  .headphone-carousel__grid1 {
     background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
     background-position: center; /* Центрує зображення по середині */
-}
-.headphone-carousel__grid2 {
+}  
+.headphone-carousel__grid2{
     background-image: url('../../assets/images/svg-bg-carousel/bgblue1.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
     background-position: center; /* Центрує зображення по середині */  
@@ -28,24 +32,24 @@
     background-position: center; /* Центрує зображення по середині */     
 }
 
+
 /* Стиль для зображення навушників */
 .headphone-carousel__image {
-    width: 100%;                     /* Зображення займає всю ширину колонки */
-    max-width: 400px;                /* Максимальна ширина зображення */
-    height: auto;    /* Зберігає пропорції */
-    padding: 5px;
+   max-width: 400px;              /* Максимальна ширина зображення */
+   height: auto;
+   padding: 5px;
+  
 }
 .carousel-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;                       /* Відстань між елементами текстової колонки */
+    gap: 5px;  
 }
-/* Стилі для заголовка */
+/* Стилі для заголовка */ 
 .headphone-carousel__title {
     font-size: 40px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 20px;
 }
 
 /* Стилі для підзаголовків (Model, Details, Price) */
@@ -58,32 +62,42 @@
     color: #ffffff;
     vertical-align: baseline
 }
-
 /* Стиль для моделі та деталей */
 .headphone-carousel__model,
 .headphone-carousel__details {
     font-size: 1rem;
-    color: #FFFFFFC7; /* Світло-сірий текст */
+    color: #FFFFFFC7; 
     margin-bottom: 10px;
     vertical-align: baseline
+}
+.headphone-carousel__price-container {
+    display: flex;
+    align-items: baseline; /* Вирівнює текст по лінії основи */
+    gap: 5px; /* Проміжок між "Price" і "$185" */
+
+}
+.headphone-carousel__button-group {
+    display: flex;
+    gap: 10px; /* Відстань між кнопками */
+    margin-top: 20px;
 }
 
 /* Стиль для ціни */
 .headphone-carousel__price1 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fdf9f0; /*  ,SKBQ текст для ціни */
+    color: #fdf9f0;
 
 }
 .headphone-carousel__price2 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #f2cb1f; /*  ,SKBQ текст для ціни */
+    color: #f2cb1f; 
 }
 .headphone-carousel__price3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #f2cb1f; /*  ,SKBQ текст для ціни */
+    color: #f2cb1f; 
 }
 /* Стиль для кнопок */
 .headphone-carousel__link {
@@ -100,8 +114,8 @@
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
-    background-color: #2877b6; /* Синя кнопка */
-    color: #fbfdfd;
+    background-color: #2877b6; 
+    color: #fdfdfd ;
 }
 .headphone-carousel__linkslide1--buy:hover {
     background-color: #2a2a2a; 
@@ -112,7 +126,7 @@
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
-    background-color: #2a2a2a; /* Світло-синя кнопка */
+    background-color: #2a2a2a; 
     color: #ffffff;
 }
 .headphone-carousel__linkslide1--all:hover {
@@ -123,7 +137,7 @@
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
-    background-color: #f2cb1f; /* Синя кнопка */
+    background-color: #f2cb1f; 
     color: #2a2a2a;
 }
 .headphone-carousel__linkslide2--buy:hover {
@@ -136,11 +150,11 @@
     width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
     align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
     border-radius: 0; /* Гострі кути */
-    background-color: #2877b6; /* Світло-синя кнопка */
+    background-color: #2877b6; 
     color: #ffffff;
 }
 .headphone-carousel__linkslide2--all:hover {
-    background-color: #2a2a2a; /* Синя кнопка */
+    background-color: #2a2a2a; 
 }
 .headphone-carousel__linkslide3--buy {
     display: inline-block;
@@ -156,21 +170,21 @@
 
 .headphone-carousel__linkslide3--all {
     display: inline-block;
-    width: auto;                   /* Дозволяє кнопці займати лише необхідну ширину */
-    align-self: flex-start;        /* Вирівнює кнопки по лівому краю, але можна замінити на 'center' */
+    width: auto;                  
+    align-self: flex-start;        
     border-radius: 0; /* Гострі кути */
-    background-color: #f2cb1f; /* Світло-синя кнопка */
+    background-color: #f2cb1f; 
     color: #2a2a2a;
 }
 .headphone-carousel__linkslide3--all:hover {
-    background-color: #2a2a2a; /* Синя кнопка */
+    background-color: #2a2a2a; 
     color: #ffffff;
 }
 .carousel-control-prev,
 .carousel-control-next {
-    width: auto; /* Контейнер буде відповідати розміру кнопки */
-    height: auto; /* Контейнер буде відповідати висоті кнопки */
-    padding: 0; /* Забираємо зайвий відступ */
+    width: auto; 
+    height: auto; 
+    padding: 0; 
 }
 @media (min-width: 768px) {
     .headphone-carousel__grid1,
