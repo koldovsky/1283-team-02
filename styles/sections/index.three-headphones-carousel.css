@@ -3,7 +3,7 @@
     width: 100%; /* Встановіть потрібну ширину */
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
-  .headphone-carousel__grid1 {
+  .headphone-carousel__grid {
     background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
     background-position: center; /* Центрує зображення по середині */
@@ -12,24 +12,7 @@
     gap: 20px;                       /* Відстань між колонками */
     padding: 90px;       
 }
-.headphone-carousel__grid2 {
-    background-image: url('../../assets/images/svg-bg-carousel/bgblue1.svg');
-    background-size: cover; /* Покриває весь екран пропорційно */
-    background-position: center; /* Центрує зображення по середині */
-    display: grid;
-    align-items: center;             /* Вирівнює елементи вертикально по центру */
-    gap: 20px;                       /* Відстань між колонками */
-    padding: 90px;       
-}
-.headphone-carousel__grid3 {
-    background-image: url('../../assets/images/svg-bg-carousel/blackbg1.svg');
-    background-size: cover; /* Покриває весь екран пропорційно */
-    background-position: center; /* Центрує зображення по середині */
-    display: grid;
-    align-items: center;             /* Вирівнює елементи вертикально по центру */
-    gap: 20px;                       /* Відстань між колонками */
-    padding: 90px;       
-}
+
 /* Стиль для зображення навушників */
 .headphone-carousel__image {
     width: 100%;                     /* Зображення займає всю ширину колонки */
