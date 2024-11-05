@@ -1,3 +1,6 @@
+footer{
+  border: none;
+}
 .footer {
   background-color: #2a2a2a;
   color: white;
@@ -13,6 +16,7 @@
 .footer-part2 a{
   text-decoration: none;
   color: #b5adad	;
+  list-style-type: none;
 }
 .footer a:hover{
   color: inherit;
