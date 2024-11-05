@@ -1,35 +1,35 @@
 <div id="carouselExampleIndicators" class="carousel slide">
-  <!-- Індикатори -->
-  <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-
-  <!-- Вміст слайдів -->
-  <div class="carousel-inner">
-      
-      <!-- Перший слайд -->
-      <div class="carousel-item active headphone-carousel__grid1">
-        <!-- Зображення як частина гріда -->
-        <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/sony_s890_carusel_el.png" alt="Sony S890">
-        <!-- Текстова інформація в іншій колонці -->
-        <div class="carousel-content">
-            <h3 class="headphone-carousel__title">Colorize Your Day With Favorite Tracks</h3>
-            <h4 class="headphone-carousel__model-title">Model</h4>
-            <p class="headphone-carousel__model">Sony S890</p>
-            <h4 class="headphone-carousel__details-title">Details</h4>
-            <p class="headphone-carousel__details">These ergonomic and colorful wireless headphones will be to the liking of all sound lovers. The headphones feature powerful bass and full immersion into your favorite music on the go.</p>
-            <h4 class="headphone-carousel__price-title">Price</h4>
-            <p class="headphone-carousel__price1">$259</p>
-            <a class="headphone-carousel__link headphone-carousel__linkslide1--buy" href="#product-tabs">BUY NOW</a>
-            <a class="headphone-carousel__link headphone-carousel__linkslide1--all" href="#headphones">ALL HEADPHONES</a>
-        </div>
+    <!-- Індикатори -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+  
+    <!-- Вміст слайдів -->
+    <div class="carousel-inner">
+      <!-- Перший слайд -->
+      <div class="carousel-item active headphone-carousel__item--first">
+        <div class="headphone-carousel__grid1">
+          <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/sony_s890_carusel_el.png" alt="Sony S890">
+          <div class="carousel-content">
+              <h3 class="headphone-carousel__title">Colorize Your Day With Favorite Tracks</h3>
+              <h4 class="headphone-carousel__model-title">Model</h4>
+              <p class="headphone-carousel__model">Sony S890</p>
+              <h4 class="headphone-carousel__details-title">Details</h4>
+              <p class="headphone-carousel__details">These ergonomic and colorful wireless headphones will be to the liking of all sound lovers. The headphones feature powerful bass and full immersion into your favorite music on the go.</p>
+              <h4 class="headphone-carousel__price-title">Price</h4>
+              <p class="headphone-carousel__price1">$259</p>
+              <a class="headphone-carousel__link headphone-carousel__linkslide1--buy" href="#product-tabs">BUY NOW</a>
+              <a class="headphone-carousel__link headphone-carousel__linkslide1--all" href="#headphones">ALL HEADPHONES</a>
+          </div>
+        </div>
+      </div>
+  
       <!-- Другий слайд -->
-      <div class="carousel-item headphone-carousel__grid2">
-        <!-- Зображення як частина гріда -->
-        <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/airpulser255_carusel_el.png" alt="AirPulse R255">
+      <div class="carousel-item headphone-carousel__item--second">
+        <div class="headphone-carousel__grid2">
+          <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/airpulser255_carusel_el.png" alt="AirPulse R255">
           <div class="carousel-content">
               <h3 class="headphone-carousel__title">Always Clear Sound Wherever You Are</h3>
               <h4 class="headphone-carousel__model-title">Model</h4>
@@ -41,11 +41,13 @@
               <a class="headphone-carousel__link headphone-carousel__linkslide2--buy" href="#product-tabs">BUY NOW</a>
               <a class="headphone-carousel__link headphone-carousel__linkslide2--all" href="#headphones">ALL HEADPHONES</a>
           </div>
+        </div>
       </div>
-
+  
       <!-- Третій слайд -->
-      <div class="carousel-item headphone-carousel__grid3">
-        <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/bang&olufsen_jy-f112_carusel_el.png" alt="Bang & Olufsen JY-F112">
+      <div class="carousel-item headphone-carousel__item--third">
+        <div class="headphone-carousel__grid3">
+          <img class="headphone-carousel__image" src="./assets/images/img-headphones/img_headphones_three_roller/bang&olufsen_jy-f112_carusel_el.png" alt="Bang & Olufsen JY-F112">
           <div class="carousel-content">
               <h3 class="headphone-carousel__title">Premium Wireless Headphones</h3>
               <h4 class="headphone-carousel__model-title">Model</h4>
@@ -57,17 +59,17 @@
               <a class="headphone-carousel__link headphone-carousel__linkslide3--buy" href="#product-tabs">BUY NOW</a>
               <a class="headphone-carousel__link headphone-carousel__linkslide3--all" href="#headphones">ALL HEADPHONES</a>
           </div>
+        </div>
       </div>
-      
+    </div>
+  
+    <!-- Кнопки навігації -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
-  <!-- Кнопки навігації -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
-</div>
