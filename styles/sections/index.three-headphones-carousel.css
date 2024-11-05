@@ -59,6 +59,7 @@
     font-weight: bold;
     margin-top: 20px;
     color: #ffffff;
+    vertical-align: baseline
 }
 
 /* Стиль для моделі та деталей */
@@ -67,6 +68,7 @@
     font-size: 1rem;
     color: #FFFFFFC7; /* Світло-сірий текст */
     margin-bottom: 10px;
+    vertical-align: baseline
 }
 /* Стиль для ціни */
 .headphone-carousel__price1 {
