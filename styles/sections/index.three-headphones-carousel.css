@@ -3,32 +3,29 @@
     width: 100%; /* Встановіть потрібну ширину */
     min-height: 1063px; /* Встановіть потрібну висоту */
   }
-  .headphone-carousel__grid1 {
-    background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
-    background-size: cover; /* Покриває весь екран пропорційно */
-    background-position: center; /* Центрує зображення по середині */
+  .headphone-carousel__grid1,
+  .headphone-carousel__grid2,
+  .headphone-carousel__grid3 {
     display: grid;
+    grid-template-columns: 1fr; 
     align-items: center;             /* Вирівнює елементи вертикально по центру */
     gap: 20px;                       /* Відстань між колонками */
     padding: 90px;       
+}
+.headphone-carousel__grid1 {
+    background-image: url('../../assets/images/svg-bg-carousel/bgyellow2carous.svg');
+    background-size: cover; /* Покриває весь екран пропорційно */
+    background-position: center; /* Центрує зображення по середині */
 }
 .headphone-carousel__grid2 {
     background-image: url('../../assets/images/svg-bg-carousel/bgblue1.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
-    background-position: center; /* Центрує зображення по середині */
-    display: grid;
-    align-items: center;             /* Вирівнює елементи вертикально по центру */
-    gap: 20px;                       /* Відстань між колонками */
-    padding: 90px;       
+    background-position: center; /* Центрує зображення по середині */  
 }
 .headphone-carousel__grid3 {
     background-image: url('../../assets/images/svg-bg-carousel/blackbg1.svg');
     background-size: cover; /* Покриває весь екран пропорційно */
-    background-position: center; /* Центрує зображення по середині */
-    display: grid;
-    align-items: center;             /* Вирівнює елементи вертикально по центру */
-    gap: 20px;                       /* Відстань між колонками */
-    padding: 90px;       
+    background-position: center; /* Центрує зображення по середині */     
 }
 
 /* Стиль для зображення навушників */
@@ -70,24 +67,23 @@
     margin-bottom: 10px;
     vertical-align: baseline
 }
+
 /* Стиль для ціни */
 .headphone-carousel__price1 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fdf9f0; /*  ,SKBQ текст для ціни */
-    margin-top: 10px;
+
 }
 .headphone-carousel__price2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #f2cb1f; /*  ,SKBQ текст для ціни */
-    margin-top: 10px;
 }
 .headphone-carousel__price3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #f2cb1f; /*  ,SKBQ текст для ціни */
-    margin-top: 10px;
 }
 /* Стиль для кнопок */
 .headphone-carousel__link {
@@ -175,4 +171,11 @@
     width: auto; /* Контейнер буде відповідати розміру кнопки */
     height: auto; /* Контейнер буде відповідати висоті кнопки */
     padding: 0; /* Забираємо зайвий відступ */
+}
+@media (min-width: 768px) {
+    .headphone-carousel__grid1,
+    .headphone-carousel__grid2,
+    .headphone-carousel__grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
