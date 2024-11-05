@@ -55,11 +55,10 @@
 @media (max-width: 768px) {
     .video {
       grid-template-columns: 1fr;
-      text-align: center;
     }
     .video__content {
-      align-items: center;
-    }
+        align-items: center;
+      }
     .video__content-titel {
       font-size: 2.5rem;
     }
