@@ -55,7 +55,7 @@
 }
 .footer-block2 {
   flex: 1;
-  mix-width: 160px;
+  min-width: 160px;
 }
 .footer-input {
   flex: 1;
