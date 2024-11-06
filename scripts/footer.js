@@ -6,13 +6,16 @@ function showError(message) {
 
 function hideError() {
     const errorMessage = document.getElementById('error-message');
-    errorMessage.classList.remove('active');
+    setTimeout(() => {
+        errorMessage.classList.remove('active');
+    }, 2000);
 }
 
 document.getElementById('submitBtn').addEventListener('click', function() {
     const emailInput = document.getElementById('emailInput');
     const inputText = emailInput.value;
-    const popupMessage = document.getElementById('popupMessage');
+    const popupMessage1 = document.getElementById('popupMessage1');
+    const popupMessage2 = document.getElementById('popupMessage2');
     const overlay = document.getElementById('overlay');
     hideError();
 
@@ -20,7 +23,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         showError('Заповніть це поле');
     } else if (!inputText.includes('@')) {
         showError('Адреса електронної пошти має містити символ @');
-    } else if (!inputText.includes('mail')) {
+    } else if (inputText.includes('@') && !inputText.includes('mail')) {
         showError('Введіть частину адреси після символу @');
     } else {
         popupMessage1.textContent = 'Успіх!';
@@ -33,11 +36,4 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 document.getElementById('closePopupBtn').addEventListener('click', function() {
     document.getElementById('overlay').style.display = 'none';
     document.body.style.backgroundColor = '';
-});
-
-document.body.addEventListener('click', function(event) {
-    const emailInput = document.getElementById('emailInput');
-    if (!emailInput.contains(event.target)){
-        hideError();
-    }
 });

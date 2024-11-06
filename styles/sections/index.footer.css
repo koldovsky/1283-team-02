@@ -2,73 +2,73 @@
   background-color: #2a2a2a;
   color: white;
   padding: 80px;
-  font-family: arial;
+  font-family: Arial;
 }
-.footer-part1 a{
+.footer-part1 a {
   text-decoration: none;
   color: white;
   font-size: 30px;
   font-weight: bold;
 }
-.footer-part2 a{
+.footer-part2 a {
   text-decoration: none;
-  color: #b5adad	;
+  color: #b5adad;
 }
-.footer-part2 ul{
+.footer-part2 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.footer a:hover{
+.footer a:hover {
   color: inherit;
   text-decoration: underline;
 }
-.logo-white{
+.logo-white {
   width: 160px;
   height: 100px;
 }
-.footer-part1{
+.footer-part1 {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
-.footer-part2{
+.footer-part2 {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
   padding-top: 50px;
 }
-.text1{
+.text1 {
   color: yellow;
 }
-.line{
+.line {
   border-color: yellow;
   background-color: yellow;
   width: 20px;
   height: 2px;
   float: left;
 }
-.footer-block1{
+.footer-block1 {
   flex: 1;
   min-width: 160px;
 }
-.footer-block2{
+.footer-block2 {
   flex: 1;
   max-width: 160px;
 }
-.footer-input{
+.footer-input {
   flex: 1;
   min-width: 160px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.footer-ul{
+.footer-ul {
   font-size: 25px;
   font-weight: bold;
 }
-.footer-part1 input{
+.footer-part1 input {
   background-color: #474545;
   color: white;
   padding: 20px;
@@ -77,11 +77,11 @@
   width: 90%;
   box-sizing: border-box;
 }
-.footer-part1 input:focus{
+.footer-part1 input:focus {
   border: 2px solid yellow;
   transition: border-color;
 }
-.footer-part1 button{
+.footer-part1 button {
   background-color: #1369d2;
   color: white;
   padding: 20px;
@@ -90,14 +90,14 @@
   width: 90%;
   box-sizing: border-box;
 }
-.footer-part1 button:hover{
+.footer-part1 button:hover {
   background-color: white;
   color: black;
 }
-.footer-logo{
+.footer-logo {
   padding-bottom: 20px;
 }
-.container-input{
+.container-input {
   position: relative;
 }
 .overlay {
@@ -107,23 +107,55 @@
   width: 100%;
   height: 100%;
   display: none;
-  background: #75747496;
+  background: rgba(0, 0, 0, 0.7);  /* Темный полупрозрачный фон */
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
+.popup {
+  background-color: #333;  /* Темный фон для окна */
+  padding: 30px;
+  border-radius: 10px;  /* Скругленные углы */
+  color: white;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+.popup p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+#closePopupBtn {
+  background-color: yellow;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#closePopupBtn:hover {
+  background-color: white;
+  color: black;
+}
+.error-message {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  min-width: 80%;
+  padding: 5px;
+  margin-left: 15px;
+  background: grey;
+  border: 1px solid black;
+  text-align: center;
+  display: none;
+  opacity: 1;
+}
 .error-message.active {
   display: block;
 }
-.error-message {
-  color: black;
-  font-size: 8px;
-  position: absolute;
-  top: 35px;
-  min-width: 60%;
-  text-align: center;
-  padding: 5px;
-  background: white;
-  border: 1px solid #517aff;
-  display: none;
+.popup #popupMessage1 {
+  font-weight: bold;
 }
