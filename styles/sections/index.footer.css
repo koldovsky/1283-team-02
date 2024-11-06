@@ -17,29 +17,24 @@
   color: #b5adad;
 }
 
-.footer-part2 ul {
+.footer-part2 nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
   clear: both;
 }
 
-.footer-part2 ul li {
+.footer-part2 li {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.footer-part2 ul li a {
-  color: #b5adad;
-  text-decoration: none;
-}
-
-.footer-part2 ul li a:hover {
+.footer-part2 li a:hover {
   text-decoration: underline;
 }
 
-hr {
+.footer-part2 hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 2px solid yellow;
