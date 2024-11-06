@@ -57,7 +57,6 @@
   background-color: yellow;
   width: 20px;
   height: 2px;
-  float: left;
   border-color: yellow;
 }
 .footer-block1 {
@@ -67,7 +66,6 @@
 .footer-block2 {
   flex: 1;
   max-width: 100%;
-  display: flex
 }
 .footer-input {
   flex: 1;
