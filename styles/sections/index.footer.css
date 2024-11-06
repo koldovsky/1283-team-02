@@ -51,15 +51,12 @@
 }
 .footer-block1 {
   flex: 1;
-  min-width: 160px;
 }
 .footer-block2 {
   flex: 1;
-  min-width: 350px;
 }
 .footer-input {
   flex: 1;
-  min-width: 160px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
