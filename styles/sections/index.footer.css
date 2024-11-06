@@ -3,6 +3,10 @@
   color: white;
   padding: 80px;
   font-family: Arial;
+  max-width: 100%;
+}
+.footer p{
+  max-width: 100%;
 }
 .footer-part1 a {
   text-decoration: none;
@@ -51,7 +55,6 @@
 }
 .footer-block1 {
   flex: 1;
-  min-width: 300px;
   max-width: 100%;
 }
 .footer-block2 {
