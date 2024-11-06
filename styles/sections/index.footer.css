@@ -5,14 +5,12 @@
   font-family: Arial;
   max-width: 100%;
 }
-.footer p{
-  max-width: 100%;
-}
 .footer-part1 a {
   text-decoration: none;
   color: white;
   font-size: 30px;
   font-weight: bold;
+  word-wrap: break-word;
 }
 .footer-part2 a {
   text-decoration: none;
@@ -36,12 +34,14 @@
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
+  flex: 1 1 100%; 
 }
 .footer-part2 {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
+  flex: 1 1 100%; 
   padding-top: 50px;
 }
 .text1 {
@@ -59,7 +59,7 @@
 }
 .footer-block2 {
   flex: 1;
-  max-width: 120px;
+  max-width: 20%;
 }
 .footer-input {
   flex: 1;
