@@ -6,6 +6,7 @@ function init() {
   import("./out-customers-say.js");
   import("./special-offers.js");
   import("./index.speakers.carousel.js");
+  import("./footer.js");
 }
 
 const totalPartials = document.querySelectorAll(

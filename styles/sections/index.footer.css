@@ -58,7 +58,7 @@
   flex: 1;
   max-width: 160px;
 }
-.footer-imput{
+.footer-input{
   flex: 1;
   min-width: 160px;
   padding-top: 15px;
@@ -70,11 +70,16 @@
 }
 .footer-part1 input{
   background-color: #474545;
+  color: white;
   padding: 20px;
   border: none;
   height: 40%;
   width: 90%;
   box-sizing: border-box;
+}
+.footer-part1 input:focus{
+  border: 2px solid yellow;
+  transition: border-color;
 }
 .footer-part1 button{
   background-color: #1369d2;
@@ -91,4 +96,34 @@
 }
 .footer-logo{
   padding-bottom: 20px;
+}
+.container-input{
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #75747496;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.error-message.active {
+  display: block;
+}
+.error-message {
+  color: black;
+  font-size: 8px;
+  position: absolute;
+  top: 35px;
+  min-width: 60%;
+  text-align: center;
+  padding: 5px;
+  background: white;
+  border: 1px solid #517aff;
+  display: none;
 }
