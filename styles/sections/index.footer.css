@@ -99,8 +99,8 @@
 .container-input {
   position: relative;
 }
-.emailInput{
-  margin-bottom: 20px;
+.subscribeBtn{
+  margin-top: 20px;
 }
 .overlay {
   position: fixed;
