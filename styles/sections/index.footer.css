@@ -59,7 +59,7 @@
 }
 .footer-block2 {
   flex: 1;
-  max-width: 20%;
+  max-width: 100%;
 }
 .footer-input {
   flex: 1;
