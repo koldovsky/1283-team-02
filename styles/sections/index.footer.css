@@ -51,6 +51,7 @@
 }
 .footer-block1 {
   flex: 1;
+  min-width: 300px;
 }
 .footer-block2 {
   flex: 1;
