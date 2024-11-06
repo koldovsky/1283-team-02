@@ -17,6 +17,10 @@
   color: #b5adad;
 }
 
+.footer-part2 hr {
+  margin-bottom: 10px;
+}
+
 .footer-part2 ul {
   list-style-type: none;
   padding: 0;
@@ -101,6 +105,7 @@
   background-color: #1369d2;
   color: white;
   padding: 20px;
+  margin-top: 20px;
   border: none;
   height: 40%;
   width: 90%;
