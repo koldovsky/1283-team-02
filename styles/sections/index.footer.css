@@ -24,21 +24,26 @@
   clear: both;
 }
 
-.footer a:hover {
-  color: inherit;
+.footer-part2 ul li {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-part2 ul li a {
+  color: #b5adad;
+  text-decoration: none;
+}
+
+.footer-part2 ul li a:hover {
   text-decoration: underline;
 }
 
-.logo-white {
-  width: 160px;
-  height: 100px;
-}
-
-.footer-part1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
+hr {
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid yellow;
+  margin-top: 30px;
 }
 
 .footer-part2 {
@@ -47,18 +52,6 @@
   gap: 10px;
   flex-wrap: wrap;
   padding-top: 50px;
-}
-
-.text1 {
-  color: yellow;
-}
-
-.line {
-  border-color: yellow;
-  background-color: yellow;
-  width: 20px;
-  height: 2px;
-  float: left;
 }
 
 .footer-block1 {
@@ -98,11 +91,10 @@
   transition: border-color;
 }
 
-.footer-part1 .submitBtn {
+.footer-part1 button {
   background-color: #1369d2;
   color: white;
   padding: 20px;
-  margin-top: 20px;
   border: none;
   height: 40%;
   width: 90%;
@@ -120,6 +112,19 @@
 
 .container-input {
   position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
 .error-message {
@@ -141,19 +146,6 @@
   display: block;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
 .popup {
   background-color: #333;
   padding: 30px;
@@ -162,10 +154,6 @@
   text-align: center;
   max-width: 400px;
   width: 90%;
-}
-
-.popup .popupMessage1 {
-  font-weight: bold;
 }
 
 .closePopupBtn {
@@ -179,6 +167,6 @@
   transition: background-color 0.3s ease;
 }
 
-#closePopupBtn:hover {
+.closePopupBtn:hover {
   background-color: #f3c200;
 }
