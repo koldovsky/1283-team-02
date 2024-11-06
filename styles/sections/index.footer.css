@@ -98,6 +98,8 @@
 }
 .container-input {
   position: relative;
+}
+.emailInput{
   margin-bottom: 20px;
 }
 .overlay {
